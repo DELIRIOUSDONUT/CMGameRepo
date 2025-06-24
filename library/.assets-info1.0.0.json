@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "map": {
+    "/Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/Scripts.meta": {
+      "time": 1750750839260.8674
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/Scripts": {
+      "time": 1750750846498.5823,
+      "uuid": "a084bb39-5748-4c80-89af-05bd3c10b9eb"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/Scripts/CardScript.ts.meta": {
+      "time": 1750750846499.2942
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/Scripts/CardScript.ts": {
+      "time": 1750750952919.5332,
+      "uuid": "72078481-5462-4b2a-b1e6-158be7f71c66"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/MainGameScene.scene.meta": {
+      "time": 1750750979865.9514
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/MainGameScene.scene": {
+      "time": 1750750979863.944,
+      "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
+    }
+  },
+  "missing": {}
+}

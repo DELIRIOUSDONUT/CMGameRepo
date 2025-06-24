@@ -1,0 +1,27 @@
+{
+  "a084bb39-5748-4c80-89af-05bd3c10b9eb": {
+    "url": "db://assets/Scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "72078481-5462-4b2a-b1e6-158be7f71c66": {
+    "url": "db://assets/Scripts/CardScript.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "29ba28d9-1244-421a-be48-36a95eb85582": {
+    "url": "db://assets/MainGameScene.scene",
+    "value": {
+      "depends": [
+        "29ba28d9-1244-421a-be48-36a95eb85582",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941"
+      ],
+      "dependScripts": [
+        "72078481-5462-4b2a-b1e6-158be7f71c66"
+      ]
+    },
+    "versionCode": 1
+  }
+}
