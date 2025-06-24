@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 12432.683499999344,
+      "mTimestamp": 5331.416208997369,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 211612.94545900077,
+      "mTimestamp": 3601923.561292,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -427,7 +427,7 @@
           }
         },
         {
-          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/Scripts/CardScript.ts",
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
@@ -436,7 +436,21 @@
             },
             "end": {
               "line": 5,
-              "column": 92
+              "column": 89
+            }
+          }
+        },
+        {
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 7
+            },
+            "end": {
+              "line": 6,
+              "column": 85
             }
           }
         }
@@ -453,7 +467,14 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/Scripts/CardScript.ts"
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts"
           },
           "messages": []
         }
@@ -562,6 +583,128 @@
           "messages": []
         }
       ]
+    },
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
+      "mTimestamp": {
+        "mtime": 1750754278584.4604,
+        "uuid": "72078481-5462-4b2a-b1e6-158be7f71c66"
+      },
+      "chunkId": "d1febd7abf416efdcd294da2b322f8e15cd055b9",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
+      "mTimestamp": {
+        "mtime": 1750755004689.4917,
+        "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
+      },
+      "chunkId": "caec25bf9120a2b9bd628d467890152acaf01abe",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 82
+            },
+            "end": {
+              "line": 1,
+              "column": 86
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "cce:/internal/code-quality/cr.mjs": {
+      "mTimestamp": 1750751403444,
+      "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
+      "imports": [],
+      "type": "esm",
+      "resolutions": []
     }
   }
 }

@@ -21,6 +21,48 @@
     "/Users/admin/Documents/GitHub/CMGameRepo/CMGame/assets/MainGameScene.scene": {
       "time": 1750750979863.944,
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts": {
+      "time": 1750751745814.106,
+      "uuid": "a084bb39-5748-4c80-89af-05bd3c10b9eb"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
+      "time": 1750754278584.4604,
+      "uuid": "72078481-5462-4b2a-b1e6-158be7f71c66"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts.meta": {
+      "time": 1750750839260.8674
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.meta": {
+      "time": 1750750846499.2942
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene": {
+      "time": 1750755433734.273,
+      "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene.meta": {
+      "time": 1750750979865.9514
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.meta": {
+      "time": 1750751745815.2346
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
+      "time": 1750755004689.4917,
+      "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs.meta": {
+      "time": 1750753304831.74
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs": {
+      "time": 1750753307607.9385,
+      "uuid": "05ce0c82-fe20-43e2-99bb-0dbc16b3db27"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs/CardButton.prefab.meta": {
+      "time": 1750753307610.7861
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs/CardButton.prefab": {
+      "time": 1750755251797.6475,
+      "uuid": "c7737fb0-80a1-48ec-8c5a-575b2740fec1"
     }
   },
   "missing": {}

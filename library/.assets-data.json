@@ -14,6 +14,28 @@
     "value": {
       "depends": [
         "29ba28d9-1244-421a-be48-36a95eb85582",
+        "c7737fb0-80a1-48ec-8c5a-575b2740fec1"
+      ],
+      "dependScripts": [
+        "f1c9c783-6e7a-4995-860a-2c80620666ea"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f1c9c783-6e7a-4995-860a-2c80620666ea": {
+    "url": "db://assets/Scripts/CardController.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "05ce0c82-fe20-43e2-99bb-0dbc16b3db27": {
+    "url": "db://assets/Prefabs",
+    "value": {},
+    "versionCode": 1
+  },
+  "c7737fb0-80a1-48ec-8c5a-575b2740fec1": {
+    "url": "db://assets/Prefabs/CardButton.prefab",
+    "value": {
+      "depends": [
         "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
         "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
         "951249e0-9f16-456d-8b85-a6ca954da16b@f9941"
