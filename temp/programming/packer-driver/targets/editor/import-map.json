@@ -4,7 +4,8 @@
     "cce:/internal/x/prerequisite-imports": "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js",
     "file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "./chunks/31/31e3c2f26607ebb67e59edfae1b48b9458089fb9.js",
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": "./chunks/ca/caec25bf9120a2b9bd628d467890152acaf01abe.js",
-    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js"
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js",
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts": "./chunks/90/9007ab4b72832a718a8bbabcded061842efed625.js"
   },
   "scopes": {
     "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js": {
@@ -42,7 +43,11 @@
     "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js": {
       "__unresolved_0": "./chunks/31/31e3c2f26607ebb67e59edfae1b48b9458089fb9.js",
       "__unresolved_1": "./chunks/ca/caec25bf9120a2b9bd628d467890152acaf01abe.js",
-      "__unresolved_2": "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js"
+      "__unresolved_2": "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js",
+      "__unresolved_3": "./chunks/90/9007ab4b72832a718a8bbabcded061842efed625.js"
+    },
+    "./chunks/90/9007ab4b72832a718a8bbabcded061842efed625.js": {
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
     },
     "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js": {
       "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"

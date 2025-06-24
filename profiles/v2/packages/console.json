@@ -2,7 +2,10 @@
   "__version__": "1.0.0",
   "panel": {
     "filterTypes": [
-      "log"
+      "log",
+      "info",
+      "warn",
+      "error"
     ]
   }
 }

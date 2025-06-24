@@ -178,6 +178,25 @@
       },
       "timestamp": 1750754279516
     },
+    "caec25bf9120a2b9bd628d467890152acaf01abe": {
+      "imports": {
+        "__unresolved_0": {
+          "resolved": {
+            "type": "chunk",
+            "id": "6a5019a719a9014c047e67aa1cf34453ab8392ce"
+          },
+          "messages": []
+        },
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1750757248071
+    },
     "6d8fd2b0177941b032ddc0733af48a561fb60657": {
       "imports": {
         "__unresolved_0": {
@@ -200,19 +219,19 @@
             "id": "d1febd7abf416efdcd294da2b322f8e15cd055b9"
           },
           "messages": []
-        }
-      },
-      "timestamp": 1750755005279
-    },
-    "caec25bf9120a2b9bd628d467890152acaf01abe": {
-      "imports": {
-        "__unresolved_0": {
+        },
+        "__unresolved_3": {
           "resolved": {
             "type": "chunk",
-            "id": "6a5019a719a9014c047e67aa1cf34453ab8392ce"
+            "id": "9007ab4b72832a718a8bbabcded061842efed625"
           },
           "messages": []
-        },
+        }
+      },
+      "timestamp": 1750757707877
+    },
+    "9007ab4b72832a718a8bbabcded061842efed625": {
+      "imports": {
         "cc": {
           "resolved": {
             "type": "chunk",
@@ -221,7 +240,7 @@
           "messages": []
         }
       },
-      "timestamp": 1750755005294
+      "timestamp": 1750757707887
     }
   },
   "entries": {
@@ -229,6 +248,7 @@
     "cce:/internal/x/prerequisite-imports": "6d8fd2b0177941b032ddc0733af48a561fb60657",
     "file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "31e3c2f26607ebb67e59edfae1b48b9458089fb9",
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": "caec25bf9120a2b9bd628d467890152acaf01abe",
-    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": "d1febd7abf416efdcd294da2b322f8e15cd055b9"
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": "d1febd7abf416efdcd294da2b322f8e15cd055b9",
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts": "9007ab4b72832a718a8bbabcded061842efed625"
   }
 }

@@ -13,6 +13,10 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
     _reporterNs.report("CardScript", "./CardScript", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfScoreEvaluator(extras) {
+    _reporterNs.report("ScoreEvaluator", "./ScoreEvaluator", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -50,6 +54,8 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           _initializerDefineProperty(this, "CardPrefab", _descriptor, this);
 
           _initializerDefineProperty(this, "NumCards", _descriptor2, this);
+
+          this.ScoreEval = void 0;
         }
 
         onLoad() {
@@ -61,13 +67,21 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
             let widget = childCard.getComponent("cc.Widget");
             widget.target = this.node;
-          }
+          } // Get the evaluator script
+
+
+          this.ScoreEval = this.node.getComponent("ScoreEvaluator");
         }
 
         start() {//this.testGetChildren();
         }
 
-        update(deltaTime) {}
+        update(deltaTime) {
+          // test score evaluator: should return 0, 100 and -1 sequentially
+          console.log(this.ScoreEval.getScore("testing", "testing"));
+          console.log(this.ScoreEval.getScore("scored", "scored"));
+          console.log(this.ScoreEval.getScore("mismatch", "another_mismatch"));
+        }
 
         testGetChildren() {
           this.node.children.forEach(childNode => {
