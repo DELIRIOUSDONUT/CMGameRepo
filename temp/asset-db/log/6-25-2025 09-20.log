@@ -1408,3 +1408,11 @@
 6-25-2025 10:38:27-debug: start refresh asset from /Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene...
 6-25-2025 10:38:27-debug: %cImport%c: /Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scenebackground: #aaff85; color: #000;color: #000;
 6-25-2025 10:38:27-debug: refresh asset /Users/admin/Documents/GitHub/CMGameRepo/assets success
+6-25-2025 11:06:12-debug: refresh db internal success
+6-25-2025 11:06:12-debug: %cImport%c: /Users/admin/Documents/GitHub/CMGameRepo/assets/Scriptsbackground: #aaff85; color: #000;color: #000;
+6-25-2025 11:06:12-debug: %cImport%c: /Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scenebackground: #aaff85; color: #000;color: #000;
+6-25-2025 11:06:12-debug: refresh db assets success
+6-25-2025 11:06:12-debug: Run asset db hook engine-extends:afterRefresh ...
+6-25-2025 11:06:12-debug: Run asset db hook engine-extends:afterRefresh success!
+6-25-2025 11:06:12-debug: asset-db:refresh-all-database (32ms)
+6-25-2025 11:06:12-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
