@@ -569,13 +569,13 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_alignFlags": 34,
+    "_alignFlags": 33,
     "_target": {
       "__id__": 8
     },
     "_left": 640,
     "_right": 0.03,
-    "_top": 0,
+    "_top": 0.05555555555555555,
     "_bottom": 310,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
@@ -605,7 +605,7 @@
     "_layoutType": 3,
     "_cellSize": {
       "__type__": "cc.Size",
-      "width": 150,
+      "width": 125,
       "height": 150
     },
     "_startAxis": 0,
@@ -618,7 +618,7 @@
     "_verticalDirection": 1,
     "_horizontalDirection": 1,
     "_constraint": 2,
-    "_constraintNum": 3,
+    "_constraintNum": 5,
     "_affectedByScale": false,
     "_isAlign": false,
     "_id": "a2mbZ9ua5EdZGE8TuwfSp3"
@@ -637,7 +637,7 @@
       "__uuid__": "c7737fb0-80a1-48ec-8c5a-575b2740fec1",
       "__expectedType__": "cc.Prefab"
     },
-    "NumCards": 16,
+    "NumCards": 25,
     "_id": "00mL+S/TdLNqYP26iNVZLI"
   },
   {
@@ -781,7 +781,7 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 153.3562692742599,
+      "width": 146.03311831825658,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -808,13 +808,13 @@
     "_fontSize": 40,
     "_fontColor": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 236,
+      "g": 215,
+      "b": 58,
       "a": 255
     },
     "_maxWidth": 0,
-    "_fontFamily": "Arial",
+    "_fontFamily": "Belwe Bold",
     "_font": null,
     "_isSystemFontUsed": true,
     "_userDefinedFont": null,
@@ -883,7 +883,7 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 153.3562692742599,
+      "width": 146.03311831825658,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -910,13 +910,13 @@
     "_fontSize": 40,
     "_fontColor": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 236,
+      "g": 215,
+      "b": 58,
       "a": 255
     },
     "_maxWidth": 0,
-    "_fontFamily": "Arial",
+    "_fontFamily": "Belwe Bold",
     "_font": null,
     "_isSystemFontUsed": true,
     "_userDefinedFont": null,
