@@ -27,16 +27,24 @@ System.register(["cc"], function (_export, _context) {
         constructor() {
           super(...arguments);
           this.scoreHashMap = void 0;
+          this.defaultScore = 10;
         }
 
         onLoad() {
-          this.scoreHashMap = new Map(); // Find a better way to do this...
+          this.scoreHashMap = new Map();
+          var rankArray = new Array();
+          rankArray = ["2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"];
+          var suitArray = new Array();
+          suitArray = ["S", "H", "D", "C"];
+          var index = 0;
 
-          this.scoreHashMap.set("Testing", 10);
-          this.scoreHashMap.set("Scored", 100);
-          this.scoreHashMap.set("a", 20);
-          this.scoreHashMap.set("b", 30);
-          this.scoreHashMap.set("c", 40);
+          for (var i = 0; i < rankArray.length; i++) {
+            for (var j = 0; j < suitArray.length; j++) {
+              this.scoreHashMap.set(rankArray[i] + suitArray[j], this.defaultScore); // All types have the same score
+
+              index++;
+            }
+          }
         }
 
         start() {}
@@ -48,13 +56,13 @@ System.register(["cc"], function (_export, _context) {
             var val = this.scoreHashMap.get(id_a);
 
             if (val === undefined) {
-              return -1;
+              return 0;
             }
 
             return val;
           }
 
-          return -1; // If mismatch
+          return 0; // If mismatch
         }
 
       }) || _class));

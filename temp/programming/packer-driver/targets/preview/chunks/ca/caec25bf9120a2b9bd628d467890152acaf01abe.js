@@ -9,7 +9,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
-  // Using the Fisher-Yates shuffle
+  // Using the Fisher-Yates shuffle to shuffle an array
   function shuffleArray(array) {
     var currentIndex = array.length,
         randomIndex; // While there remain elements to shuffle.
@@ -35,6 +35,10 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
   function _reportPossibleCrUseOfCardSelectEvent(extras) {
     _reporterNs.report("CardSelectEvent", "./CardSelectEvent", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfScoreCounter(extras) {
+    _reporterNs.report("ScoreCounter", "./ScoreCounter", _context.meta, extras);
   }
 
   return {
@@ -84,50 +88,59 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           this.CardSelectedQueue = void 0;
           // Number of cards currently selected
           this.NumSelectedCards = void 0;
+          // Assuming that number of cards is even, there must be NumCards/2 unique pairs
+          // However, can have repeated pairs if run out of card types
+          // For now, use 5 card types 
+          // Object to keep track of player score
+          this.ScoreCounter = void 0;
         }
 
-        // Assuming that number of cards is even, there must be NumCards/2 unique pairs
-        // However, can have repeated pairs if run out of card types
-        // For now, use 5 card types 
         onLoad() {}
 
         start() {
-          //this.testGetChildren();
-          // Get the evaluator script
-          this.ScoreEval = this.node.getComponent("ScoreEvaluator"); // From the score evaluator, get the list of scoring card types
-
-          var scoringTypes = Array.from(this.ScoreEval.scoreHashMap.keys());
-          scoringTypes = shuffleArray(scoringTypes);
-          console.log(scoringTypes);
-          var numTypes = this.NumCards / 2;
-          var shuffledTypes = new Array(); // Get the first numTypes shuffled types from the evaluator, and only use those for this game
-
-          console.log(shuffledTypes);
-
-          for (var i = 0; i < numTypes; i++) {
-            // Push twice since we need pairs
-            shuffledTypes.push(scoringTypes[i]);
-            shuffledTypes.push(scoringTypes[i]);
-            console.log(shuffledTypes);
-          } //console.log(shuffledTypes);
+          // First make sure that numcards is an even number (cant make pairs with odd num)
+          if (this.NumCards % 2 != 0) {
+            this.NumCards -= 1;
+          } // Get the evaluator script
 
 
-          shuffledTypes = shuffleArray(shuffledTypes); //console.log(shuffledTypes);
+          this.ScoreEval = this.node.getComponent("ScoreEvaluator"); // Get a random subset of card type pairs
 
-          for (var _i = 0; _i < this.NumCards; _i++) {
+          var shuffledTypes = this.getCardTypes(); // Instantiate all cards
+
+          for (var i = 0; i < this.NumCards; i++) {
             var childCard = instantiate(this.CardPrefab);
             this.node.addChild(childCard);
             var cardScript = childCard.getComponent("CardScript");
-            cardScript.init(false, shuffledTypes[_i], _i); // todo change this to randomly spreading different matches
+            cardScript.init(false, shuffledTypes[i], i); // todo change this to randomly spreading different matches
             // For layout adjustments
 
             var widget = childCard.getComponent("cc.Widget");
             widget.target = this.node;
-          }
+          } // Setup listener for card selection events
 
+
+          this.setupCardMatchListener(); // Get score tracker
+
+          this.ScoreCounter = this.node.getComponent("ScoreCounter");
+        }
+
+        update(deltaTime) {}
+
+        testGetChildren() {
+          this.node.children.forEach(childNode => {
+            console.log(childNode.name);
+            var cardScript = childNode.getComponent("CardScript");
+
+            if (cardScript) {
+              console.log(cardScript.CardType, cardScript.FlippedUp);
+            }
+          });
+        }
+
+        setupCardMatchListener() {
           this.CardSelectedQueue = new Array();
-          this.NumSelectedCards = 0; // Setup listener for card selection events
-
+          this.NumSelectedCards = 0;
           this.node.on("card-selected", event => {
             var card = event.card; // Stop event propagation
 
@@ -150,9 +163,11 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               // By this point, two cards are selected
               card.setFlipStatus(true);
               var score = this.ScoreEval.getScore(this.CardSelectedQueue[0].CardType, card.CardType);
-              console.log("Score: ", score);
+              console.log("Score: ", score); // Pass score to score counter
 
-              if (score < 0) {
+              this.ScoreCounter.trackScore(score);
+
+              if (score <= 0) {
                 // Mismatch
                 // Do delay, then flip both cards face down
                 this.CardSelectedQueue[0].setFlipStatus(false);
@@ -174,21 +189,26 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           });
         }
 
-        update(deltaTime) {// test score evaluator: should return 0, 100 and -1 sequentially
-          //console.log(this.ScoreEval.getScore("testing", "testing"));
-          //console.log(this.ScoreEval.getScore("scored", "scored"));
-          //console.log(this.ScoreEval.getScore("mismatch", "another_mismatch"));
-        }
+        getCardTypes() {
+          // From the score evaluator, get the list of scoring card types
+          var scoringTypes = Array.from(this.ScoreEval.scoreHashMap.keys());
+          scoringTypes = shuffleArray(scoringTypes);
+          console.log(scoringTypes);
+          var numTypes = this.NumCards / 2;
+          var shuffledTypes = new Array(); // Get the first numTypes shuffled types from the evaluator, and only use those for this game
 
-        testGetChildren() {
-          this.node.children.forEach(childNode => {
-            console.log(childNode.name);
-            var cardScript = childNode.getComponent("CardScript");
+          console.log(shuffledTypes);
 
-            if (cardScript) {
-              console.log(cardScript.CardType, cardScript.FlippedUp);
-            }
-          });
+          for (var i = 0; i < numTypes; i++) {
+            // Push twice since we need pairs
+            shuffledTypes.push(scoringTypes[i]);
+            shuffledTypes.push(scoringTypes[i]);
+            console.log(shuffledTypes);
+          } //console.log(shuffledTypes);
+
+
+          shuffledTypes = shuffleArray(shuffledTypes);
+          return shuffledTypes;
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "CardPrefab", [_dec2], {

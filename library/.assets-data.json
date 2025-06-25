@@ -18,7 +18,8 @@
       ],
       "dependScripts": [
         "f1c9c783-6e7a-4995-860a-2c80620666ea",
-        "b4d57943-4a9c-4d95-bc66-2f62251cc49d"
+        "b4d57943-4a9c-4d95-bc66-2f62251cc49d",
+        "5f684221-564d-4ce4-8d19-bb195065f271"
       ]
     },
     "versionCode": 1
@@ -54,6 +55,11 @@
   },
   "b17bf39d-4a21-40b7-bfa5-5f0aad7fa75e": {
     "url": "db://assets/Scripts/CardSelectEvent.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "5f684221-564d-4ce4-8d19-bb195065f271": {
+    "url": "db://assets/Scripts/ScoreCounter.ts",
     "value": {},
     "versionCode": 1
   }
