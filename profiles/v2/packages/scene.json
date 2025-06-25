@@ -10,7 +10,7 @@
       166,
       255
     ],
-    "transformToolName": "position",
+    "transformToolName": "rect",
     "pivot": "pivot",
     "coordinate": "local",
     "toolsVisibility3d": true
@@ -784,10 +784,10 @@
       },
       "scale": 0.7
     },
-    "bce471d4-394f-4ebf-befd-484ab7ce9c3c": {
+    "16173f64-4373-4bd0-9e67-6195a78d1ba6": {
       "position": {
-        "x": 639.2733333333333,
-        "y": 360.7266666666667,
+        "x": 639.2633333333333,
+        "y": 360.7366666666667,
         "z": 5000
       },
       "rotation": {
@@ -866,7 +866,7 @@
     "a36b333e-d92b-4143-9348-61f7fb2922a5",
     "2256d340-8dc5-49c5-9e5e-c0d8995091ec",
     "c7737fb0-80a1-48ec-8c5a-575b2740fec1",
-    "bce471d4-394f-4ebf-befd-484ab7ce9c3c",
+    "16173f64-4373-4bd0-9e67-6195a78d1ba6",
     "29ba28d9-1244-421a-be48-36a95eb85582"
   ],
   "camera": {

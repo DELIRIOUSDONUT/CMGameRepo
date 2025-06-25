@@ -37,7 +37,7 @@
       "time": 1750750846499.2942
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene": {
-      "time": 1750835687416.407,
+      "time": 1750837698761.3643,
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene.meta": {
@@ -98,6 +98,20 @@
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts": {
       "time": 1750835510570.2026,
       "uuid": "7c8af5c5-16b3-4f9c-a023-a39dd638d72a"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites.meta": {
+      "time": 1750836368366.81
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites": {
+      "time": 1750836739827.3076,
+      "uuid": "e7b6cec2-545e-4fa9-86bb-bad97d65d2a7"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/istockphoto-1186585903-612x612.jpg.meta": {
+      "time": 1750836983467.069
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/istockphoto-1186585903-612x612.jpg": {
+      "time": 1750836725852.9446,
+      "uuid": "52a40af8-2668-462d-8a42-61997c8a340e"
     }
   },
   "missing": {}

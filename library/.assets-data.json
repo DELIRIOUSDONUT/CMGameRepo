@@ -14,6 +14,7 @@
     "value": {
       "depends": [
         "29ba28d9-1244-421a-be48-36a95eb85582",
+        "52a40af8-2668-462d-8a42-61997c8a340e@f9941",
         "c7737fb0-80a1-48ec-8c5a-575b2740fec1"
       ],
       "dependScripts": [
@@ -72,6 +73,36 @@
   "7c8af5c5-16b3-4f9c-a023-a39dd638d72a": {
     "url": "db://assets/Scripts/ScoreUpdater.ts",
     "value": {},
+    "versionCode": 1
+  },
+  "e7b6cec2-545e-4fa9-86bb-bad97d65d2a7": {
+    "url": "db://assets/Sprites",
+    "value": {},
+    "versionCode": 1
+  },
+  "52a40af8-2668-462d-8a42-61997c8a340e": {
+    "url": "db://assets/Sprites/istockphoto-1186585903-612x612.jpg",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "52a40af8-2668-462d-8a42-61997c8a340e@6c48a": {
+    "url": "db://assets/Sprites/istockphoto-1186585903-612x612.jpg@6c48a",
+    "value": {
+      "depends": [
+        "52a40af8-2668-462d-8a42-61997c8a340e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "52a40af8-2668-462d-8a42-61997c8a340e@f9941": {
+    "url": "db://assets/Sprites/istockphoto-1186585903-612x612.jpg@f9941",
+    "value": {
+      "depends": [
+        "52a40af8-2668-462d-8a42-61997c8a340e@6c48a"
+      ]
+    },
     "versionCode": 1
   }
 }
