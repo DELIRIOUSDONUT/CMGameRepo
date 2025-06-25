@@ -19,7 +19,8 @@
       "dependScripts": [
         "f1c9c783-6e7a-4995-860a-2c80620666ea",
         "b4d57943-4a9c-4d95-bc66-2f62251cc49d",
-        "5f684221-564d-4ce4-8d19-bb195065f271"
+        "5f684221-564d-4ce4-8d19-bb195065f271",
+        "7c8af5c5-16b3-4f9c-a023-a39dd638d72a"
       ]
     },
     "versionCode": 1
@@ -60,6 +61,16 @@
   },
   "5f684221-564d-4ce4-8d19-bb195065f271": {
     "url": "db://assets/Scripts/ScoreCounter.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "3a125897-cb07-4ca2-8c94-537572fd668e": {
+    "url": "db://assets/Scripts/ScoreUpdateEvent.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "7c8af5c5-16b3-4f9c-a023-a39dd638d72a": {
+    "url": "db://assets/Scripts/ScoreUpdater.ts",
     "value": {},
     "versionCode": 1
   }

@@ -63,7 +63,6 @@ export class CardController extends Component {
 
         // Get score tracker
         this.ScoreCounter = this.node.getComponent("ScoreCounter") as ScoreCounter;
-        
     }
 
     update(deltaTime: number) {
@@ -113,6 +112,7 @@ export class CardController extends Component {
                 
                 // Pass score to score counter
                 this.ScoreCounter.trackScore(score);
+
                 if(score <= 0){
                     // Mismatch
                     

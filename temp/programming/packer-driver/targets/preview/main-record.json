@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 9288662.020583,
+      "mTimestamp": 11257102.374208,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -495,6 +495,34 @@
               "column": 89
             }
           }
+        },
+        {
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 7
+            },
+            "end": {
+              "line": 10,
+              "column": 91
+            }
+          }
+        },
+        {
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts",
+          "resolved": "__unresolved_7",
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 7
+            },
+            "end": {
+              "line": 11,
+              "column": 87
+            }
+          }
         }
       ],
       "type": "esm",
@@ -538,6 +566,20 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts"
           },
           "messages": []
         }
@@ -733,7 +775,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
       "mTimestamp": {
-        "mtime": 1750833583121.201,
+        "mtime": 1750834298619.2368,
         "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
       },
       "chunkId": "caec25bf9120a2b9bd628d467890152acaf01abe",
@@ -938,11 +980,15 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts": {
       "mTimestamp": {
-        "mtime": 1750833672058.0293,
+        "mtime": 1750835639173.5083,
         "uuid": "5f684221-564d-4ce4-8d19-bb195065f271"
       },
       "chunkId": "a125d109f0b97243b4f1c9797caf34a7a511d0cf",
       "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
         {
           "value": "cc"
         },
@@ -961,10 +1007,153 @@
               "column": 68
             }
           }
+        },
+        {
+          "value": "./ScoreUpdateEvent",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 33
+            },
+            "end": {
+              "line": 2,
+              "column": 53
+            }
+          }
         }
       ],
       "type": "esm",
       "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts": {
+      "mTimestamp": {
+        "mtime": 1750834291103.5972,
+        "uuid": "3a125897-cb07-4ca2-8c94-537572fd668e"
+      },
+      "chunkId": "ff3268cab4d899bc2eaffe851cc9cdd01024ff62",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 20
+            },
+            "end": {
+              "line": 1,
+              "column": 24
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts": {
+      "mTimestamp": {
+        "mtime": 1750835510570.2026,
+        "uuid": "7c8af5c5-16b3-4f9c-a023-a39dd638d72a"
+      },
+      "chunkId": "8f4819b59b8ffda51714044ea8a800909441061d",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 62
+            },
+            "end": {
+              "line": 1,
+              "column": 66
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
         {
           "resolved": {
             "type": "module",

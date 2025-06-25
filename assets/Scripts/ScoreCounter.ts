@@ -1,10 +1,11 @@
 import { _decorator, CCFloat, CCInteger, Component, Node } from 'cc';
+import { ScoreUpdateEvent } from './ScoreUpdateEvent';
 const { ccclass, property } = _decorator;
 
 @ccclass('ScoreCounter')
 export class ScoreCounter extends Component {
-    @property({type : CCFloat, tooltip : "How much the combo score increases per combo streak"})
-    ScoreComboGrowth : number = 0.1;
+    @property({type : CCInteger, tooltip : "How much the combo score increases per combo streak"})
+    ScoreComboGrowth : number = 5;
 
     @property({type : CCInteger, tooltip : "How much the player is allowed to not match while maintaining the combo"})
     ComboStreakTolerance : number = 1;
@@ -37,8 +38,11 @@ export class ScoreCounter extends Component {
             // Player scored, so update score and combo
             this.ComboMisses = 0;
             this.ComboStreak += 1;
-            this.Score += score;
+            this.Score += score + this.ScoreComboGrowth * this.ComboStreak;
         }
+
+        // Emit signal to update UI for score and combo
+        this.node.dispatchEvent(new ScoreUpdateEvent(this.Score, this.ComboStreak));
     }
 }
 

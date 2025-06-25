@@ -23,7 +23,7 @@
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts": {
-      "time": 1750833097404.8916,
+      "time": 1750834334006.6326,
       "uuid": "a084bb39-5748-4c80-89af-05bd3c10b9eb"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
@@ -37,7 +37,7 @@
       "time": 1750750846499.2942
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene": {
-      "time": 1750833711482.5305,
+      "time": 1750835687416.407,
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene.meta": {
@@ -47,7 +47,7 @@
       "time": 1750751745815.2346
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
-      "time": 1750833583121.201,
+      "time": 1750834298619.2368,
       "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs.meta": {
@@ -82,8 +82,22 @@
       "time": 1750833097406.5586
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts": {
-      "time": 1750833672058.0293,
+      "time": 1750835639173.5083,
       "uuid": "5f684221-564d-4ce4-8d19-bb195065f271"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.meta": {
+      "time": 1750834309945.057
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts": {
+      "time": 1750834291103.5972,
+      "uuid": "3a125897-cb07-4ca2-8c94-537572fd668e"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts.meta": {
+      "time": 1750834334007.9907
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts": {
+      "time": 1750835510570.2026,
+      "uuid": "7c8af5c5-16b3-4f9c-a023-a39dd638d72a"
     }
   },
   "missing": {}
