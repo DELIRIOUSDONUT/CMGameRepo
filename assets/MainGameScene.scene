@@ -479,7 +479,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "CardCanvas",
+    "_name": "CardGroup",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -510,8 +510,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 352,
-      "y": 238,
+      "x": 281.6,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -523,11 +523,11 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 0.5,
-      "y": 0.5,
+      "x": 1,
+      "y": 1,
       "z": 1
     },
-    "_mobility": 2,
+    "_mobility": 0,
     "_layer": 33554432,
     "_euler": {
       "__type__": "cc.Vec3",
@@ -550,7 +550,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 640,
-      "height": 200
+      "height": 640
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -569,13 +569,13 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_alignFlags": 33,
+    "_alignFlags": 34,
     "_target": {
       "__id__": 8
     },
-    "_left": 590,
-    "_right": 0.1,
-    "_top": 0.1,
+    "_left": 640,
+    "_right": 0.03,
+    "_top": 0,
     "_bottom": 310,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
@@ -585,7 +585,7 @@
     "_isAbsBottom": true,
     "_isAbsHorizontalCenter": true,
     "_isAbsVerticalCenter": true,
-    "_originalWidth": 1260,
+    "_originalWidth": 640,
     "_originalHeight": 200,
     "_alignMode": 1,
     "_lockFlags": 33,
@@ -606,7 +606,7 @@
     "_cellSize": {
       "__type__": "cc.Size",
       "width": 150,
-      "height": 200
+      "height": 150
     },
     "_startAxis": 0,
     "_paddingLeft": 0,
@@ -616,10 +616,10 @@
     "_spacingX": 10,
     "_spacingY": 10,
     "_verticalDirection": 1,
-    "_horizontalDirection": 0,
+    "_horizontalDirection": 1,
     "_constraint": 2,
-    "_constraintNum": 5,
-    "_affectedByScale": true,
+    "_constraintNum": 3,
+    "_affectedByScale": false,
     "_isAlign": false,
     "_id": "a2mbZ9ua5EdZGE8TuwfSp3"
   },
@@ -637,7 +637,7 @@
       "__uuid__": "c7737fb0-80a1-48ec-8c5a-575b2740fec1",
       "__expectedType__": "cc.Prefab"
     },
-    "NumCards": 10,
+    "NumCards": 16,
     "_id": "00mL+S/TdLNqYP26iNVZLI"
   },
   {
@@ -668,7 +668,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "ScoreCanvas",
+    "_name": "ScoreGroup",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -958,7 +958,9 @@
     "_enabled": true,
     "__prefab": null,
     "_alignFlags": 18,
-    "_target": null,
+    "_target": {
+      "__id__": 8
+    },
     "_left": 320,
     "_right": 960,
     "_top": 360,
