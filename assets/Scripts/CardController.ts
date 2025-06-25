@@ -30,16 +30,54 @@ export class CardController extends Component {
     // Object to keep track of player score
     ScoreCounter : ScoreCounter;
 
+    SaveState = {
+        score: 0,
+        combo: 0,
+        cards : [] as string[],
+        faceUpIndex: -1,
+        removedCards : [] as number[]
+    };
+
     protected onLoad(): void {
         
     }
     start() {
+        // Get the evaluator script
+        this.ScoreEval = this.node.getComponent("ScoreEvaluator") as ScoreEvaluator;
+        // Get score tracker
+        this.ScoreCounter = this.node.getComponent("ScoreCounter") as ScoreCounter;
+        // If save state exists and at least one pair is left
+        if((localStorage.getItem("saveState")) ){
+            console.log("Fetched save data");
+            this.SaveState = JSON.parse(localStorage.getItem("saveState") as string);
+            // parse from here
+            this.NumCards = this.SaveState.cards.length;
+            this.ScoreCounter.Score = this.SaveState.score;
+            this.ScoreCounter.ComboStreak = this.SaveState.combo;
+            for(let i = 0; i < this.NumCards; i++){
+                const childCard = instantiate(this.CardPrefab);
+                this.node.addChild(childCard);
+                let cardScript : CardScript = 
+                    this.node.children[i].getComponent("CardScript") as CardScript;
+                cardScript.init(false, this.SaveState.cards[i], i);
+                if(this.SaveState.faceUpIndex == i){
+                    cardScript.setFlipStatus(true);
+                }
+                if(this.SaveState.removedCards[i] == 1){
+                    cardScript.disable();
+                }
+                
+            }
+            // Setup listener for card selection events
+            this.setupCardMatchListener();
+            return;
+        }
+
         // First make sure that numcards is an even number (cant make pairs with odd num)
         if(this.NumCards % 2 != 0){
             this.NumCards -= 1;
         }
-        // Get the evaluator script
-        this.ScoreEval = this.node.getComponent("ScoreEvaluator") as ScoreEvaluator;
+        
 
         // Get a random subset of card type pairs
         let shuffledTypes : Array<String> = this.getCardTypes();
@@ -51,18 +89,23 @@ export class CardController extends Component {
             let cardScript : CardScript = 
                     childCard.getComponent("CardScript") as CardScript;
             
-            cardScript.init(false, shuffledTypes[i], i); // todo change this to randomly spreading different matches
+            cardScript.init(false, shuffledTypes[i], i); 
             // For layout adjustments
             let widget : Widget = 
                     childCard.getComponent("cc.Widget") as Widget;
             widget.target = this.node;
+
+            // Save to save state
+            this.SaveState.cards.push(shuffledTypes[i] as string);
+            this.SaveState.removedCards.push(0);
         }
+
+        
 
         // Setup listener for card selection events
         this.setupCardMatchListener();
 
-        // Get score tracker
-        this.ScoreCounter = this.node.getComponent("ScoreCounter") as ScoreCounter;
+        
     }
 
     update(deltaTime: number) {
@@ -101,8 +144,10 @@ export class CardController extends Component {
             if(this.NumSelectedCards == 1){
                 // Flip face up
                 card.setFlipStatus(true);
+                this.SaveState.faceUpIndex = card.CardID; // this works because the card id IS the index
             } else if (this.NumSelectedCards > 1){
                 // By this point, two cards are selected
+                this.SaveState.faceUpIndex = -1;
                 card.setFlipStatus(true);
                 let score : number = this.ScoreEval.getScore(
                     this.CardSelectedQueue[0].CardType,
@@ -112,10 +157,13 @@ export class CardController extends Component {
                 
                 // Pass score to score counter
                 this.ScoreCounter.trackScore(score);
-
+                // For save state
+                this.SaveState.score = this.ScoreCounter.Score;
+                this.SaveState.combo = this.ScoreCounter.ComboStreak;
+                // Save combo to save state
                 if(score <= 0){
                     // Mismatch
-                    
+                    this.SaveState.combo = 0;
                     // Do delay, then flip both cards face down
                     this.CardSelectedQueue[0].setFlipStatus(false);
                     card.setFlipStatus(false);
@@ -126,6 +174,10 @@ export class CardController extends Component {
                     // Do delay, then disable both cards from rendering
                     this.CardSelectedQueue[0].disable();
                     card.disable();
+
+                    // Add disabled cards to save state
+                    this.SaveState.removedCards[this.CardSelectedQueue[0].CardID] = 1;
+                    this.SaveState.removedCards[card.CardID] = 1;
                 }
                 // Eject the first two queue entries which are the two selected cards
                 this.NumSelectedCards -= 2;
@@ -134,6 +186,14 @@ export class CardController extends Component {
     
             } else {
                 console.log("ERROR: Num selected cards: ", this.NumSelectedCards);
+            }
+            console.log(this.SaveState);
+            
+            // if all cards are removed, no need to save state as game is over
+            if(this.SaveState.removedCards.every((val) => val == 1)){
+                localStorage.removeItem("saveState");
+            } else {
+                localStorage.setItem("saveState", JSON.stringify(this.SaveState));
             }
         });
     }

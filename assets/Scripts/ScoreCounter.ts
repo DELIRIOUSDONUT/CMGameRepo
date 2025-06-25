@@ -38,7 +38,7 @@ export class ScoreCounter extends Component {
             // Player scored, so update score and combo
             this.ComboMisses = 0;
             this.ComboStreak += 1;
-            this.Score += score + this.ScoreComboGrowth * this.ComboStreak;
+            this.Score += score + this.ScoreComboGrowth * (this.ComboStreak - 1);
         }
 
         // Emit signal to update UI for score and combo
