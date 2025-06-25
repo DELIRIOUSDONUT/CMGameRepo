@@ -1,4 +1,4 @@
-import { _decorator, Component, Node , Event } from 'cc';
+import { _decorator, Component, Node , Event , Label} from 'cc';
 const { ccclass, property } = _decorator;
 import { CardSelectEvent } from "./CardSelectEvent";
 
@@ -18,6 +18,11 @@ export class CardScript extends Component {
     setCardType(cardType: String){
         this.CardType = cardType;
         console.log("Card type set to: ", this.CardType);
+
+        // For testing
+        let label : Label = this.node.getComponentInChildren("cc.Label") as Label;
+        label.string = this.CardType as string;
+
     }
 
     setFlipStatus(flippedUp : boolean){

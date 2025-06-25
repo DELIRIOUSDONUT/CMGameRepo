@@ -640,7 +640,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 11257073.348499998,
+      "mTimestamp": 14411163.822875,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -922,7 +922,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
       "mTimestamp": {
-        "mtime": 1750827943368.7854,
+        "mtime": 1750838793812.5964,
         "uuid": "72078481-5462-4b2a-b1e6-158be7f71c66"
       },
       "chunkId": "d1febd7abf416efdcd294da2b322f8e15cd055b9",
@@ -942,11 +942,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 52
+              "column": 59
             },
             "end": {
               "line": 1,
-              "column": 56
+              "column": 63
             }
           }
         },

@@ -24,7 +24,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
       _cclegacy._RF.push({}, "72078SBVGJLKrHmFYvn9xxm", "CardScript", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Node', 'Event']);
+      __checkObsolete__(['_decorator', 'Component', 'Node', 'Event', 'Label']);
 
       ({
         ccclass,
@@ -45,7 +45,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
         setCardType(cardType) {
           this.CardType = cardType;
-          console.log("Card type set to: ", this.CardType);
+          console.log("Card type set to: ", this.CardType); // For testing
+
+          var label = this.node.getComponentInChildren("cc.Label");
+          label.string = this.CardType;
         }
 
         setFlipStatus(flippedUp) {
