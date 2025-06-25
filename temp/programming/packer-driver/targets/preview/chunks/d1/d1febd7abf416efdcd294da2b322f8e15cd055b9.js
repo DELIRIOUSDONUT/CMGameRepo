@@ -1,22 +1,30 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, _dec, _class, _crd, ccclass, property, CardScript;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, CardSelectEvent, _dec, _class, _crd, ccclass, property, CardScript;
+
+  function _reportPossibleCrUseOfCardSelectEvent(extras) {
+    _reporterNs.report("CardSelectEvent", "./CardSelectEvent", _context.meta, extras);
+  }
 
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
       Component = _cc.Component;
+    }, function (_unresolved_2) {
+      CardSelectEvent = _unresolved_2.CardSelectEvent;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "72078SBVGJLKrHmFYvn9xxm", "CardScript", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Node']);
+      __checkObsolete__(['_decorator', 'Component', 'Node', 'Event']);
 
       ({
         ccclass,
@@ -28,6 +36,7 @@ System.register(["cc"], function (_export, _context) {
           super(...arguments);
           this.FlippedUp = void 0;
           this.CardType = void 0;
+          this.CardID = void 0;
         }
 
         start() {}
@@ -41,12 +50,28 @@ System.register(["cc"], function (_export, _context) {
 
         setFlipStatus(flippedUp) {
           this.FlippedUp = flippedUp;
-          console.log("Card flipped up: ", this.FlippedUp);
+          console.log("ID: ", this.CardID, "Card flipped up: ", this.FlippedUp); // Add animation here based on flip status
         }
 
-        init(flippedUp, cardType) {
+        init(flippedUp, cardType, cardID) {
           this.setFlipStatus(flippedUp);
           this.setCardType(cardType);
+          this.CardID = cardID;
+        } // For observer-publisher pattern, when card is selected, emit to card controller
+
+
+        onCardSelected() {
+          //console.log("Selected, attempt to emit event");
+          //this.node.emit("card-selected", this);
+          this.node.dispatchEvent(new (_crd && CardSelectEvent === void 0 ? (_reportPossibleCrUseOfCardSelectEvent({
+            error: Error()
+          }), CardSelectEvent) : CardSelectEvent)(this));
+        }
+
+        disable() {
+          //this.node.active = false;
+          this.node.getComponent("cc.Sprite").enabled = false;
+          this.node.getComponent("cc.Button").enabled = false;
         }
 
       }) || _class));

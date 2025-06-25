@@ -32,7 +32,7 @@ System.register(["cc"], function (_export, _context) {
         start() {
           this.scoreHashMap = new Map(); // Find a better way to do this...
 
-          this.scoreHashMap.set("testing", 0);
+          this.scoreHashMap.set("Testing", 10);
           this.scoreHashMap.set("scored", 100);
         }
 

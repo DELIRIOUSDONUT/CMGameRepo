@@ -9,7 +9,7 @@ export class ScoreEvaluator extends Component {
     start() {
         this.scoreHashMap = new Map<String, number>;
         // Find a better way to do this...
-        this.scoreHashMap.set("testing", 0);
+        this.scoreHashMap.set("Testing", 10);
         this.scoreHashMap.set("scored", 100);
     }
 

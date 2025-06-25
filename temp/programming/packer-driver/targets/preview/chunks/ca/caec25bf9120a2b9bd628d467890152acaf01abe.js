@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Prefab, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, CardController;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Prefab, CCInteger, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, CardController;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -17,6 +17,10 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
     _reporterNs.report("ScoreEvaluator", "./ScoreEvaluator", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfCardSelectEvent(extras) {
+    _reporterNs.report("CardSelectEvent", "./CardSelectEvent", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -28,13 +32,16 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
       Component = _cc.Component;
       instantiate = _cc.instantiate;
       Prefab = _cc.Prefab;
+      CCInteger = _cc.CCInteger;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "f1c9ceDbnpJlYYKLIBiBmbq", "CardController", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Node', 'Prefab', 'WidgetComponent']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Node', 'Prefab', 'Widget']);
+
+      __checkObsolete__(['CCInteger']);
 
       ({
         ccclass,
@@ -45,7 +52,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         type: Prefab,
         tooltip: "Drag card prefab here"
       }), _dec3 = property({
-        type: Number,
+        type: CCInteger,
         tooltip: "Number of cards"
       }), _dec(_class = (_class2 = class CardController extends Component {
         constructor() {
@@ -56,6 +63,11 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           _initializerDefineProperty(this, "NumCards", _descriptor2, this);
 
           this.ScoreEval = void 0;
+          // Queue for tracking card selection events  --  for now use array, change to actual queue later
+          // Stores ID of selected cards temporally, remove the first two on match/mismatch
+          this.CardSelectedQueue = void 0;
+          // Number of cards currently selected
+          this.NumSelectedCards = void 0;
         }
 
         onLoad() {
@@ -63,7 +75,8 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             var childCard = instantiate(this.CardPrefab);
             this.node.addChild(childCard);
             var cardScript = childCard.getComponent("CardScript");
-            cardScript.init(false, "Testing"); // For layout adjustments
+            cardScript.init(false, "Testing", i); // todo change this to randomly spreading different matches
+            // For layout adjustments
 
             var widget = childCard.getComponent("cc.Widget");
             widget.target = this.node;
@@ -71,16 +84,57 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
 
           this.ScoreEval = this.node.getComponent("ScoreEvaluator");
+          this.CardSelectedQueue = new Array();
+          this.NumSelectedCards = 0; // Setup listener for card selection events
+
+          this.node.on("card-selected", event => {
+            var card = event.card; // Stop event propagation
+
+            event.propagationStopped = true;
+            console.log("Card selected: ", card.CardID, card.CardType); // Handle animation logic here
+            // First add to queue
+
+            this.CardSelectedQueue.push(card);
+            this.NumSelectedCards++; // If no other cards selected, can flip face up
+
+            if (this.NumSelectedCards == 1) {
+              // Flip face up
+              card.setFlipStatus(true);
+            } else if (this.NumSelectedCards > 1) {
+              // By this point, two cards are selected
+              card.setFlipStatus(true);
+              var score = this.ScoreEval.getScore(this.CardSelectedQueue[0].CardType, card.CardType);
+              console.log("Score: ", score);
+
+              if (score < 0) {
+                // Mismatch
+                // Do delay, then flip both cards face down
+                this.CardSelectedQueue[0].setFlipStatus(false);
+                card.setFlipStatus(false);
+              } else {
+                // Match
+                // Do delay, then disable both cards from rendering
+                this.CardSelectedQueue[0].disable();
+                card.disable();
+              } // Eject the first two queue entries which are the two selected cards
+
+
+              this.NumSelectedCards -= 2;
+              this.CardSelectedQueue.shift();
+              this.CardSelectedQueue.shift();
+            } else {
+              console.log("ERROR: Num selected cards: ", this.NumSelectedCards);
+            }
+          });
         }
 
         start() {//this.testGetChildren();
         }
 
-        update(deltaTime) {
-          // test score evaluator: should return 0, 100 and -1 sequentially
-          console.log(this.ScoreEval.getScore("testing", "testing"));
-          console.log(this.ScoreEval.getScore("scored", "scored"));
-          console.log(this.ScoreEval.getScore("mismatch", "another_mismatch"));
+        update(deltaTime) {// test score evaluator: should return 0, 100 and -1 sequentially
+          //console.log(this.ScoreEval.getScore("testing", "testing"));
+          //console.log(this.ScoreEval.getScore("scored", "scored"));
+          //console.log(this.ScoreEval.getScore("mismatch", "another_mismatch"));
         }
 
         testGetChildren() {
