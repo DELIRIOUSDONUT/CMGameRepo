@@ -54,9 +54,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }
 
         init(flippedUp, cardType, cardID) {
-          this.setFlipStatus(flippedUp);
-          this.setCardType(cardType);
+          console.log("---INIT---");
           this.CardID = cardID;
+          this.setCardType(cardType);
+          this.setFlipStatus(flippedUp);
+          console.log("---END CARD INIT---");
         } // For observer-publisher pattern, when card is selected, emit to card controller
 
 

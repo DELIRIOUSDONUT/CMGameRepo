@@ -3604,3 +3604,1410 @@
     at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
     at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
     at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:53:18 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:53:18 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:53:18 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:53:18 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:53:18 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:53:18 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:53:18 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:53:18 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:53:19 - error: [PreviewInEditor] Cannot read property 'keys' of undefinedTypeError: Cannot read property 'keys' of undefined
+    at CardController.onLoad (file:///Users/admin/Documents/GitHub/CMGameRepo/temp/programming/packer-driver/targets/editor/chunks/ca/file:/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts:34:83)
+    at eval (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:51025:132)
+    at OneOffInvoker.eval [as _invoke] (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48235:9)
+    at OneOffInvoker.invoke (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48351:16)
+    at NodeActivator.activateNode (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:51077:27)
+    at Scene._activate (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:58361:44)
+    at Director.runSceneImmediate (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:19886:17)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scene/utils.ccc:1:1367
+    at eval (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:130264:17)
+    at eval (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:138378:9)
+6-25-2025 11:54:27 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:54:27 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:54:29 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:54:31 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:54:31 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:54:31 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:54:31 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:54:31 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:54:31 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:54:31 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:54:32 - error: [PreviewInEditor] Cannot read property 'keys' of undefinedTypeError: Cannot read property 'keys' of undefined
+    at CardController.onLoad (file:///Users/admin/Documents/GitHub/CMGameRepo/temp/programming/packer-driver/targets/editor/chunks/ca/file:/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts:34:83)
+    at eval (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:51025:132)
+    at OneOffInvoker.eval [as _invoke] (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48235:9)
+    at OneOffInvoker.invoke (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48351:16)
+    at NodeActivator.activateNode (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:51077:27)
+    at Scene._activate (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:58361:44)
+    at Director.runSceneImmediate (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:19886:17)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/manager/scene/utils.ccc:1:1367
+    at eval (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:130264:17)
+    at eval (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:138378:9)
+6-25-2025 11:54:41 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:54:41 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:54:42 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:56:54 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:56:54 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:56:54 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:56:54 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:56:54 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:56:54 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:56:54 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:56:55 - log: [PreviewInEditor] [ 'Scored', 'c', 'Testing', 'a', 'b' ]
+6-25-2025 11:56:55 - error: [PreviewInEditor] Cannot read property 'push' of undefinedTypeError: Cannot read property 'push' of undefined
+    at CardController.start (file:///Users/admin/Documents/GitHub/CMGameRepo/temp/programming/packer-driver/targets/editor/chunks/ca/file:/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts:46:27)
+    at eval (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48405:16)
+    at OneOffInvoker.eval [as _invoke] (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48235:9)
+    at OneOffInvoker.invoke (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48351:16)
+    at ComponentScheduler.startPhase (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:48583:29)
+    at Director.tick (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:20171:35)
+    at Game._updateCallback (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:16114:22)
+    at updateCallback (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/bin/.cache/dev/editor/bundled/index.js:87803:20)
+6-25-2025 11:57:26 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:57:26 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:57:27 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:57:27 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:57:27 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:57:27 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:57:27 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:57:27 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:57:27 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:57:27 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:57:28 - log: [PreviewInEditor] [ 'b', 'a', 'Testing', 'c', 'Scored' ]
+6-25-2025 11:57:28 - log: [PreviewInEditor] [
+  undefined, undefined, undefined,
+  'Scored',  undefined, undefined,
+  'Testing', undefined, 'b',
+  'a',       undefined, undefined,
+  'Testing', undefined, 'b',
+  undefined, undefined, undefined,
+  undefined, 'a',       undefined,
+  undefined, undefined, 'c',
+  'c',       undefined, undefined,
+  'Scored',  undefined, undefined
+]
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:28 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:28 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:30 - log: [PreviewInEditor] Card selected:  0 undefined
+6-25-2025 11:57:30 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 11:57:33 - log: [PreviewInEditor] Card selected:  1 undefined
+6-25-2025 11:57:33 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-25-2025 11:57:33 - log: [PreviewInEditor] Score:  -1
+6-25-2025 11:57:33 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 11:57:33 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 11:57:36 - log: [PreviewInEditor] Card selected:  5 undefined
+6-25-2025 11:57:36 - log: [PreviewInEditor] ID:  5 Card flipped up:  true
+6-25-2025 11:57:40 - log: [PreviewInEditor] Card selected:  6 Testing
+6-25-2025 11:57:40 - log: [PreviewInEditor] ID:  6 Card flipped up:  true
+6-25-2025 11:57:40 - log: [PreviewInEditor] Score:  -1
+6-25-2025 11:57:40 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-25-2025 11:57:40 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-25-2025 11:57:42 - log: [PreviewInEditor] Card selected:  2 undefined
+6-25-2025 11:57:42 - log: [PreviewInEditor] ID:  2 Card flipped up:  true
+6-25-2025 11:57:44 - log: [PreviewInEditor] Card selected:  3 Scored
+6-25-2025 11:57:44 - log: [PreviewInEditor] ID:  3 Card flipped up:  true
+6-25-2025 11:57:44 - log: [PreviewInEditor] Score:  -1
+6-25-2025 11:57:44 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-25-2025 11:57:44 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-25-2025 11:57:50 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:57:50 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:57:51 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:57:51 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:57:51 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:57:51 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:57:51 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:57:51 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:57:51 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:57:52 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:57:52 - log: [PreviewInEditor] [ 'b', 'Testing', 'c', 'Scored', 'a' ]
+6-25-2025 11:57:52 - log: [PreviewInEditor] [
+  undefined, 'Scored',  undefined,
+  undefined, 'a',       'Scored',
+  undefined, 'Testing', undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, 'a',
+  undefined, undefined, undefined,
+  undefined, 'b',       undefined,
+  undefined, undefined, undefined,
+  'Testing', undefined, undefined,
+  'c',       'b',       'c'
+]
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:57:52 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:57:52 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:58:06 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:58:06 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:58:07 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:59:13 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:59:13 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:59:13 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:59:13 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:59:13 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:59:13 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:59:13 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:59:14 - log: [PreviewInEditor] [ 'c', 'Scored', 'a', 'b', 'Testing' ]
+6-25-2025 11:59:14 - log: [PreviewInEditor] [
+  'c',       'c',       'Scored',
+  'Scored',  'a',       'a',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:14 - log: [PreviewInEditor] [
+  'a',       'Scored',  undefined,
+  'c',       undefined, undefined,
+  undefined, 'b',       undefined,
+  undefined, 'Testing', undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, 'Testing',
+  undefined, 'b',       undefined,
+  undefined, undefined, undefined,
+  'a',       undefined, 'c',
+  undefined, undefined, 'Scored'
+]
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:14 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:14 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:59:38 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:59:38 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:59:39 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:59:39 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:59:39 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:59:39 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:59:39 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:59:39 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:59:39 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:59:39 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:59:40 - log: [PreviewInEditor] [ 'a', 'c', 'Testing', 'b', 'Scored' ]
+6-25-2025 11:59:40 - log: [PreviewInEditor] []
+6-25-2025 11:59:40 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Testing', 'Testing',
+  'b',       'b',       'Scored',
+  'Scored',  undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:40 - log: [PreviewInEditor] [
+  undefined, undefined, 'Scored',
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  'b',       undefined, 'Scored',
+  undefined, undefined, 'c',
+  undefined, 'c',       'Testing',
+  'a',       undefined, undefined,
+  'Testing', undefined, undefined,
+  undefined, 'a',       'b',
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:40 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:40 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:55 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:59:55 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 11:59:56 - info: [PreviewInEditor] preview process is ready
+6-25-2025 11:59:56 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 11:59:56 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 11:59:56 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 11:59:56 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 11:59:56 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 11:59:56 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 11:59:56 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 11:59:57 - log: [PreviewInEditor] [ 'Testing', 'Scored', 'c', 'b', 'a' ]
+6-25-2025 11:59:57 - log: [PreviewInEditor] []
+6-25-2025 11:59:57 - log: [PreviewInEditor] [ 'Testing', 'Testing' ]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [ 'Testing', 'Testing', 'Scored', 'Scored' ]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [ 'Testing', 'Testing', 'Scored', 'Scored', 'c', 'c' ]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing',
+  'Scored',  'Scored',
+  'c',       'c',
+  'b',       'b'
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing',
+  'Scored',  'Scored',
+  'c',       'c',
+  'b',       'b',
+  'a',       'a'
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing',
+  'Scored',  'Scored',
+  'c',       'c',
+  'b',       'b',
+  'a',       'a',
+  undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing',
+  'Scored',  'Scored',
+  'c',       'c',
+  'b',       'b',
+  'a',       'a',
+  undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing',
+  'Scored',  'Scored',
+  'c',       'c',
+  'b',       'b',
+  'a',       'a',
+  undefined, undefined,
+  undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'Testing', 'Testing', 'Scored',
+  'Scored',  'c',       'c',
+  'b',       'b',       'a',
+  'a',       undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] [
+  'c',       undefined, undefined,
+  'c',       undefined, 'a',
+  'Scored',  undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, 'Testing', undefined,
+  'a',       'Scored',  'b',
+  'Testing', undefined, undefined,
+  'b',       undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 11:59:57 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 11:59:57 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:44 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:01:44 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:01:45 - info: [PreviewInEditor] preview process is ready
+6-25-2025 12:01:45 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 12:01:45 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 12:01:45 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 12:01:46 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 12:01:46 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 12:01:46 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 12:01:46 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 12:01:46 - log: [PreviewInEditor] [ 'a', 'c', 'Scored', 'b', 'Testing' ]
+6-25-2025 12:01:46 - log: [PreviewInEditor] []
+6-25-2025 12:01:46 - log: [PreviewInEditor] [ 'a', 'a' ]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [ 'a', 'a', 'c', 'c' ]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [ 'a', 'a', 'c', 'c', 'Scored', 'Scored' ]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [ 'a', 'a', 'c', 'c', 'Scored', 'Scored', 'b', 'b' ]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',
+  'c',       'c',
+  'Scored',  'Scored',
+  'b',       'b',
+  'Testing', 'Testing'
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',
+  'c',       'c',
+  'Scored',  'Scored',
+  'b',       'b',
+  'Testing', 'Testing',
+  undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',
+  'c',       'c',
+  'Scored',  'Scored',
+  'b',       'b',
+  'Testing', 'Testing',
+  undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',
+  'c',       'c',
+  'Scored',  'Scored',
+  'b',       'b',
+  'Testing', 'Testing',
+  undefined, undefined,
+  undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Scored',  'Scored',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Scored',  'Scored',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Scored',  'Scored',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Scored',  'Scored',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Scored',  'Scored',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Scored',  'Scored',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] [
+  'a',       'a',       'c',
+  'c',       'Scored',  'Scored',
+  'b',       'b',       'Testing',
+  'Testing', undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined,
+  undefined, undefined, undefined
+]
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  undefined
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:01:46 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:01:46 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 12:02:37 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:02:37 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:02:38 - info: [PreviewInEditor] preview process is ready
+6-25-2025 12:02:53 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 12:02:53 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 12:02:53 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 12:02:53 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 12:02:54 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 12:02:54 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 12:02:54 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 12:02:54 - log: [PreviewInEditor] [ 'b', 'Scored', 'c', 'Testing', 'a' ]
+6-25-2025 12:02:54 - log: [PreviewInEditor] []
+6-25-2025 12:02:54 - log: [PreviewInEditor] [ 'b', 'b' ]
+6-25-2025 12:02:54 - log: [PreviewInEditor] [ 'b', 'b', 'Scored', 'Scored' ]
+6-25-2025 12:02:54 - log: [PreviewInEditor] [ 'b', 'b', 'Scored', 'Scored', 'c', 'c' ]
+6-25-2025 12:02:54 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:02:54 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:02:54 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:02:54 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:02:54 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:02:54 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:02:54 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:02:54 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:02:54 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:02:54 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:02:54 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:02:54 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:03:32 - log: [PreviewInEditor] Card selected:  0 b
+6-25-2025 12:03:32 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 12:03:38 - log: [PreviewInEditor] Card selected:  5 Scored
+6-25-2025 12:03:38 - log: [PreviewInEditor] ID:  5 Card flipped up:  true
+6-25-2025 12:03:38 - log: [PreviewInEditor] Score:  -1
+6-25-2025 12:03:38 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:03:38 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-25-2025 12:03:46 - log: [PreviewInEditor] Card selected:  1 Scored
+6-25-2025 12:03:46 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-25-2025 12:03:49 - log: [PreviewInEditor] Card selected:  0 b
+6-25-2025 12:03:49 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 12:03:49 - log: [PreviewInEditor] Score:  -1
+6-25-2025 12:03:49 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 12:03:49 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:03:53 - log: [PreviewInEditor] Card selected:  5 Scored
+6-25-2025 12:03:53 - log: [PreviewInEditor] ID:  5 Card flipped up:  true
+6-25-2025 12:03:55 - log: [PreviewInEditor] Card selected:  1 Scored
+6-25-2025 12:03:55 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-25-2025 12:03:55 - log: [PreviewInEditor] Score:  100
+6-25-2025 12:03:56 - log: [PreviewInEditor] Card selected:  2 c
+6-25-2025 12:03:56 - log: [PreviewInEditor] ID:  2 Card flipped up:  true
+6-25-2025 12:03:58 - log: [PreviewInEditor] Card selected:  4 c
+6-25-2025 12:03:58 - log: [PreviewInEditor] ID:  4 Card flipped up:  true
+6-25-2025 12:03:58 - log: [PreviewInEditor] Score:  40
+6-25-2025 12:03:59 - log: [PreviewInEditor] Card selected:  3 b
+6-25-2025 12:03:59 - log: [PreviewInEditor] ID:  3 Card flipped up:  true
+6-25-2025 12:04:00 - log: [PreviewInEditor] Card selected:  0 b
+6-25-2025 12:04:00 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 12:04:00 - log: [PreviewInEditor] Score:  30
+6-25-2025 12:04:01 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:04:01 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:04:02 - info: [PreviewInEditor] preview process is ready
+6-25-2025 12:04:24 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 12:04:24 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 12:04:24 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 12:04:24 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 12:04:24 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 12:04:24 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 12:04:24 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 12:04:25 - log: [PreviewInEditor] [ 'c', 'Testing', 'b', 'a', 'Scored' ]
+6-25-2025 12:04:25 - log: [PreviewInEditor] []
+6-25-2025 12:04:25 - log: [PreviewInEditor] [ 'c', 'c' ]
+6-25-2025 12:04:25 - log: [PreviewInEditor] [ 'c', 'c', 'Testing', 'Testing' ]
+6-25-2025 12:04:25 - log: [PreviewInEditor] [ 'c', 'c', 'Testing', 'Testing', 'b', 'b' ]
+6-25-2025 12:04:25 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:04:25 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:04:25 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 12:04:25 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:04:25 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:04:25 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:04:25 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:04:25 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:04:25 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 12:04:25 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:04:25 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:04:25 - log: [PreviewInEditor] ID:  undefined Card flipped up:  false
+6-25-2025 12:04:47 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:04:47 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:04:48 - info: [PreviewInEditor] preview process is ready
+6-25-2025 12:05:02 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 12:05:02 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 12:05:02 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 12:05:02 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 12:05:02 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 12:05:02 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 12:05:02 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 12:05:03 - log: [PreviewInEditor] [ 'b', 'Testing', 'a', 'c', 'Scored' ]
+6-25-2025 12:05:03 - log: [PreviewInEditor] []
+6-25-2025 12:05:03 - log: [PreviewInEditor] [ 'b', 'b' ]
+6-25-2025 12:05:03 - log: [PreviewInEditor] [ 'b', 'b', 'Testing', 'Testing' ]
+6-25-2025 12:05:03 - log: [PreviewInEditor] [ 'b', 'b', 'Testing', 'Testing', 'a', 'a' ]
+6-25-2025 12:05:03 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 12:05:03 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:05:03 - log: [PreviewInEditor] Card type set to:  Testing
+6-25-2025 12:05:03 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 12:05:03 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:05:03 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-25-2025 12:05:03 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:05:03 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-25-2025 12:05:03 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:05:03 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-25-2025 12:05:03 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:05:03 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-25-2025 12:05:16 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:05:16 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:05:17 - info: [PreviewInEditor] preview process is ready
+6-25-2025 12:05:44 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 12:05:44 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 12:05:44 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 12:05:44 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 12:05:44 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 12:05:44 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 12:05:44 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 12:05:45 - log: [PreviewInEditor] [ 'b', 'c', 'a', 'Testing', 'Scored' ]
+6-25-2025 12:05:45 - log: [PreviewInEditor] []
+6-25-2025 12:05:45 - log: [PreviewInEditor] [ 'b', 'b' ]
+6-25-2025 12:05:45 - log: [PreviewInEditor] [ 'b', 'b', 'c', 'c' ]
+6-25-2025 12:05:45 - log: [PreviewInEditor] [ 'b', 'b', 'c', 'c', 'a', 'a' ]
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:05:45 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:05:45 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:05:45 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:05:45 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:05:45 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:05:45 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:05:45 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-25-2025 12:05:45 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:05:59 - log: [PreviewInEditor] Card selected:  0 a
+6-25-2025 12:05:59 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 12:06:08 - log: [PreviewInEditor] Card selected:  1 c
+6-25-2025 12:06:08 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-25-2025 12:06:08 - log: [PreviewInEditor] Score:  -1
+6-25-2025 12:06:08 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:06:08 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 12:06:13 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:06:13 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:06:14 - info: [PreviewInEditor] preview process is ready
+6-25-2025 12:06:50 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 12:06:50 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 12:06:50 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 12:06:50 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 12:06:51 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 12:06:51 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 12:06:51 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 12:06:51 - log: [PreviewInEditor] [ 'Scored', 'a', 'b', 'c', 'Testing' ]
+6-25-2025 12:06:51 - log: [PreviewInEditor] []
+6-25-2025 12:06:51 - log: [PreviewInEditor] [ 'Scored', 'Scored' ]
+6-25-2025 12:06:51 - log: [PreviewInEditor] [ 'Scored', 'Scored', 'a', 'a' ]
+6-25-2025 12:06:51 - log: [PreviewInEditor] [ 'Scored', 'Scored', 'a', 'a', 'b', 'b' ]
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:06:51 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:06:51 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:06:51 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:06:51 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:06:51 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:06:51 - log: [PreviewInEditor] Card type set to:  a
+6-25-2025 12:06:51 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-25-2025 12:06:51 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:06:53 - log: [PreviewInEditor] SELECTED CARD ID:  0  CARD TYPE:  b
+6-25-2025 12:06:53 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 12:07:05 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:07:05 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:07:06 - info: [PreviewInEditor] preview process is ready
+6-25-2025 12:07:11 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-25-2025 12:07:11 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-25-2025 12:07:11 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-25-2025 12:07:11 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-25-2025 12:07:11 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-25-2025 12:07:11 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-25-2025 12:07:11 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-25-2025 12:07:12 - log: [PreviewInEditor] [ 'c', 'b', 'Scored', 'Testing', 'a' ]
+6-25-2025 12:07:12 - log: [PreviewInEditor] []
+6-25-2025 12:07:12 - log: [PreviewInEditor] [ 'c', 'c' ]
+6-25-2025 12:07:12 - log: [PreviewInEditor] [ 'c', 'c', 'b', 'b' ]
+6-25-2025 12:07:12 - log: [PreviewInEditor] [ 'c', 'c', 'b', 'b', 'Scored', 'Scored' ]
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:07:12 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:07:12 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] Card type set to:  c
+6-25-2025 12:07:12 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:07:12 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] Card type set to:  Scored
+6-25-2025 12:07:12 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---INIT---
+6-25-2025 12:07:12 - log: [PreviewInEditor] Card type set to:  b
+6-25-2025 12:07:12 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-25-2025 12:07:12 - log: [PreviewInEditor] ---END CARD INIT---
+6-25-2025 12:07:14 - log: [PreviewInEditor] SELECTED CARD ID:  0  CARD TYPE:  b
+6-25-2025 12:07:14 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 12:07:20 - log: [PreviewInEditor] SELECTED CARD ID:  1  CARD TYPE:  c
+6-25-2025 12:07:20 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-25-2025 12:07:20 - log: [PreviewInEditor] Score:  -1
+6-25-2025 12:07:20 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-25-2025 12:07:20 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-25-2025 12:07:27 - log: [PreviewInEditor] SELECTED CARD ID:  2  CARD TYPE:  c
+6-25-2025 12:07:27 - log: [PreviewInEditor] ID:  2 Card flipped up:  true
+6-25-2025 12:07:28 - log: [PreviewInEditor] SELECTED CARD ID:  1  CARD TYPE:  c
+6-25-2025 12:07:28 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-25-2025 12:07:28 - log: [PreviewInEditor] Score:  40
+6-25-2025 12:07:31 - log: [PreviewInEditor] SELECTED CARD ID:  3  CARD TYPE:  Scored
+6-25-2025 12:07:31 - log: [PreviewInEditor] ID:  3 Card flipped up:  true
+6-25-2025 12:07:35 - log: [PreviewInEditor] SELECTED CARD ID:  4  CARD TYPE:  Scored
+6-25-2025 12:07:35 - log: [PreviewInEditor] ID:  4 Card flipped up:  true
+6-25-2025 12:07:35 - log: [PreviewInEditor] Score:  100
+6-25-2025 12:07:37 - log: [PreviewInEditor] SELECTED CARD ID:  5  CARD TYPE:  b
+6-25-2025 12:07:37 - log: [PreviewInEditor] ID:  5 Card flipped up:  true
+6-25-2025 12:07:38 - log: [PreviewInEditor] SELECTED CARD ID:  0  CARD TYPE:  b
+6-25-2025 12:07:38 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-25-2025 12:07:38 - log: [PreviewInEditor] Score:  30
+6-25-2025 12:07:40 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:07:40 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-25-2025 12:07:41 - info: [PreviewInEditor] preview process is ready

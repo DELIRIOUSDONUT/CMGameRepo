@@ -247,7 +247,7 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": 320,
       "y": 238,
       "z": 0
     },
@@ -481,7 +481,7 @@
       "__uuid__": "c7737fb0-80a1-48ec-8c5a-575b2740fec1",
       "__expectedType__": "cc.Prefab"
     },
-    "NumCards": 30,
+    "NumCards": 6,
     "_id": "00mL+S/TdLNqYP26iNVZLI"
   },
   {

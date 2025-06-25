@@ -6,11 +6,17 @@ export class ScoreEvaluator extends Component {
     
     scoreHashMap : Map<String, number>;
     
-    start() {
+    protected onLoad(): void {
         this.scoreHashMap = new Map<String, number>;
         // Find a better way to do this...
         this.scoreHashMap.set("Testing", 10);
-        this.scoreHashMap.set("scored", 100);
+        this.scoreHashMap.set("Scored", 100);
+        this.scoreHashMap.set("a", 20);
+        this.scoreHashMap.set("b", 30);
+        this.scoreHashMap.set("c", 40);
+    }
+    start() {
+        
     }
 
     update(deltaTime: number) {

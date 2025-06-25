@@ -9,6 +9,22 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
   function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'transform-class-properties is enabled and runs after the decorators transform.'); }
 
+  // Using the Fisher-Yates shuffle
+  function shuffleArray(array) {
+    var currentIndex = array.length,
+        randomIndex; // While there remain elements to shuffle.
+
+    while (currentIndex !== 0) {
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--; // And swap it with the current element.
+
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
+
   function _reportPossibleCrUseOfCardScript(extras) {
     _reporterNs.report("CardScript", "./CardScript", _context.meta, extras);
   }
@@ -70,20 +86,45 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           this.NumSelectedCards = void 0;
         }
 
-        onLoad() {
-          for (var i = 0; i < this.NumCards; i++) {
+        // Assuming that number of cards is even, there must be NumCards/2 unique pairs
+        // However, can have repeated pairs if run out of card types
+        // For now, use 5 card types 
+        onLoad() {}
+
+        start() {
+          //this.testGetChildren();
+          // Get the evaluator script
+          this.ScoreEval = this.node.getComponent("ScoreEvaluator"); // From the score evaluator, get the list of scoring card types
+
+          var scoringTypes = Array.from(this.ScoreEval.scoreHashMap.keys());
+          scoringTypes = shuffleArray(scoringTypes);
+          console.log(scoringTypes);
+          var numTypes = this.NumCards / 2;
+          var shuffledTypes = new Array(); // Get the first numTypes shuffled types from the evaluator, and only use those for this game
+
+          console.log(shuffledTypes);
+
+          for (var i = 0; i < numTypes; i++) {
+            // Push twice since we need pairs
+            shuffledTypes.push(scoringTypes[i]);
+            shuffledTypes.push(scoringTypes[i]);
+            console.log(shuffledTypes);
+          } //console.log(shuffledTypes);
+
+
+          shuffledTypes = shuffleArray(shuffledTypes); //console.log(shuffledTypes);
+
+          for (var _i = 0; _i < this.NumCards; _i++) {
             var childCard = instantiate(this.CardPrefab);
             this.node.addChild(childCard);
             var cardScript = childCard.getComponent("CardScript");
-            cardScript.init(false, "Testing", i); // todo change this to randomly spreading different matches
+            cardScript.init(false, shuffledTypes[_i], _i); // todo change this to randomly spreading different matches
             // For layout adjustments
 
             var widget = childCard.getComponent("cc.Widget");
             widget.target = this.node;
-          } // Get the evaluator script
+          }
 
-
-          this.ScoreEval = this.node.getComponent("ScoreEvaluator");
           this.CardSelectedQueue = new Array();
           this.NumSelectedCards = 0; // Setup listener for card selection events
 
@@ -91,8 +132,13 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             var card = event.card; // Stop event propagation
 
             event.propagationStopped = true;
-            console.log("Card selected: ", card.CardID, card.CardType); // Handle animation logic here
-            // First add to queue
+            console.log("SELECTED CARD ID: ", card.CardID, " CARD TYPE: ", card.CardType); // Handle animation logic here
+            // Check if this card is already face up. If it is then early return
+
+            if (card.FlippedUp) {
+              return;
+            } // First add to queue
+
 
             this.CardSelectedQueue.push(card);
             this.NumSelectedCards++; // If no other cards selected, can flip face up
@@ -126,9 +172,6 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               console.log("ERROR: Num selected cards: ", this.NumSelectedCards);
             }
           });
-        }
-
-        start() {//this.testGetChildren();
         }
 
         update(deltaTime) {// test score evaluator: should return 0, 100 and -1 sequentially
