@@ -14,11 +14,13 @@
     "value": {
       "depends": [
         "29ba28d9-1244-421a-be48-36a95eb85582",
-        "52a40af8-2668-462d-8a42-61997c8a340e@f9941",
+        "86fd5ae1-427e-448f-8e1c-4b3f43406e6f@f9941",
+        "6455e663-a815-4d21-9100-4fb9ddd27969@f9941",
         "c7737fb0-80a1-48ec-8c5a-575b2740fec1",
         "a863a68a-323e-4933-b0bf-7750c5bce3f2@f9941"
       ],
       "dependScripts": [
+        "53a9d8db-76df-4c43-96d6-c4426f450b09",
         "f1c9c783-6e7a-4995-860a-2c80620666ea",
         "b4d57943-4a9c-4d95-bc66-2f62251cc49d",
         "5f684221-564d-4ce4-8d19-bb195065f271",
@@ -41,12 +43,7 @@
   "c7737fb0-80a1-48ec-8c5a-575b2740fec1": {
     "url": "db://assets/Prefabs/CardButton.prefab",
     "value": {
-      "depends": [
-        "f19fcd8e-598f-40dd-9768-952e99996b2e@f9941",
-        "749a69f6-3a4d-4a62-89b5-12cf13f33e38@f9941",
-        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
-        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941"
-      ],
+      "depends": [],
       "dependScripts": [
         "72078481-5462-4b2a-b1e6-158be7f71c66"
       ]
@@ -5904,6 +5901,66 @@
     "value": {
       "depends": [
         "4fa8aeff-afa4-4ec5-b132-e608f171b625@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "53a9d8db-76df-4c43-96d6-c4426f450b09": {
+    "url": "db://assets/Scripts/BGScaler.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e1a07427-1e0d-4796-83bd-133fef557194": {
+    "url": "db://assets/resources/rose-petals.svg",
+    "value": {},
+    "versionCode": 1
+  },
+  "86fd5ae1-427e-448f-8e1c-4b3f43406e6f": {
+    "url": "db://assets/resources/rose-petals.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "86fd5ae1-427e-448f-8e1c-4b3f43406e6f@6c48a": {
+    "url": "db://assets/resources/rose-petals.png@6c48a",
+    "value": {
+      "depends": [
+        "86fd5ae1-427e-448f-8e1c-4b3f43406e6f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "86fd5ae1-427e-448f-8e1c-4b3f43406e6f@f9941": {
+    "url": "db://assets/resources/rose-petals.png@f9941",
+    "value": {
+      "depends": [
+        "86fd5ae1-427e-448f-8e1c-4b3f43406e6f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6455e663-a815-4d21-9100-4fb9ddd27969": {
+    "url": "db://assets/resources/Sprites/endless-constellation.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6455e663-a815-4d21-9100-4fb9ddd27969@6c48a": {
+    "url": "db://assets/resources/Sprites/endless-constellation.png@6c48a",
+    "value": {
+      "depends": [
+        "6455e663-a815-4d21-9100-4fb9ddd27969"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6455e663-a815-4d21-9100-4fb9ddd27969@f9941": {
+    "url": "db://assets/resources/Sprites/endless-constellation.png@f9941",
+    "value": {
+      "depends": [
+        "6455e663-a815-4d21-9100-4fb9ddd27969@6c48a"
       ]
     },
     "versionCode": 1

@@ -23,7 +23,7 @@
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts": {
-      "time": 1750919558290.5935,
+      "time": 1750929493272.0615,
       "uuid": "a084bb39-5748-4c80-89af-05bd3c10b9eb"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
@@ -54,7 +54,7 @@
       "time": 1750753307610.7861
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs/CardButton.prefab": {
-      "time": 1750924815889.552,
+      "time": 1750930895351.772,
       "uuid": "c7737fb0-80a1-48ec-8c5a-575b2740fec1"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.meta": {
@@ -110,7 +110,7 @@
       "time": 1750750979865.9514
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes/MainGameScene.scene": {
-      "time": 1750928649070.568,
+      "time": 1750932245504.867,
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources.meta": {
@@ -123,11 +123,11 @@
       "time": 1750924003274.9814
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources": {
-      "time": 1750924294599.7402,
+      "time": 1750930215556.556,
       "uuid": "ad369614-11de-463c-9a1e-4169b59498ba"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Sprites": {
-      "time": 1750924182584.3516,
+      "time": 1750931211522.062,
       "uuid": "e7b6cec2-545e-4fa9-86bb-bad97d65d2a7"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Sprites/istockphoto-1186585903-612x612.jpg": {
@@ -609,6 +609,27 @@
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/cardSpadesQ.png": {
       "time": 1750924294599.3435,
       "uuid": "4fa8aeff-afa4-4ec5-b132-e608f171b625"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts.meta": {
+      "time": 1750929493273.348
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts": {
+      "time": 1750932222584.2983,
+      "uuid": "53a9d8db-76df-4c43-96d6-c4426f450b09"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/rose-petals.png.meta": {
+      "time": 1750930228410.2659
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/rose-petals.png": {
+      "time": 1750930215551.981,
+      "uuid": "86fd5ae1-427e-448f-8e1c-4b3f43406e6f"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Sprites/endless-constellation.png.meta": {
+      "time": 1750931229641.1968
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Sprites/endless-constellation.png": {
+      "time": 1750931211520.9575,
+      "uuid": "6455e663-a815-4d21-9100-4fb9ddd27969"
     }
   },
   "missing": {
@@ -1656,6 +1677,11 @@
       "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/cardSpades10.png",
       "time": 1750924200906.0413,
       "removeTime": 1750924267518
+    },
+    "e1a07427-1e0d-4796-83bd-133fef557194": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/rose-petals.svg",
+      "time": 1750930178552.5952,
+      "removeTime": 1750930196249
     }
   }
 }

@@ -640,7 +640,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 5239612.383000001,
+      "mTimestamp": 8913247.63075,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -658,7 +658,7 @@
           }
         },
         {
-          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts",
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
@@ -667,105 +667,119 @@
             },
             "end": {
               "line": 5,
-              "column": 281
+              "column": 275
+            }
+          }
+        },
+        {
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 291
+            },
+            "end": {
+              "line": 5,
+              "column": 373
             }
           }
         },
         {
           "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts",
-          "resolved": "__unresolved_2",
+          "resolved": "__unresolved_3",
           "loc": {
             "start": {
               "line": 5,
-              "column": 297
+              "column": 389
             },
             "end": {
               "line": 5,
-              "column": 375
+              "column": 467
             }
           }
         },
         {
           "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts",
-          "resolved": "__unresolved_3",
+          "resolved": "__unresolved_4",
           "loc": {
             "start": {
               "line": 5,
-              "column": 391
+              "column": 483
             },
             "end": {
               "line": 5,
-              "column": 474
+              "column": 566
             }
           }
         },
         {
           "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts",
-          "resolved": "__unresolved_4",
+          "resolved": "__unresolved_5",
           "loc": {
             "start": {
               "line": 5,
-              "column": 490
+              "column": 582
             },
             "end": {
               "line": 5,
-              "column": 570
+              "column": 662
             }
           }
         },
         {
           "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts",
-          "resolved": "__unresolved_5",
+          "resolved": "__unresolved_6",
           "loc": {
             "start": {
               "line": 5,
-              "column": 586
+              "column": 678
             },
             "end": {
               "line": 5,
-              "column": 668
+              "column": 760
             }
           }
         },
         {
           "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts",
-          "resolved": "__unresolved_6",
+          "resolved": "__unresolved_7",
           "loc": {
             "start": {
               "line": 5,
-              "column": 684
+              "column": 776
             },
             "end": {
               "line": 5,
-              "column": 768
+              "column": 860
             }
           }
         },
         {
           "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts",
-          "resolved": "__unresolved_7",
+          "resolved": "__unresolved_8",
           "loc": {
             "start": {
               "line": 5,
-              "column": 784
+              "column": 876
             },
             "end": {
               "line": 5,
-              "column": 864
+              "column": 956
             }
           }
         },
         {
           "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts",
-          "resolved": "__unresolved_8",
+          "resolved": "__unresolved_9",
           "loc": {
             "start": {
               "line": 5,
-              "column": 880
+              "column": 972
             },
             "end": {
               "line": 5,
-              "column": 961
+              "column": 1053
             }
           }
         }
@@ -776,6 +790,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts"
           },
           "messages": []
         },
@@ -1469,6 +1490,58 @@
           },
           "messages": []
         },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts": {
+      "mTimestamp": {
+        "mtime": 1750932222584.2983,
+        "uuid": "53a9d8db-76df-4c43-96d6-c4426f450b09"
+      },
+      "chunkId": "04d1282fdfcfb291dc12982df300c4c56bb669b2",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 73
+            },
+            "end": {
+              "line": 1,
+              "column": 77
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
         {
           "resolved": {
             "type": "module",

@@ -3,6 +3,7 @@
     "cce:/internal/x/cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js",
     "file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts": "./chunks/31/31e3c2f26607ebb67e59edfae1b48b9458089fb9.js",
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts": "./chunks/04/04d1282fdfcfb291dc12982df300c4c56bb669b2.js",
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": "./chunks/ca/caec25bf9120a2b9bd628d467890152acaf01abe.js",
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js",
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts": "./chunks/71/71834c943e90378eb4ecb09e1e96025125ba1bc4.js",
@@ -36,14 +37,15 @@
     },
     "./chunks/6d/6d8fd2b0177941b032ddc0733af48a561fb60657.js": {
       "__unresolved_0": "./chunks/31/31e3c2f26607ebb67e59edfae1b48b9458089fb9.js",
-      "__unresolved_1": "./chunks/ca/caec25bf9120a2b9bd628d467890152acaf01abe.js",
-      "__unresolved_2": "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js",
-      "__unresolved_3": "./chunks/71/71834c943e90378eb4ecb09e1e96025125ba1bc4.js",
-      "__unresolved_4": "./chunks/a1/a125d109f0b97243b4f1c9797caf34a7a511d0cf.js",
-      "__unresolved_5": "./chunks/90/9007ab4b72832a718a8bbabcded061842efed625.js",
-      "__unresolved_6": "./chunks/ff/ff3268cab4d899bc2eaffe851cc9cdd01024ff62.js",
-      "__unresolved_7": "./chunks/8f/8f4819b59b8ffda51714044ea8a800909441061d.js",
-      "__unresolved_8": "./chunks/75/75f50742f94cd93512fd9cb4631ed6522e7fa6bb.js"
+      "__unresolved_1": "./chunks/04/04d1282fdfcfb291dc12982df300c4c56bb669b2.js",
+      "__unresolved_2": "./chunks/ca/caec25bf9120a2b9bd628d467890152acaf01abe.js",
+      "__unresolved_3": "./chunks/d1/d1febd7abf416efdcd294da2b322f8e15cd055b9.js",
+      "__unresolved_4": "./chunks/71/71834c943e90378eb4ecb09e1e96025125ba1bc4.js",
+      "__unresolved_5": "./chunks/a1/a125d109f0b97243b4f1c9797caf34a7a511d0cf.js",
+      "__unresolved_6": "./chunks/90/9007ab4b72832a718a8bbabcded061842efed625.js",
+      "__unresolved_7": "./chunks/ff/ff3268cab4d899bc2eaffe851cc9cdd01024ff62.js",
+      "__unresolved_8": "./chunks/8f/8f4819b59b8ffda51714044ea8a800909441061d.js",
+      "__unresolved_9": "./chunks/75/75f50742f94cd93512fd9cb4631ed6522e7fa6bb.js"
     },
     "./chunks/75/75f50742f94cd93512fd9cb4631ed6522e7fa6bb.js": {
       "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
@@ -75,6 +77,9 @@
     },
     "./chunks/ca/caec25bf9120a2b9bd628d467890152acaf01abe.js": {
       "__unresolved_0": "./chunks/6a/6a5019a719a9014c047e67aa1cf34453ab8392ce.js",
+      "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
+    },
+    "./chunks/04/04d1282fdfcfb291dc12982df300c4c56bb669b2.js": {
       "cc": "./chunks/93/93ba276ea7b26ffcdc433fab14afc1ed6f05647b.js"
     },
     "./chunks/31/31e3c2f26607ebb67e59edfae1b48b9458089fb9.js": {
