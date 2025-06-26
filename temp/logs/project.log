@@ -17644,3 +17644,1332 @@
     at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
     at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
 6-26-2025 11:47:57 - info: [PreviewInEditor] preview process is ready
+6-26-2025 11:56:08 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-26-2025 11:56:08 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-26-2025 11:56:08 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-26-2025 11:56:08 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-26-2025 11:56:08 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-26-2025 11:56:08 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-26-2025 11:56:08 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-26-2025 11:56:09 - log: [PreviewInEditor] Parent width  640 , parent height  640
+6-26-2025 11:56:09 - log: [PreviewInEditor] Num rows is  5
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', '3S', '5C', '9S', '7C', '8D', 'AH',
+  '4D', '6D', '8S', 'KS', '4H', '2S', 'KD',
+  'QS', 'KC', 'JH', 'QC', '6C', '7S', '3C',
+  'KH', 'TC', 'QH', '5H', 'TD', '9C', '7D',
+  'JC', '6H', '5S', '2C', '4C', 'QD', '8C',
+  '4S', '5D', '8H', '2D', 'TS', '6S', 'AC',
+  'AD', '3H', '9D', '3D', 'AS', '9H', 'JD',
+  '2H', '7H', 'JS'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] []
+6-26-2025 11:56:09 - log: [PreviewInEditor] [ 'TH', 'TH' ]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [ 'TH', 'TH', '3S', '3S' ]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [ 'TH', 'TH', '3S', '3S', '5C', '5C' ]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S',
+  '3S', '5C', '5C',
+  '9S', '9S'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S',
+  '3S', '5C', '5C',
+  '9S', '9S', '7C',
+  '7C'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S',
+  '3S', '5C', '5C',
+  '9S', '9S', '7C',
+  '7C', '8D', '8D'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S',
+  '3S', '5C', '5C',
+  '9S', '9S', '7C',
+  '7C', '8D', '8D',
+  'AH', 'AH'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S', '3S',
+  '5C', '5C', '9S', '9S',
+  '7C', '7C', '8D', '8D',
+  'AH', 'AH', '4D', '4D'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S', '3S',
+  '5C', '5C', '9S', '9S',
+  '7C', '7C', '8D', '8D',
+  'AH', 'AH', '4D', '4D',
+  '6D', '6D'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S', '3S',
+  '5C', '5C', '9S', '9S',
+  '7C', '7C', '8D', '8D',
+  'AH', 'AH', '4D', '4D',
+  '6D', '6D', '8S', '8S'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S', '3S',
+  '5C', '5C', '9S', '9S',
+  '7C', '7C', '8D', '8D',
+  'AH', 'AH', '4D', '4D',
+  '6D', '6D', '8S', '8S',
+  'KS', 'KS'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] [
+  'TH', 'TH', '3S', '3S',
+  '5C', '5C', '9S', '9S',
+  '7C', '7C', '8D', '8D',
+  'AH', 'AH', '4D', '4D',
+  '6D', '6D', '8S', '8S',
+  'KS', 'KS', '4H', '4H'
+]
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  7 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  8 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  9 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  10 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  11 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  12 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  13 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  14 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  15 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  16 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  17 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  18 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  19 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  20 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  21 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  22 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:09 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:09 - log: [PreviewInEditor] ID:  23 Card flipped up:  false
+6-26-2025 11:56:09 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:10 - log: [PreviewInEditor] SELECTED CARD ID:  0  CARD TYPE:  4D
+6-26-2025 11:56:10 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-26-2025 11:56:10 - log: [PreviewInEditor] {
+  score: 0,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 0,
+  removedCards: [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:12 - log: [PreviewInEditor] SELECTED CARD ID:  6  CARD TYPE:  KS
+6-26-2025 11:56:12 - log: [PreviewInEditor] ID:  6 Card flipped up:  true
+6-26-2025 11:56:12 - log: [PreviewInEditor] Score:  0
+6-26-2025 11:56:12 - log: [PreviewInEditor] Score: 0
+6-26-2025 11:56:12 - log: [PreviewInEditor] Combo: 0
+6-26-2025 11:56:12 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-26-2025 11:56:12 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-26-2025 11:56:12 - log: [PreviewInEditor] {
+  score: 0,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:12 - log: [PreviewInEditor] SELECTED CARD ID:  1  CARD TYPE:  3S
+6-26-2025 11:56:12 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-26-2025 11:56:12 - log: [PreviewInEditor] {
+  score: 0,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 1,
+  removedCards: [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:13 - log: [PreviewInEditor] SELECTED CARD ID:  7  CARD TYPE:  7C
+6-26-2025 11:56:13 - log: [PreviewInEditor] ID:  7 Card flipped up:  true
+6-26-2025 11:56:13 - log: [PreviewInEditor] Score:  0
+6-26-2025 11:56:13 - log: [PreviewInEditor] Score: 0
+6-26-2025 11:56:13 - log: [PreviewInEditor] Combo: 0
+6-26-2025 11:56:13 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-26-2025 11:56:13 - log: [PreviewInEditor] ID:  7 Card flipped up:  false
+6-26-2025 11:56:13 - log: [PreviewInEditor] {
+  score: 0,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:14 - log: [PreviewInEditor] SELECTED CARD ID:  1  CARD TYPE:  3S
+6-26-2025 11:56:14 - log: [PreviewInEditor] ID:  1 Card flipped up:  true
+6-26-2025 11:56:14 - log: [PreviewInEditor] {
+  score: 0,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 1,
+  removedCards: [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:15 - log: [PreviewInEditor] SELECTED CARD ID:  6  CARD TYPE:  KS
+6-26-2025 11:56:15 - log: [PreviewInEditor] ID:  6 Card flipped up:  true
+6-26-2025 11:56:15 - log: [PreviewInEditor] Score:  0
+6-26-2025 11:56:15 - log: [PreviewInEditor] Score: 0
+6-26-2025 11:56:15 - log: [PreviewInEditor] Combo: 0
+6-26-2025 11:56:15 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-26-2025 11:56:15 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-26-2025 11:56:15 - log: [PreviewInEditor] {
+  score: 0,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:17 - log: [PreviewInEditor] SELECTED CARD ID:  16  CARD TYPE:  4D
+6-26-2025 11:56:17 - log: [PreviewInEditor] ID:  16 Card flipped up:  true
+6-26-2025 11:56:17 - log: [PreviewInEditor] {
+  score: 0,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 16,
+  removedCards: [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:18 - log: [PreviewInEditor] SELECTED CARD ID:  0  CARD TYPE:  4D
+6-26-2025 11:56:18 - log: [PreviewInEditor] ID:  0 Card flipped up:  true
+6-26-2025 11:56:18 - log: [PreviewInEditor] Score:  10
+6-26-2025 11:56:18 - log: [PreviewInEditor] Score: 10
+6-26-2025 11:56:18 - log: [PreviewInEditor] Combo: 1
+6-26-2025 11:56:18 - log: [PreviewInEditor] {
+  score: 10,
+  combo: 1,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:19 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:19 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:20 - info: [PreviewInEditor] preview process is ready
+6-26-2025 11:56:20 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-26-2025 11:56:20 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-26-2025 11:56:20 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-26-2025 11:56:20 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-26-2025 11:56:20 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-26-2025 11:56:20 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-26-2025 11:56:20 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-26-2025 11:56:21 - log: [PreviewInEditor] Parent width  640 , parent height  640
+6-26-2025 11:56:21 - log: [PreviewInEditor] Num rows is  5
+6-26-2025 11:56:21 - log: [PreviewInEditor] Fetched save data
+6-26-2025 11:56:21 - log: [PreviewInEditor] savedata: column req:5
+6-26-2025 11:56:21 - log: [PreviewInEditor] savedata numcards: 24
+6-26-2025 11:56:21 - log: [PreviewInEditor] savedata score: 10
+6-26-2025 11:56:21 - log: [PreviewInEditor] savedata combo: 1
+6-26-2025 11:56:21 - log: [PreviewInEditor] Parse success
+6-26-2025 11:56:21 - log: [PreviewInEditor] [
+  '4D', '3S', '8D', '4H',
+  'AH', 'TH', 'KS', '7C',
+  'TH', 'AH', '5C', '8D',
+  '6D', '6D', '3S', '7C',
+  '4D', '5C', '4H', '8S',
+  'KS', '9S', '8S', '9S'
+]
+6-26-2025 11:56:21 - log: [PreviewInEditor] Score: 10
+6-26-2025 11:56:21 - log: [PreviewInEditor] Combo: 1
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  7 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  8 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  9 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  10 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  11 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  12 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  13 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  14 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  15 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  16 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  17 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  18 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  19 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  20 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  21 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  22 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:21 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:21 - log: [PreviewInEditor] ID:  23 Card flipped up:  false
+6-26-2025 11:56:21 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:26 - log: [PreviewInEditor] SELECTED CARD ID:  22  CARD TYPE:  8S
+6-26-2025 11:56:26 - log: [PreviewInEditor] ID:  22 Card flipped up:  true
+6-26-2025 11:56:26 - log: [PreviewInEditor] {
+  score: 10,
+  combo: 1,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 22,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 0, 0, 0, 0, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:28 - log: [PreviewInEditor] SELECTED CARD ID:  19  CARD TYPE:  8S
+6-26-2025 11:56:28 - log: [PreviewInEditor] ID:  19 Card flipped up:  true
+6-26-2025 11:56:28 - log: [PreviewInEditor] Score:  10
+6-26-2025 11:56:28 - log: [PreviewInEditor] Score: 25
+6-26-2025 11:56:28 - log: [PreviewInEditor] Combo: 2
+6-26-2025 11:56:28 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 2,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:31 - log: [PreviewInEditor] SELECTED CARD ID:  23  CARD TYPE:  9S
+6-26-2025 11:56:31 - log: [PreviewInEditor] ID:  23 Card flipped up:  true
+6-26-2025 11:56:31 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 2,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 23,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:31 - log: [PreviewInEditor] SELECTED CARD ID:  18  CARD TYPE:  4H
+6-26-2025 11:56:31 - log: [PreviewInEditor] ID:  18 Card flipped up:  true
+6-26-2025 11:56:31 - log: [PreviewInEditor] Score:  0
+6-26-2025 11:56:31 - log: [PreviewInEditor] Score: 25
+6-26-2025 11:56:31 - log: [PreviewInEditor] Combo: 2
+6-26-2025 11:56:31 - log: [PreviewInEditor] ID:  23 Card flipped up:  false
+6-26-2025 11:56:31 - log: [PreviewInEditor] ID:  18 Card flipped up:  false
+6-26-2025 11:56:31 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:32 - log: [PreviewInEditor] SELECTED CARD ID:  14  CARD TYPE:  3S
+6-26-2025 11:56:32 - log: [PreviewInEditor] ID:  14 Card flipped up:  true
+6-26-2025 11:56:32 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 14,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:34 - log: [PreviewInEditor] SELECTED CARD ID:  8  CARD TYPE:  TH
+6-26-2025 11:56:34 - log: [PreviewInEditor] ID:  8 Card flipped up:  true
+6-26-2025 11:56:34 - log: [PreviewInEditor] Score:  0
+6-26-2025 11:56:34 - log: [PreviewInEditor] Score: 25
+6-26-2025 11:56:34 - log: [PreviewInEditor] Combo: 0
+6-26-2025 11:56:34 - log: [PreviewInEditor] ID:  14 Card flipped up:  false
+6-26-2025 11:56:34 - log: [PreviewInEditor] ID:  8 Card flipped up:  false
+6-26-2025 11:56:34 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:34 - log: [PreviewInEditor] SELECTED CARD ID:  9  CARD TYPE:  AH
+6-26-2025 11:56:34 - log: [PreviewInEditor] ID:  9 Card flipped up:  true
+6-26-2025 11:56:34 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 9,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:35 - log: [PreviewInEditor] SELECTED CARD ID:  8  CARD TYPE:  TH
+6-26-2025 11:56:35 - log: [PreviewInEditor] ID:  8 Card flipped up:  true
+6-26-2025 11:56:35 - log: [PreviewInEditor] Score:  0
+6-26-2025 11:56:35 - log: [PreviewInEditor] Score: 25
+6-26-2025 11:56:35 - log: [PreviewInEditor] Combo: 0
+6-26-2025 11:56:35 - log: [PreviewInEditor] ID:  9 Card flipped up:  false
+6-26-2025 11:56:35 - log: [PreviewInEditor] ID:  8 Card flipped up:  false
+6-26-2025 11:56:35 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:35 - log: [PreviewInEditor] SELECTED CARD ID:  4  CARD TYPE:  AH
+6-26-2025 11:56:35 - log: [PreviewInEditor] ID:  4 Card flipped up:  true
+6-26-2025 11:56:35 - log: [PreviewInEditor] {
+  score: 25,
+  combo: 0,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 4,
+  removedCards: [
+    1, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:36 - log: [PreviewInEditor] SELECTED CARD ID:  9  CARD TYPE:  AH
+6-26-2025 11:56:36 - log: [PreviewInEditor] ID:  9 Card flipped up:  true
+6-26-2025 11:56:36 - log: [PreviewInEditor] Score:  10
+6-26-2025 11:56:36 - log: [PreviewInEditor] Score: 35
+6-26-2025 11:56:36 - log: [PreviewInEditor] Combo: 1
+6-26-2025 11:56:36 - log: [PreviewInEditor] {
+  score: 35,
+  combo: 1,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    1, 0, 0, 0, 1, 0, 0, 0,
+    0, 1, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:37 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:37 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:38 - info: [PreviewInEditor] preview process is ready
+6-26-2025 11:56:38 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-26-2025 11:56:38 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-26-2025 11:56:38 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-26-2025 11:56:38 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-26-2025 11:56:38 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-26-2025 11:56:38 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-26-2025 11:56:38 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-26-2025 11:56:39 - log: [PreviewInEditor] Parent width  640 , parent height  640
+6-26-2025 11:56:39 - log: [PreviewInEditor] Num rows is  5
+6-26-2025 11:56:39 - log: [PreviewInEditor] Fetched save data
+6-26-2025 11:56:39 - log: [PreviewInEditor] savedata: column req:5
+6-26-2025 11:56:39 - log: [PreviewInEditor] savedata numcards: 24
+6-26-2025 11:56:39 - log: [PreviewInEditor] savedata score: 35
+6-26-2025 11:56:39 - log: [PreviewInEditor] savedata combo: 1
+6-26-2025 11:56:39 - log: [PreviewInEditor] Parse success
+6-26-2025 11:56:39 - log: [PreviewInEditor] [
+  '4D', '3S', '8D', '4H',
+  'AH', 'TH', 'KS', '7C',
+  'TH', 'AH', '5C', '8D',
+  '6D', '6D', '3S', '7C',
+  '4D', '5C', '4H', '8S',
+  'KS', '9S', '8S', '9S'
+]
+6-26-2025 11:56:39 - log: [PreviewInEditor] Score: 35
+6-26-2025 11:56:39 - log: [PreviewInEditor] Combo: 1
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  7 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  8 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  9 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  10 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  11 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  12 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  13 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  14 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  15 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  16 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  17 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  18 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  19 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  20 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  21 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  22 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:39 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:39 - log: [PreviewInEditor] ID:  23 Card flipped up:  false
+6-26-2025 11:56:39 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:41 - log: [PreviewInEditor] SELECTED CARD ID:  15  CARD TYPE:  7C
+6-26-2025 11:56:41 - log: [PreviewInEditor] ID:  15 Card flipped up:  true
+6-26-2025 11:56:41 - log: [PreviewInEditor] {
+  score: 35,
+  combo: 1,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: 15,
+  removedCards: [
+    1, 0, 0, 0, 1, 0, 0, 0,
+    0, 1, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:43 - log: [PreviewInEditor] SELECTED CARD ID:  7  CARD TYPE:  7C
+6-26-2025 11:56:43 - log: [PreviewInEditor] ID:  7 Card flipped up:  true
+6-26-2025 11:56:43 - log: [PreviewInEditor] Score:  10
+6-26-2025 11:56:43 - log: [PreviewInEditor] Score: 50
+6-26-2025 11:56:43 - log: [PreviewInEditor] Combo: 2
+6-26-2025 11:56:43 - log: [PreviewInEditor] {
+  score: 50,
+  combo: 2,
+  cards: [
+    '4D', '3S', '8D', '4H',
+    'AH', 'TH', 'KS', '7C',
+    'TH', 'AH', '5C', '8D',
+    '6D', '6D', '3S', '7C',
+    '4D', '5C', '4H', '8S',
+    'KS', '9S', '8S', '9S'
+  ],
+  faceUpIndex: -1,
+  removedCards: [
+    1, 0, 0, 0, 1, 0, 0, 1,
+    0, 1, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 1, 0, 0, 1, 0
+  ],
+  columnReq: 5,
+  numCards: 24
+}
+6-26-2025 11:56:44 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:44 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:45 - info: [PreviewInEditor] preview process is ready
+6-26-2025 11:56:45 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-26-2025 11:56:45 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-26-2025 11:56:45 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-26-2025 11:56:45 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-26-2025 11:56:45 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-26-2025 11:56:45 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-26-2025 11:56:45 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-26-2025 11:56:46 - log: [PreviewInEditor] Parent width  640 , parent height  640
+6-26-2025 11:56:46 - log: [PreviewInEditor] Num rows is  5
+6-26-2025 11:56:46 - log: [PreviewInEditor] Fetched save data
+6-26-2025 11:56:46 - log: [PreviewInEditor] savedata: column req:5
+6-26-2025 11:56:46 - log: [PreviewInEditor] savedata numcards: 24
+6-26-2025 11:56:46 - log: [PreviewInEditor] savedata score: 50
+6-26-2025 11:56:46 - log: [PreviewInEditor] savedata combo: 2
+6-26-2025 11:56:46 - log: [PreviewInEditor] Parse success
+6-26-2025 11:56:46 - log: [PreviewInEditor] [
+  '4D', '3S', '8D', '4H',
+  'AH', 'TH', 'KS', '7C',
+  'TH', 'AH', '5C', '8D',
+  '6D', '6D', '3S', '7C',
+  '4D', '5C', '4H', '8S',
+  'KS', '9S', '8S', '9S'
+]
+6-26-2025 11:56:46 - log: [PreviewInEditor] Score: 50
+6-26-2025 11:56:46 - log: [PreviewInEditor] Combo: 2
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  7 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  8 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  AH
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  9 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  10 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  8D
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  11 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  12 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  6D
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  13 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  14 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  7C
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  15 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  4D
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  16 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  5C
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  17 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  18 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  19 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  KS
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  20 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  21 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  8S
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  22 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:46 - log: [PreviewInEditor] Card type set to:  9S
+6-26-2025 11:56:46 - log: [PreviewInEditor] ID:  23 Card flipped up:  false
+6-26-2025 11:56:46 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:47 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:47 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:56:48 - info: [PreviewInEditor] preview process is ready
+6-26-2025 11:56:56 - log: [PreviewInEditor] meshopt wasm decoder initialized
+6-26-2025 11:56:56 - log: [PreviewInEditor] [box2d]:box2d wasm lib loaded.
+6-26-2025 11:56:56 - log: [PreviewInEditor] [bullet]:bullet wasm lib loaded.
+6-26-2025 11:56:56 - log: [PreviewInEditor] [PHYSICS]: using builtin.
+6-26-2025 11:56:56 - log: [PreviewInEditor] Cocos Creator v3.8.3
+6-26-2025 11:56:56 - info: [PreviewInEditor] Forward render pipeline initialized.
+6-26-2025 11:56:56 - log: [PreviewInEditor] [PHYSICS2D]: switch from box2d-wasm to box2d.
+6-26-2025 11:56:57 - log: [PreviewInEditor] Parent width  640 , parent height  640
+6-26-2025 11:56:57 - log: [PreviewInEditor] Num rows is  4
+6-26-2025 11:56:57 - log: [PreviewInEditor] Fetched save data
+6-26-2025 11:56:57 - log: [PreviewInEditor] savedata: column req:5
+6-26-2025 11:56:57 - log: [PreviewInEditor] savedata numcards: 24
+6-26-2025 11:56:57 - log: [PreviewInEditor] savedata score: 50
+6-26-2025 11:56:57 - log: [PreviewInEditor] savedata combo: 2
+6-26-2025 11:56:57 - log: [PreviewInEditor] Column req not met 5 6
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', '3D', '6H', '4C', 'TH', 'TD', '7D',
+  'JS', '5H', '8C', '3S', '4H', 'KD', '5C',
+  '4S', '8D', '6D', '2S', '3H', '9H', '8S',
+  '9C', 'JH', 'KH', '9D', '9S', '6S', 'TC',
+  'JC', '2H', 'QS', 'AC', '4D', '5S', 'QH',
+  'AS', 'KC', 'AH', 'AD', '7C', '7H', '6C',
+  '5D', 'JD', '7S', 'TS', '8H', '2C', 'QC',
+  '2D', 'KS', '3C'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] []
+6-26-2025 11:56:57 - log: [PreviewInEditor] [ 'QD', 'QD' ]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [ 'QD', 'QD', '3D', '3D' ]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [ 'QD', 'QD', '3D', '3D', '6H', '6H' ]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D',
+  '3D', '6H', '6H',
+  '4C', '4C'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D',
+  '3D', '6H', '6H',
+  '4C', '4C', 'TH',
+  'TH'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D',
+  '3D', '6H', '6H',
+  '4C', '4C', 'TH',
+  'TH', 'TD', 'TD'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D',
+  '3D', '6H', '6H',
+  '4C', '4C', 'TH',
+  'TH', 'TD', 'TD',
+  '7D', '7D'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D', '3D',
+  '6H', '6H', '4C', '4C',
+  'TH', 'TH', 'TD', 'TD',
+  '7D', '7D', 'JS', 'JS'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D', '3D',
+  '6H', '6H', '4C', '4C',
+  'TH', 'TH', 'TD', 'TD',
+  '7D', '7D', 'JS', 'JS',
+  '5H', '5H'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D', '3D',
+  '6H', '6H', '4C', '4C',
+  'TH', 'TH', 'TD', 'TD',
+  '7D', '7D', 'JS', 'JS',
+  '5H', '5H', '8C', '8C'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D', '3D',
+  '6H', '6H', '4C', '4C',
+  'TH', 'TH', 'TD', 'TD',
+  '7D', '7D', 'JS', 'JS',
+  '5H', '5H', '8C', '8C',
+  '3S', '3S'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] [
+  'QD', 'QD', '3D', '3D',
+  '6H', '6H', '4C', '4C',
+  'TH', 'TH', 'TD', 'TD',
+  '7D', '7D', 'JS', 'JS',
+  '5H', '5H', '8C', '8C',
+  '3S', '3S', '4H', '4H'
+]
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  TD
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  0 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  JS
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  1 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  QD
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  2 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  6H
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  3 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  4C
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  4 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  5 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  QD
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  6 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  8C
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  7 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  8C
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  8 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  9 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  TD
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  10 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  4H
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  11 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  7D
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  12 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  JS
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  13 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  14 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  3D
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  15 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  5H
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  16 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  4C
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  17 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  3D
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  18 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  6H
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  19 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  7D
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  20 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  3S
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  21 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  5H
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  22 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---INIT---
+6-26-2025 11:56:57 - log: [PreviewInEditor] Card type set to:  TH
+6-26-2025 11:56:57 - log: [PreviewInEditor] ID:  23 Card flipped up:  false
+6-26-2025 11:56:57 - log: [PreviewInEditor] ---END CARD INIT---
+6-26-2025 11:57:25 - log: [Scene] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:57:25 - error: [Window] Cannot read property 'updateSize' of undefinedTypeError: Cannot read property 'updateSize' of undefined
+    at <process:scene>
+    at CameraIconGizmo.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/components/base/gizmo-icon.ccc:1:1035)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9279
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1027
+    at Array.forEach (<anonymous>)
+    at walkNodeComponent (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/hack-component.ccc:1:1015)
+    at /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9227
+    at Array.forEach (<anonymous>)
+    at GizmoManager.setIconGizmoSize (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:9148)
+    at GizmoManager.initFromConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/public/gizmos/manager/gizmo.ccc:1:10886)
+    at SceneFacadeManager.initSceneConfig (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/app.asar/builtin/scene/dist/script/3d/facade/scene-facade-manager.ccc:1:28626)
+6-26-2025 11:57:26 - info: [PreviewInEditor] preview process is ready

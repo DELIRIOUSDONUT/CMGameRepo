@@ -89,11 +89,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           this.CardSelectedQueue = void 0;
           // Number of cards currently selected
           this.NumSelectedCards = void 0;
-          // Assuming that number of cards is even, there must be NumCards/2 unique pairs
-          // However, can have repeated pairs if run out of card types
-          // For now, use 5 card types 
           // Object to keep track of player score
           this.ScoreCounter = void 0;
+          // For keeping track of game states across restarts
           this.SaveState = {
             score: 0,
             combo: 0,
@@ -103,12 +101,12 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             columnReq: 0,
             numCards: 0
           };
+          // Number of columns required by Layout
+          this.ColumnReq = void 0;
+          // Dimensions of cards based on number of cards and requird columns
           this.childCardHeight = void 0;
           this.childCardWidth = void 0;
-          this.ColumnReq = void 0;
         }
-
-        onLoad() {}
 
         start() {
           // Get requirements for card sizes and columns
@@ -118,52 +116,12 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
           this.ScoreCounter = this.node.getComponent("ScoreCounter"); // If save state exists and at least one pair is left
 
-          if (localStorage.getItem("saveState")) {
-            console.log("Fetched save data");
-            this.SaveState = JSON.parse(localStorage.getItem("saveState"));
-            console.log("savedata: column req:" + this.SaveState.columnReq);
-            console.log("savedata numcards: " + this.SaveState.numCards);
-            console.log("savedata score: " + this.SaveState.score);
-            console.log("savedata combo: " + this.SaveState.combo);
+          if (this.loadIfAvailable()) {
+            // Setup listener for card selection events
+            this.setupCardMatchListener(); // No need to set up game
 
-            if (this.SaveState.columnReq != this.ColumnReq) {
-              console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
-              this.getCardSize();
-            } else if (this.SaveState.cards.length != this.NumCards) {
-              console.log("Num cards not met", this.SaveState.cards.length, this.NumCards);
-              this.getCardSize();
-            } else {
-              console.log("Parse success");
-              console.log(this.SaveState.cards); // parse from here
-
-              this.NumCards = this.SaveState.cards.length;
-              this.ScoreCounter.Score = this.SaveState.score;
-              this.ScoreCounter.ComboStreak = this.SaveState.combo;
-              this.ScoreCounter.sendUpdate();
-
-              for (let i = 0; i < this.SaveState.numCards; i++) {
-                const childCard = instantiate(this.CardPrefab);
-                let childTransform = childCard.getComponent("cc.UITransform");
-                childTransform.width = this.childCardWidth;
-                childTransform.height = this.childCardHeight;
-                this.node.addChild(childCard);
-                let cardScript = this.node.children[i].getComponent("CardScript");
-                cardScript.init(false, this.SaveState.cards[i], i);
-
-                if (this.SaveState.faceUpIndex == i) {
-                  cardScript.setFlipStatus(true);
-                }
-
-                if (this.SaveState.removedCards[i] == 1) {
-                  cardScript.disable();
-                }
-              } // Setup listener for card selection events
-
-
-              this.setupCardMatchListener();
-              return;
-            }
-          } // By this point, failed to load save data
+            return;
+          } // By this point, failed to load save data, so set up game
 
 
           this.SaveState = {
@@ -174,13 +132,13 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             removedCards: [],
             columnReq: 0,
             numCards: 0
-          };
-          this.SaveState.columnReq = this.ColumnReq; // First make sure that numcards is an even number (cant make pairs with odd num)
+          }; // First make sure that numcards is an even number (cant make pairs with odd num)
 
           if (this.NumCards % 2 != 0) {
             this.NumCards -= 1;
           }
 
+          this.SaveState.columnReq = this.ColumnReq;
           this.SaveState.numCards = this.NumCards; // Get a random subset of card type pairs
 
           let shuffledTypes = this.getCardTypes(); // Instantiate all cards
@@ -206,17 +164,6 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         }
 
         update(deltaTime) {}
-
-        testGetChildren() {
-          this.node.children.forEach(childNode => {
-            console.log(childNode.name);
-            let cardScript = childNode.getComponent("CardScript");
-
-            if (cardScript) {
-              console.log(cardScript.CardType, cardScript.FlippedUp);
-            }
-          });
-        }
 
         setupCardMatchListener() {
           this.CardSelectedQueue = new Array();
@@ -342,6 +289,55 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               // Grow the children
               return;
             }
+          }
+        }
+
+        loadIfAvailable() {
+          if (localStorage.getItem("saveState")) {
+            console.log("Fetched save data");
+            this.SaveState = JSON.parse(localStorage.getItem("saveState"));
+            console.log("savedata: column req:" + this.SaveState.columnReq);
+            console.log("savedata numcards: " + this.SaveState.numCards);
+            console.log("savedata score: " + this.SaveState.score);
+            console.log("savedata combo: " + this.SaveState.combo);
+
+            if (this.SaveState.columnReq != this.ColumnReq) {
+              console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
+              return false;
+            } else if (this.SaveState.cards.length != this.NumCards) {
+              console.log("Num cards not met", this.SaveState.cards.length, this.NumCards);
+              return false;
+            } else {
+              console.log("Parse success");
+              console.log(this.SaveState.cards); // parse from here
+
+              this.NumCards = this.SaveState.cards.length;
+              this.ScoreCounter.Score = this.SaveState.score;
+              this.ScoreCounter.ComboStreak = this.SaveState.combo;
+              this.ScoreCounter.sendUpdate();
+
+              for (let i = 0; i < this.SaveState.numCards; i++) {
+                const childCard = instantiate(this.CardPrefab);
+                let childTransform = childCard.getComponent("cc.UITransform");
+                childTransform.width = this.childCardWidth;
+                childTransform.height = this.childCardHeight;
+                this.node.addChild(childCard);
+                let cardScript = this.node.children[i].getComponent("CardScript");
+                cardScript.init(false, this.SaveState.cards[i], i);
+
+                if (this.SaveState.faceUpIndex == i) {
+                  cardScript.setFlipStatus(true);
+                }
+
+                if (this.SaveState.removedCards[i] == 1) {
+                  cardScript.disable();
+                }
+              }
+
+              return true;
+            }
+          } else {
+            return false;
           }
         }
 

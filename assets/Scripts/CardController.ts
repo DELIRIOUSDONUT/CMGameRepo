@@ -15,7 +15,6 @@ export class CardController extends Component {
     NumCards : number;
 
     ScoreEval : ScoreEvaluator;
-
     // Queue for tracking card selection events  --  for now use array, change to actual queue later
     // Stores ID of selected cards temporally, remove the first two on match/mismatch
     CardSelectedQueue : Array<CardScript>;
@@ -23,13 +22,10 @@ export class CardController extends Component {
     // Number of cards currently selected
     NumSelectedCards : number;
 
-    // Assuming that number of cards is even, there must be NumCards/2 unique pairs
-    // However, can have repeated pairs if run out of card types
-    // For now, use 5 card types 
-
     // Object to keep track of player score
     ScoreCounter : ScoreCounter;
 
+    // For keeping track of game states across restarts
     SaveState = {
         score: 0,
         combo: 0,
@@ -40,14 +36,13 @@ export class CardController extends Component {
         numCards : 0
     };
 
-    childCardHeight : number;
-    childCardWidth : number;
-
+    // Number of columns required by Layout
     ColumnReq : number;
 
-    protected onLoad(): void {
-
-    }
+    // Dimensions of cards based on number of cards and requird columns
+    childCardHeight : number;
+    childCardWidth : number;
+    
     start() {
         // Get requirements for card sizes and columns
         this.getCardSize();
@@ -56,51 +51,14 @@ export class CardController extends Component {
         // Get score tracker
         this.ScoreCounter = this.node.getComponent("ScoreCounter") as ScoreCounter;
         // If save state exists and at least one pair is left
-        if((localStorage.getItem("saveState")) ){
-            console.log("Fetched save data");
-            this.SaveState = JSON.parse(localStorage.getItem("saveState") as string);
-            console.log("savedata: column req:" + this.SaveState.columnReq);
-            console.log("savedata numcards: " + this.SaveState.numCards);
-            console.log("savedata score: " + this.SaveState.score);
-            console.log("savedata combo: " + this.SaveState.combo);
-            if(this.SaveState.columnReq != this.ColumnReq){
-                console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
-                this.getCardSize();
-            } else if(this.SaveState.cards.length != this.NumCards){
-                console.log("Num cards not met", this.SaveState.cards.length, this.NumCards);
-                this.getCardSize();
-            } else {
-                console.log("Parse success");
-                console.log(this.SaveState.cards);
-                // parse from here
-                this.NumCards = this.SaveState.cards.length;
-                this.ScoreCounter.Score = this.SaveState.score;
-                this.ScoreCounter.ComboStreak = this.SaveState.combo;
-                this.ScoreCounter.sendUpdate();
-                for(let i = 0; i < this.SaveState.numCards; i++){
-                    const childCard = instantiate(this.CardPrefab);
-                    let childTransform : UITransform = 
-                        childCard.getComponent("cc.UITransform") as UITransform;
-                    childTransform.width = this.childCardWidth;
-                    childTransform.height = this.childCardHeight;
-                    this.node.addChild(childCard);
-                    let cardScript : CardScript = 
-                        this.node.children[i].getComponent("CardScript") as CardScript;
-                    cardScript.init(false, this.SaveState.cards[i], i);
-                    if(this.SaveState.faceUpIndex == i){
-                        cardScript.setFlipStatus(true);
-                    }
-                    if(this.SaveState.removedCards[i] == 1){
-                        cardScript.disable();
-                    }
-                 }
-                 // Setup listener for card selection events
-                this.setupCardMatchListener();
-                return;
-            }
+        if(this.loadIfAvailable()){
+            // Setup listener for card selection events
+            this.setupCardMatchListener();
+            // No need to set up game
+            return;
         }
-
-        // By this point, failed to load save data
+        
+        // By this point, failed to load save data, so set up game
         this.SaveState = {
             score: 0,
             combo: 0,
@@ -111,14 +69,14 @@ export class CardController extends Component {
             numCards : 0
         };
 
-        this.SaveState.columnReq = this.ColumnReq;
         // First make sure that numcards is an even number (cant make pairs with odd num)
         if(this.NumCards % 2 != 0){
             this.NumCards -= 1;
         }
+
+        this.SaveState.columnReq = this.ColumnReq;
         this.SaveState.numCards = this.NumCards;
         
-
         // Get a random subset of card type pairs
         let shuffledTypes : Array<String> = this.getCardTypes();
 
@@ -149,18 +107,6 @@ export class CardController extends Component {
     }
 
     update(deltaTime: number) {
-    }
-
-    testGetChildren(){
-        this.node.children.forEach(childNode=> {
-            console.log(childNode.name);
-            let cardScript : CardScript = 
-                        childNode.getComponent("CardScript") as CardScript;
-            if(cardScript){
-                console.log(cardScript.CardType, cardScript.FlippedUp);
-            }
-            
-        });
     }
 
     setupCardMatchListener(){
@@ -292,6 +238,52 @@ export class CardController extends Component {
             }
         }
 
+    }
+
+    loadIfAvailable(){
+        if((localStorage.getItem("saveState")) ){
+            console.log("Fetched save data");
+            this.SaveState = JSON.parse(localStorage.getItem("saveState") as string);
+            console.log("savedata: column req:" + this.SaveState.columnReq);
+            console.log("savedata numcards: " + this.SaveState.numCards);
+            console.log("savedata score: " + this.SaveState.score);
+            console.log("savedata combo: " + this.SaveState.combo);
+            if(this.SaveState.columnReq != this.ColumnReq){
+                console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
+                return false;
+            } else if(this.SaveState.cards.length != this.NumCards){
+                console.log("Num cards not met", this.SaveState.cards.length, this.NumCards);
+                return false;
+            } else {
+                console.log("Parse success");
+                console.log(this.SaveState.cards);
+                // parse from here
+                this.NumCards = this.SaveState.cards.length;
+                this.ScoreCounter.Score = this.SaveState.score;
+                this.ScoreCounter.ComboStreak = this.SaveState.combo;
+                this.ScoreCounter.sendUpdate();
+                for(let i = 0; i < this.SaveState.numCards; i++){
+                    const childCard = instantiate(this.CardPrefab);
+                    let childTransform : UITransform = 
+                        childCard.getComponent("cc.UITransform") as UITransform;
+                    childTransform.width = this.childCardWidth;
+                    childTransform.height = this.childCardHeight;
+                    this.node.addChild(childCard);
+                    let cardScript : CardScript = 
+                        this.node.children[i].getComponent("CardScript") as CardScript;
+                    cardScript.init(false, this.SaveState.cards[i], i);
+                    if(this.SaveState.faceUpIndex == i){
+                        cardScript.setFlipStatus(true);
+                    }
+                    if(this.SaveState.removedCards[i] == 1){
+                        cardScript.disable();
+                    }
+                 }
+                return true;
+            }
+        } else {
+            return false;
+        }
     }
 }
 
