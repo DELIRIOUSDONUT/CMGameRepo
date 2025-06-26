@@ -18,6 +18,13 @@ export class ScoreCounter extends Component {
 
     // Current combo misses
     ComboMisses : number = 0;
+
+    // Current turn
+    Turn : number = 0;
+
+    // Current number of matches
+    MatchCount : number = 0;
+
     start() {
 
     }
@@ -39,14 +46,16 @@ export class ScoreCounter extends Component {
             this.ComboMisses = 0;
             this.ComboStreak += 1;
             this.Score += score + this.ScoreComboGrowth * (this.ComboStreak - 1);
+            this.MatchCount += 1;
         }
 
+        this.Turn += 1;
         // Emit signal to update UI for score and combo
         this.sendUpdate();
     }
 
     sendUpdate(){
-        this.node.dispatchEvent(new ScoreUpdateEvent(this.Score, this.ComboStreak));
+        this.node.dispatchEvent(new ScoreUpdateEvent(this.Score, this.ComboStreak, this.MatchCount, this.Turn));
     }
 }
 

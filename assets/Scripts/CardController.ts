@@ -36,7 +36,9 @@ export class CardController extends Component {
         faceUpIndex: -1,
         removedCards : [] as number[],
         columnReq: 0,
-        numCards : 0
+        numCards : 0,
+        turn: 0,
+        matchCount: 0
     };
 
     // Number of columns required by Layout
@@ -74,7 +76,9 @@ export class CardController extends Component {
             faceUpIndex: -1,
             removedCards : [] as number[],
             columnReq: 0,
-            numCards : 0
+            numCards : 0,
+            turn: 0,
+            matchCount: 0
         };
 
         // First make sure that numcards is an even number (cant make pairs with odd num)
@@ -183,8 +187,6 @@ export class CardController extends Component {
                         card.setFlipStatus(false);
                     }, this.FlipDelay);
 
-                    
-
                     // Enable both buttons
                     let button1 : Button = this.CardSelectedQueue[0].getComponent("cc.Button") as Button;
                     button1.interactable = true;
@@ -200,6 +202,7 @@ export class CardController extends Component {
                     this.scheduleOnce(()=>{
                         prevCard.disable();
                         card.disable();
+                        this.SaveState.turn += 1;
                     }, this.FlipDelay);
 
                     // Add disabled cards to save state
@@ -210,7 +213,10 @@ export class CardController extends Component {
                 this.NumSelectedCards -= 2;
                 this.CardSelectedQueue.shift();
                 this.CardSelectedQueue.shift();
-    
+
+                // Save states for turn and match count
+                this.SaveState.turn = this.ScoreCounter.Turn;
+                this.SaveState.matchCount = this.ScoreCounter.MatchCount;
             } else {
                 console.log("ERROR: Num selected cards: ", this.NumSelectedCards);
             }
@@ -293,6 +299,8 @@ export class CardController extends Component {
                 this.NumCards = this.SaveState.cards.length;
                 this.ScoreCounter.Score = this.SaveState.score;
                 this.ScoreCounter.ComboStreak = this.SaveState.combo;
+                this.ScoreCounter.Turn = this.SaveState.turn;
+                this.ScoreCounter.MatchCount = this.SaveState.matchCount;
                 this.ScoreCounter.sendUpdate();
                 for(let i = 0; i < this.SaveState.numCards; i++){
                     const childCard = instantiate(this.CardPrefab);

@@ -20,12 +20,16 @@ System.register(["cc"], function (_export, _context) {
       __checkObsolete__(['Event']);
 
       _export("ScoreUpdateEvent", ScoreUpdateEvent = class ScoreUpdateEvent extends Event {
-        constructor(score, combo) {
+        constructor(score, combo, matchCount, turn) {
           super("score-update", true);
           this.score = void 0;
           this.combo = void 0;
+          this.turn = void 0;
+          this.matchCount = void 0;
           this.score = score;
           this.combo = combo;
+          this.turn = turn;
+          this.matchCount = matchCount;
         }
 
       });

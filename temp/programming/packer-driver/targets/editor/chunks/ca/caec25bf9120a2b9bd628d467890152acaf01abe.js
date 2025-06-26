@@ -108,7 +108,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             faceUpIndex: -1,
             removedCards: [],
             columnReq: 0,
-            numCards: 0
+            numCards: 0,
+            turn: 0,
+            matchCount: 0
           };
           // Number of columns required by Layout
           this.ColumnReq = void 0;
@@ -143,7 +145,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             faceUpIndex: -1,
             removedCards: [],
             columnReq: 0,
-            numCards: 0
+            numCards: 0,
+            turn: 0,
+            matchCount: 0
           }; // First make sure that numcards is an even number (cant make pairs with odd num)
 
           if (this.NumCards % 2 != 0) {
@@ -253,6 +257,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
                 this.scheduleOnce(() => {
                   prevCard.disable();
                   card.disable();
+                  this.SaveState.turn += 1;
                 }, this.FlipDelay); // Add disabled cards to save state
 
                 this.SaveState.removedCards[this.CardSelectedQueue[0].CardID] = 1;
@@ -262,7 +267,10 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
               this.NumSelectedCards -= 2;
               this.CardSelectedQueue.shift();
-              this.CardSelectedQueue.shift();
+              this.CardSelectedQueue.shift(); // Save states for turn and match count
+
+              this.SaveState.turn = this.ScoreCounter.Turn;
+              this.SaveState.matchCount = this.ScoreCounter.MatchCount;
             } else {
               console.log("ERROR: Num selected cards: ", this.NumSelectedCards);
             }
@@ -349,6 +357,8 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               this.NumCards = this.SaveState.cards.length;
               this.ScoreCounter.Score = this.SaveState.score;
               this.ScoreCounter.ComboStreak = this.SaveState.combo;
+              this.ScoreCounter.Turn = this.SaveState.turn;
+              this.ScoreCounter.MatchCount = this.SaveState.matchCount;
               this.ScoreCounter.sendUpdate();
 
               for (let i = 0; i < this.SaveState.numCards; i++) {

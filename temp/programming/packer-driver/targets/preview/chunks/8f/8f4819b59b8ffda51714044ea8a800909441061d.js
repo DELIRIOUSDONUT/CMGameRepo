@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, ScoreUpdater;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _crd, ccclass, property, ScoreUpdater;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -42,6 +42,12 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
       }), _dec3 = property({
         type: Node,
         tooltip: "Drag node with combo text here"
+      }), _dec4 = property({
+        type: Node,
+        tooltip: "Drag node with match text here"
+      }), _dec5 = property({
+        type: Node,
+        tooltip: "Drag node with turn text here"
       }), _dec(_class = (_class2 = class ScoreUpdater extends Component {
         constructor() {
           super(...arguments);
@@ -50,14 +56,24 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
           _initializerDefineProperty(this, "ComboTextNode", _descriptor2, this);
 
+          _initializerDefineProperty(this, "MatchTextNode", _descriptor3, this);
+
+          _initializerDefineProperty(this, "TurnTextNode", _descriptor4, this);
+
           this.ScoreText = void 0;
           this.ComboText = void 0;
+          this.MatchText = void 0;
+          this.TurnText = void 0;
         }
 
         start() {
           this.node.on("score-update", this.updateScore, this);
           this.ScoreText = this.ScoreTextNode.getComponent("cc.RichText");
           this.ComboText = this.ComboTextNode.getComponent("cc.RichText");
+          this.MatchText = this.MatchTextNode.getComponent("cc.RichText");
+          this.TurnText = this.TurnTextNode.getComponent("cc.RichText");
+          this.MatchText.string = "Match = 0";
+          this.TurnText.string = "Turn = 0";
           this.ScoreText.string = "Score = 0";
           this.ComboText.string = "Combo = 0";
         }
@@ -65,8 +81,12 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         updateScore(event) {
           console.log("Score: " + event.score);
           console.log("Combo: " + event.combo);
+          console.log("Match: " + event.matchCount);
+          console.log("Turn: " + event.turn);
           this.ScoreText.string = "Score = " + event.score;
           this.ComboText.string = "Combo = " + event.combo;
+          this.MatchText.string = "Match = " + event.matchCount;
+          this.TurnText.string = "Turn = " + event.turn;
         }
 
         update(deltaTime) {}
@@ -77,6 +97,16 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         writable: true,
         initializer: null
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "ComboTextNode", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "MatchTextNode", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "TurnTextNode", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,

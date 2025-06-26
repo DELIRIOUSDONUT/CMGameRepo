@@ -58,6 +58,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.Score = 0;
           // Current combo misses
           this.ComboMisses = 0;
+          // Current turn
+          this.Turn = 0;
+          // Current number of matches
+          this.MatchCount = 0;
         }
 
         start() {}
@@ -78,8 +82,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             this.ComboMisses = 0;
             this.ComboStreak += 1;
             this.Score += score + this.ScoreComboGrowth * (this.ComboStreak - 1);
-          } // Emit signal to update UI for score and combo
+            this.MatchCount += 1;
+          }
 
+          this.Turn += 1; // Emit signal to update UI for score and combo
 
           this.sendUpdate();
         }
@@ -87,7 +93,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         sendUpdate() {
           this.node.dispatchEvent(new (_crd && ScoreUpdateEvent === void 0 ? (_reportPossibleCrUseOfScoreUpdateEvent({
             error: Error()
-          }), ScoreUpdateEvent) : ScoreUpdateEvent)(this.Score, this.ComboStreak));
+          }), ScoreUpdateEvent) : ScoreUpdateEvent)(this.Score, this.ComboStreak, this.MatchCount, this.Turn));
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "ScoreComboGrowth", [_dec2], {
