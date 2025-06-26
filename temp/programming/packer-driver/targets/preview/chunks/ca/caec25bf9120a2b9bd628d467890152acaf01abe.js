@@ -99,10 +99,12 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             combo: 0,
             cards: [],
             faceUpIndex: -1,
-            removedCards: []
+            removedCards: [],
+            columnReq: 0
           };
           this.childCardHeight = void 0;
           this.childCardWidth = void 0;
+          this.ColumnReq = void 0;
         }
 
         onLoad() {
@@ -110,7 +112,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         }
 
         start() {
-          // Get requirements for card sizes
+          // Get requirements for card sizes and columns
           this.getCardSize(); // Get the evaluator script
 
           this.ScoreEval = this.node.getComponent("ScoreEvaluator"); // Get score tracker
@@ -119,33 +121,42 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
           if (localStorage.getItem("saveState")) {
             console.log("Fetched save data");
-            this.SaveState = JSON.parse(localStorage.getItem("saveState")); // parse from here
+            this.SaveState = JSON.parse(localStorage.getItem("saveState"));
 
-            this.NumCards = this.SaveState.cards.length;
-            this.ScoreCounter.Score = this.SaveState.score;
-            this.ScoreCounter.ComboStreak = this.SaveState.combo;
+            if (this.SaveState.columnReq != this.ColumnReq) {
+              console.log("Column req not met");
+              this.getCardSize();
+            } else if (this.SaveState.cards.length != this.NumCards) {
+              console.log("Num cards not met");
+              this.getCardSize();
+            } else {
+              // parse from here
+              this.NumCards = this.SaveState.cards.length;
+              this.ScoreCounter.Score = this.SaveState.score;
+              this.ScoreCounter.ComboStreak = this.SaveState.combo;
 
-            for (var i = 0; i < this.NumCards; i++) {
-              var childCard = instantiate(this.CardPrefab);
-              var childTransform = childCard.getComponent("cc.UITransform");
-              childTransform.width = this.childCardWidth;
-              childTransform.height = this.childCardHeight;
-              this.node.addChild(childCard);
-              var cardScript = this.node.children[i].getComponent("CardScript");
-              cardScript.init(false, this.SaveState.cards[i], i);
+              for (var i = 0; i < this.NumCards; i++) {
+                var childCard = instantiate(this.CardPrefab);
+                var childTransform = childCard.getComponent("cc.UITransform");
+                childTransform.width = this.childCardWidth;
+                childTransform.height = this.childCardHeight;
+                this.node.addChild(childCard);
+                var cardScript = this.node.children[i].getComponent("CardScript");
+                cardScript.init(false, this.SaveState.cards[i], i);
 
-              if (this.SaveState.faceUpIndex == i) {
-                cardScript.setFlipStatus(true);
-              }
+                if (this.SaveState.faceUpIndex == i) {
+                  cardScript.setFlipStatus(true);
+                }
 
-              if (this.SaveState.removedCards[i] == 1) {
-                cardScript.disable();
-              }
-            } // Setup listener for card selection events
+                if (this.SaveState.removedCards[i] == 1) {
+                  cardScript.disable();
+                }
+              } // Setup listener for card selection events
 
 
-            this.setupCardMatchListener();
-            return;
+              this.setupCardMatchListener();
+              return;
+            }
           } // First make sure that numcards is an even number (cant make pairs with odd num)
 
 
@@ -295,6 +306,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
           if (parentLayout.constraint == Layout.Constraint.FIXED_COL) {
             var numCols = parentLayout.constraintNum;
+            this.ColumnReq = numCols;
 
             if (this.NumCards >= numCols) {
               // Have to be the full size
@@ -302,7 +314,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               console.log("Parent width ", parentWidth, ", parent height ", parentHeight);
               this.childCardWidth = (parentWidth - (numCols - 1) * parentLayout.spacingX) / numCols; // Adjust height to fit
 
-              var numRows = this.NumCards / numCols + (this.NumCards % numCols > 0 ? 1 : 0);
+              var numRows = Math.ceil(this.NumCards / numCols);
               console.log("Num rows is ", numRows);
               this.childCardHeight = (parentHeight - (numRows - 1) * parentLayout.spacingY) / numRows;
             } else {

@@ -35,17 +35,20 @@ export class CardController extends Component {
         combo: 0,
         cards : [] as string[],
         faceUpIndex: -1,
-        removedCards : [] as number[]
+        removedCards : [] as number[],
+        columnReq: 0
     };
 
     childCardHeight : number;
     childCardWidth : number;
 
+    ColumnReq : number;
+
     protected onLoad(): void {
         this.getCardSize();
     }
     start() {
-        // Get requirements for card sizes
+        // Get requirements for card sizes and columns
         this.getCardSize();
         // Get the evaluator script
         this.ScoreEval = this.node.getComponent("ScoreEvaluator") as ScoreEvaluator;
@@ -55,31 +58,38 @@ export class CardController extends Component {
         if((localStorage.getItem("saveState")) ){
             console.log("Fetched save data");
             this.SaveState = JSON.parse(localStorage.getItem("saveState") as string);
-            // parse from here
-            this.NumCards = this.SaveState.cards.length;
-            this.ScoreCounter.Score = this.SaveState.score;
-            this.ScoreCounter.ComboStreak = this.SaveState.combo;
-            for(let i = 0; i < this.NumCards; i++){
-                const childCard = instantiate(this.CardPrefab);
-                let childTransform : UITransform = 
-                    childCard.getComponent("cc.UITransform") as UITransform;
-                childTransform.width = this.childCardWidth;
-                childTransform.height = this.childCardHeight;
-                this.node.addChild(childCard);
-                let cardScript : CardScript = 
-                    this.node.children[i].getComponent("CardScript") as CardScript;
-                cardScript.init(false, this.SaveState.cards[i], i);
-                if(this.SaveState.faceUpIndex == i){
-                    cardScript.setFlipStatus(true);
-                }
-                if(this.SaveState.removedCards[i] == 1){
-                    cardScript.disable();
-                }
-                
+            if(this.SaveState.columnReq != this.ColumnReq){
+                console.log("Column req not met");
+                this.getCardSize();
+            } else if(this.SaveState.cards.length != this.NumCards){
+                console.log("Num cards not met");
+                this.getCardSize();
+            } else {
+                // parse from here
+                this.NumCards = this.SaveState.cards.length;
+                this.ScoreCounter.Score = this.SaveState.score;
+                this.ScoreCounter.ComboStreak = this.SaveState.combo;
+                for(let i = 0; i < this.NumCards; i++){
+                    const childCard = instantiate(this.CardPrefab);
+                    let childTransform : UITransform = 
+                        childCard.getComponent("cc.UITransform") as UITransform;
+                    childTransform.width = this.childCardWidth;
+                    childTransform.height = this.childCardHeight;
+                    this.node.addChild(childCard);
+                    let cardScript : CardScript = 
+                        this.node.children[i].getComponent("CardScript") as CardScript;
+                    cardScript.init(false, this.SaveState.cards[i], i);
+                    if(this.SaveState.faceUpIndex == i){
+                        cardScript.setFlipStatus(true);
+                    }
+                    if(this.SaveState.removedCards[i] == 1){
+                        cardScript.disable();
+                    }
+                 }
+                 // Setup listener for card selection events
+                this.setupCardMatchListener();
+                return;
             }
-            // Setup listener for card selection events
-            this.setupCardMatchListener();
-            return;
         }
 
         // First make sure that numcards is an even number (cant make pairs with odd num)
@@ -113,12 +123,8 @@ export class CardController extends Component {
             this.SaveState.removedCards.push(0);
         }
 
-        
-
         // Setup listener for card selection events
         this.setupCardMatchListener();
-
-        
     }
 
     update(deltaTime: number) {
@@ -240,13 +246,14 @@ export class CardController extends Component {
         let parentHeight : number = parentTransform.contentSize.height;
         if(parentLayout.constraint == Layout.Constraint.FIXED_COL){
             let numCols : number = parentLayout.constraintNum;
+            this.ColumnReq = numCols;
             if(this.NumCards >= numCols){
                 // Have to be the full size
                 // Adjust width to fit
                 console.log("Parent width ", parentWidth, ", parent height ", parentHeight);
                 this.childCardWidth = (parentWidth - ((numCols - 1) * parentLayout.spacingX)) / numCols;
                 // Adjust height to fit
-                let numRows : number = (this.NumCards / numCols) + ((this.NumCards % numCols) > 0 ? 1 : 0);
+                let numRows : number = Math.ceil(this.NumCards / numCols);
                 console.log("Num rows is ", numRows);
                 this.childCardHeight = (parentHeight - ((numRows - 1) * parentLayout.spacingY)) / numRows;
             } else {
