@@ -322,7 +322,7 @@
       }
     ],
     "_interactable": true,
-    "_transition": 2,
+    "_transition": 0,
     "_normalColor": {
       "__type__": "cc.Color",
       "r": 214,
@@ -356,7 +356,7 @@
       "__expectedType__": "cc.SpriteFrame"
     },
     "_hoverSprite": {
-      "__uuid__": "f20f4c8d-b589-4795-85a8-b8080709f1e3@f9941",
+      "__uuid__": "749a69f6-3a4d-4a62-89b5-12cf13f33e38@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_pressedSprite": {

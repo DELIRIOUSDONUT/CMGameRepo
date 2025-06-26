@@ -24,7 +24,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
       _cclegacy._RF.push({}, "72078SBVGJLKrHmFYvn9xxm", "CardScript", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Node', 'Event', 'Label']);
+      __checkObsolete__(['_decorator', 'Component', 'Node', 'Event', 'Label', 'Sprite', 'SpriteFrame']);
 
       ({
         ccclass,
@@ -37,6 +37,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.FlippedUp = void 0;
           this.CardType = void 0;
           this.CardID = void 0;
+          this.CardSprite = void 0;
+          this.BackSprite = void 0;
+          this.SpriteFrame = void 0;
         }
 
         start() {}
@@ -54,6 +57,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         setFlipStatus(flippedUp) {
           this.FlippedUp = flippedUp;
           console.log("ID: ", this.CardID, "Card flipped up: ", this.FlippedUp); // Add animation here based on flip status
+
+          if (this.CardSprite != null && this.BackSprite != null) {
+            if (this.FlippedUp) {
+              this.SpriteFrame.spriteFrame = this.CardSprite;
+            } else {
+              this.SpriteFrame.spriteFrame = this.BackSprite;
+            }
+          }
         }
 
         init(flippedUp, cardType, cardID) {
@@ -61,7 +72,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.CardID = cardID;
           this.setCardType(cardType);
           this.setFlipStatus(flippedUp);
+          this.CardSprite = null;
+          this.BackSprite = null;
+          this.SpriteFrame = this.node.getComponent("cc.Sprite");
           console.log("---END CARD INIT---");
+        }
+
+        setSprite(cardSprite, backSprite) {
+          this.CardSprite = cardSprite;
+          this.BackSprite = backSprite;
+
+          if (this.FlippedUp) {
+            this.SpriteFrame.spriteFrame = this.CardSprite;
+          } else {
+            this.SpriteFrame.spriteFrame = this.BackSprite;
+          }
+
+          console.log(cardSprite, backSprite);
         } // For observer-publisher pattern, when card is selected, emit to card controller
 
 

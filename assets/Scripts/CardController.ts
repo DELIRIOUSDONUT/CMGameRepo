@@ -1,9 +1,10 @@
-import { _decorator, Component, instantiate, Layout, Node, Prefab, UITransform, Widget, Button} from 'cc';
+import { _decorator, Component, instantiate, Layout, Node, Prefab, UITransform, Widget, Button, SpriteFrame} from 'cc';
 import { CCInteger } from 'cc'
 import { CardScript } from './CardScript';
 import { ScoreEvaluator } from './ScoreEvaluator';
 import { CardSelectEvent } from './CardSelectEvent';
 import { ScoreCounter } from './ScoreCounter';
+import { SpriteHandler } from './SpriteHandler';
 const { ccclass, property } = _decorator;
 
 @ccclass('CardController')
@@ -14,6 +15,8 @@ export class CardController extends Component {
     @property({type: CCInteger, tooltip: "Number of cards"})
     NumCards : number;
 
+    @property({type: CCInteger, tooltip: "Delay time for card flip"})
+    FlipDelay : number;
     ScoreEval : ScoreEvaluator;
     // Queue for tracking card selection events  --  for now use array, change to actual queue later
     // Stores ID of selected cards temporally, remove the first two on match/mismatch
@@ -42,6 +45,8 @@ export class CardController extends Component {
     // Dimensions of cards based on number of cards and requird columns
     childCardHeight : number;
     childCardWidth : number;
+
+    SpriteHandler : SpriteHandler;
     
     start() {
         // Get requirements for card sizes and columns
@@ -50,6 +55,9 @@ export class CardController extends Component {
         this.ScoreEval = this.node.getComponent("ScoreEvaluator") as ScoreEvaluator;
         // Get score tracker
         this.ScoreCounter = this.node.getComponent("ScoreCounter") as ScoreCounter;
+
+        // Sprite handler
+        this.SpriteHandler = this.node.getComponent("SpriteHandler") as SpriteHandler;
         // If save state exists and at least one pair is left
         if(this.loadIfAvailable()){
             // Setup listener for card selection events
@@ -97,6 +105,8 @@ export class CardController extends Component {
                     childCard.getComponent("cc.Widget") as Widget;
             widget.target = this.node;
 
+            // Add sprites
+            this.SpriteHandler.setSprites(cardScript);
             // Save to save state
             this.SaveState.cards.push(shuffledTypes[i] as string);
             this.SaveState.removedCards.push(0);
@@ -111,7 +121,20 @@ export class CardController extends Component {
 
     setupCardMatchListener(){
         this.CardSelectedQueue = new Array<CardScript>();
-        this.NumSelectedCards = 0;
+        this.NumSelectedCards = (this.SaveState.faceUpIndex == -1) ? 0 : 1;
+        // In the case that the program was closed while one card was faceup
+        if(this.NumSelectedCards == 1){
+            // Search for card with matching index, and add to queue
+            for(let i = 0; i < this.NumCards; i++){
+                if(this.SaveState.faceUpIndex == i){
+                    let child = this.node.children[i].getComponent("CardScript") as CardScript;
+                    this.CardSelectedQueue.push(child);
+                    child.setFlipStatus(true);
+                    break;
+                }
+            }
+            
+        }
         this.node.on("card-selected", (event : CardSelectEvent) => {
             let card : CardScript = event.card;
             // Stop event propagation
@@ -154,8 +177,13 @@ export class CardController extends Component {
                     // Mismatch
                     this.SaveState.combo = 0;
                     // Do delay, then flip both cards face down
-                    this.CardSelectedQueue[0].setFlipStatus(false);
-                    card.setFlipStatus(false);
+                    let prevCard = this.CardSelectedQueue[0];
+                    this.scheduleOnce(() => {
+                        prevCard.setFlipStatus(false);
+                        card.setFlipStatus(false);
+                    }, this.FlipDelay);
+
+                    
 
                     // Enable both buttons
                     let button1 : Button = this.CardSelectedQueue[0].getComponent("cc.Button") as Button;
@@ -165,10 +193,14 @@ export class CardController extends Component {
                     
                 } else {
                     // Match
-    
+                    console.log("MATCH");
+                    console.log(this.CardSelectedQueue[0].CardType, card.CardType);
                     // Do delay, then disable both cards from rendering
-                    this.CardSelectedQueue[0].disable();
-                    card.disable();
+                    let prevCard = this.CardSelectedQueue[0];
+                    this.scheduleOnce(()=>{
+                        prevCard.disable();
+                        card.disable();
+                    }, this.FlipDelay);
 
                     // Add disabled cards to save state
                     this.SaveState.removedCards[this.CardSelectedQueue[0].CardID] = 1;
@@ -272,6 +304,8 @@ export class CardController extends Component {
                     let cardScript : CardScript = 
                         this.node.children[i].getComponent("CardScript") as CardScript;
                     cardScript.init(false, this.SaveState.cards[i], i);
+                    // Add sprites
+                    this.SpriteHandler.setSprites(cardScript);
                     if(this.SaveState.faceUpIndex == i){
                         cardScript.setFlipStatus(true);
                     }

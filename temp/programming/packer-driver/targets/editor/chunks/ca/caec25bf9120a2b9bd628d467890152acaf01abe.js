@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Layout, Prefab, CCInteger, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, CardController;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Layout, Prefab, CCInteger, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _crd, ccclass, property, CardController;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -41,6 +41,10 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
     _reporterNs.report("ScoreCounter", "./ScoreCounter", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfSpriteHandler(extras) {
+    _reporterNs.report("SpriteHandler", "./SpriteHandler", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -60,7 +64,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "f1c9ceDbnpJlYYKLIBiBmbq", "CardController", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Layout', 'Node', 'Prefab', 'UITransform', 'Widget', 'Button']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Layout', 'Node', 'Prefab', 'UITransform', 'Widget', 'Button', 'SpriteFrame']);
 
       __checkObsolete__(['CCInteger']);
 
@@ -75,6 +79,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
       }), _dec3 = property({
         type: CCInteger,
         tooltip: "Number of cards"
+      }), _dec4 = property({
+        type: CCInteger,
+        tooltip: "Delay time for card flip"
       }), _dec(_class = (_class2 = class CardController extends Component {
         constructor(...args) {
           super(...args);
@@ -82,6 +89,8 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           _initializerDefineProperty(this, "CardPrefab", _descriptor, this);
 
           _initializerDefineProperty(this, "NumCards", _descriptor2, this);
+
+          _initializerDefineProperty(this, "FlipDelay", _descriptor3, this);
 
           this.ScoreEval = void 0;
           // Queue for tracking card selection events  --  for now use array, change to actual queue later
@@ -106,6 +115,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           // Dimensions of cards based on number of cards and requird columns
           this.childCardHeight = void 0;
           this.childCardWidth = void 0;
+          this.SpriteHandler = void 0;
         }
 
         start() {
@@ -114,7 +124,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
           this.ScoreEval = this.node.getComponent("ScoreEvaluator"); // Get score tracker
 
-          this.ScoreCounter = this.node.getComponent("ScoreCounter"); // If save state exists and at least one pair is left
+          this.ScoreCounter = this.node.getComponent("ScoreCounter"); // Sprite handler
+
+          this.SpriteHandler = this.node.getComponent("SpriteHandler"); // If save state exists and at least one pair is left
 
           if (this.loadIfAvailable()) {
             // Setup listener for card selection events
@@ -153,7 +165,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             cardScript.init(false, shuffledTypes[i], i); // For layout adjustments
 
             let widget = childCard.getComponent("cc.Widget");
-            widget.target = this.node; // Save to save state
+            widget.target = this.node; // Add sprites
+
+            this.SpriteHandler.setSprites(cardScript); // Save to save state
 
             this.SaveState.cards.push(shuffledTypes[i]);
             this.SaveState.removedCards.push(0);
@@ -167,7 +181,20 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
         setupCardMatchListener() {
           this.CardSelectedQueue = new Array();
-          this.NumSelectedCards = 0;
+          this.NumSelectedCards = this.SaveState.faceUpIndex == -1 ? 0 : 1; // In the case that the program was closed while one card was faceup
+
+          if (this.NumSelectedCards == 1) {
+            // Search for card with matching index, and add to queue
+            for (let i = 0; i < this.NumCards; i++) {
+              if (this.SaveState.faceUpIndex == i) {
+                let child = this.node.children[i].getComponent("CardScript");
+                this.CardSelectedQueue.push(child);
+                child.setFlipStatus(true);
+                break;
+              }
+            }
+          }
+
           this.node.on("card-selected", event => {
             let card = event.card; // Stop event propagation
 
@@ -207,8 +234,11 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
                 // Mismatch
                 this.SaveState.combo = 0; // Do delay, then flip both cards face down
 
-                this.CardSelectedQueue[0].setFlipStatus(false);
-                card.setFlipStatus(false); // Enable both buttons
+                let prevCard = this.CardSelectedQueue[0];
+                this.scheduleOnce(() => {
+                  prevCard.setFlipStatus(false);
+                  card.setFlipStatus(false);
+                }, this.FlipDelay); // Enable both buttons
 
                 let button1 = this.CardSelectedQueue[0].getComponent("cc.Button");
                 button1.interactable = true;
@@ -216,9 +246,14 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
                 button2.interactable = true;
               } else {
                 // Match
-                // Do delay, then disable both cards from rendering
-                this.CardSelectedQueue[0].disable();
-                card.disable(); // Add disabled cards to save state
+                console.log("MATCH");
+                console.log(this.CardSelectedQueue[0].CardType, card.CardType); // Do delay, then disable both cards from rendering
+
+                let prevCard = this.CardSelectedQueue[0];
+                this.scheduleOnce(() => {
+                  prevCard.disable();
+                  card.disable();
+                }, this.FlipDelay); // Add disabled cards to save state
 
                 this.SaveState.removedCards[this.CardSelectedQueue[0].CardID] = 1;
                 this.SaveState.removedCards[card.CardID] = 1;
@@ -323,7 +358,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
                 childTransform.height = this.childCardHeight;
                 this.node.addChild(childCard);
                 let cardScript = this.node.children[i].getComponent("CardScript");
-                cardScript.init(false, this.SaveState.cards[i], i);
+                cardScript.init(false, this.SaveState.cards[i], i); // Add sprites
+
+                this.SpriteHandler.setSprites(cardScript);
 
                 if (this.SaveState.faceUpIndex == i) {
                   cardScript.setFlipStatus(true);
@@ -347,6 +384,11 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         writable: true,
         initializer: null
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "NumCards", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "FlipDelay", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,

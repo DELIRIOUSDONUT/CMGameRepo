@@ -1,4 +1,5 @@
 {
   "__version__": "1.0.3",
-  "import-path": "/Users/admin/Documents/GitHub/CMGameRepo"
+  "import-path": "/Users/admin/Documents/GitHub/CMGameRepo",
+  "import-new-asset-path": "/Users/admin/Downloads/PNG/Cards"
 }
