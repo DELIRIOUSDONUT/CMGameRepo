@@ -1,4 +1,4 @@
-import { _decorator, Component, instantiate, Node, Prefab, Widget } from 'cc';
+import { _decorator, Component, instantiate, Layout, Node, Prefab, UITransform, Widget} from 'cc';
 import { CCInteger } from 'cc'
 import { CardScript } from './CardScript';
 import { ScoreEvaluator } from './ScoreEvaluator';
@@ -38,10 +38,15 @@ export class CardController extends Component {
         removedCards : [] as number[]
     };
 
+    childCardHeight : number;
+    childCardWidth : number;
+
     protected onLoad(): void {
-        
+        this.getCardSize();
     }
     start() {
+        // Get requirements for card sizes
+        this.getCardSize();
         // Get the evaluator script
         this.ScoreEval = this.node.getComponent("ScoreEvaluator") as ScoreEvaluator;
         // Get score tracker
@@ -56,6 +61,10 @@ export class CardController extends Component {
             this.ScoreCounter.ComboStreak = this.SaveState.combo;
             for(let i = 0; i < this.NumCards; i++){
                 const childCard = instantiate(this.CardPrefab);
+                let childTransform : UITransform = 
+                    childCard.getComponent("cc.UITransform") as UITransform;
+                childTransform.width = this.childCardWidth;
+                childTransform.height = this.childCardHeight;
                 this.node.addChild(childCard);
                 let cardScript : CardScript = 
                     this.node.children[i].getComponent("CardScript") as CardScript;
@@ -85,6 +94,10 @@ export class CardController extends Component {
         // Instantiate all cards
         for (let i = 0; i < this.NumCards; i++){
             const childCard = instantiate(this.CardPrefab);
+            let childTransform : UITransform = 
+                childCard.getComponent("cc.UITransform") as UITransform;
+            childTransform.width = this.childCardWidth;
+            childTransform.height = this.childCardHeight;
             this.node.addChild(childCard);
             let cardScript : CardScript = 
                     childCard.getComponent("CardScript") as CardScript;
@@ -216,6 +229,32 @@ export class CardController extends Component {
         //console.log(shuffledTypes);
         shuffledTypes = shuffleArray(shuffledTypes);
         return shuffledTypes;
+    }
+
+    getCardSize(){
+        // For NumCards, adjust the size of the cell such that they fit perfectly in the container
+        // Need to reference the column constraint 
+        let parentLayout : Layout = this.node.getComponent("cc.Layout") as Layout;
+        let parentTransform : UITransform = this.node.getComponent("cc.UITransform") as UITransform;
+        let parentWidth : number = parentTransform.contentSize.width;
+        let parentHeight : number = parentTransform.contentSize.height;
+        if(parentLayout.constraint == Layout.Constraint.FIXED_COL){
+            let numCols : number = parentLayout.constraintNum;
+            if(this.NumCards >= numCols){
+                // Have to be the full size
+                // Adjust width to fit
+                console.log("Parent width ", parentWidth, ", parent height ", parentHeight);
+                this.childCardWidth = (parentWidth - ((numCols - 1) * parentLayout.spacingX)) / numCols;
+                // Adjust height to fit
+                let numRows : number = (this.NumCards / numCols) + ((this.NumCards % numCols) > 0 ? 1 : 0);
+                console.log("Num rows is ", numRows);
+                this.childCardHeight = (parentHeight - ((numRows - 1) * parentLayout.spacingY)) / numRows;
+            } else {
+                // Grow the children
+                return;
+            }
+        }
+
     }
 }
 

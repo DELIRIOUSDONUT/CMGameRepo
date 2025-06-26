@@ -8952,3 +8952,8 @@
 6-25-2025 16:39:42-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
 6-25-2025 16:39:42-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 15%
 6-25-2025 16:39:42-debug: [Build Memory track]: Sort some build options to settings.json start:172.29MB, end 171.75MB, increase: -552.98KB
+6-25-2025 16:40:11-debug: refresh db internal success
+6-25-2025 16:40:11-debug: refresh db assets success
+6-25-2025 16:40:11-debug: Run asset db hook engine-extends:afterRefresh ...
+6-25-2025 16:40:11-debug: Run asset db hook engine-extends:afterRefresh success!
+6-25-2025 16:40:11-debug: asset-db:refresh-all-database (36ms)

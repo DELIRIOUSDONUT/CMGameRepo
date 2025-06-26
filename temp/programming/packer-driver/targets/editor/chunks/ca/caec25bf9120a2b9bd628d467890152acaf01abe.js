@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Prefab, CCInteger, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, CardController;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Layout, Prefab, CCInteger, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, CardController;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -51,6 +51,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
       _decorator = _cc._decorator;
       Component = _cc.Component;
       instantiate = _cc.instantiate;
+      Layout = _cc.Layout;
       Prefab = _cc.Prefab;
       CCInteger = _cc.CCInteger;
     }],
@@ -59,7 +60,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "f1c9ceDbnpJlYYKLIBiBmbq", "CardController", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Node', 'Prefab', 'Widget']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Layout', 'Node', 'Prefab', 'UITransform', 'Widget']);
 
       __checkObsolete__(['CCInteger']);
 
@@ -100,12 +101,18 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             faceUpIndex: -1,
             removedCards: []
           };
+          this.childCardHeight = void 0;
+          this.childCardWidth = void 0;
         }
 
-        onLoad() {}
+        onLoad() {
+          this.getCardSize();
+        }
 
         start() {
-          // Get the evaluator script
+          // Get requirements for card sizes
+          this.getCardSize(); // Get the evaluator script
+
           this.ScoreEval = this.node.getComponent("ScoreEvaluator"); // Get score tracker
 
           this.ScoreCounter = this.node.getComponent("ScoreCounter"); // If save state exists and at least one pair is left
@@ -120,6 +127,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
             for (let i = 0; i < this.NumCards; i++) {
               const childCard = instantiate(this.CardPrefab);
+              let childTransform = childCard.getComponent("cc.UITransform");
+              childTransform.width = this.childCardWidth;
+              childTransform.height = this.childCardHeight;
               this.node.addChild(childCard);
               let cardScript = this.node.children[i].getComponent("CardScript");
               cardScript.init(false, this.SaveState.cards[i], i);
@@ -148,6 +158,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
           for (let i = 0; i < this.NumCards; i++) {
             const childCard = instantiate(this.CardPrefab);
+            let childTransform = childCard.getComponent("cc.UITransform");
+            childTransform.width = this.childCardWidth;
+            childTransform.height = this.childCardHeight;
             this.node.addChild(childCard);
             let cardScript = childCard.getComponent("CardScript");
             cardScript.init(false, shuffledTypes[i], i); // For layout adjustments
@@ -264,6 +277,33 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
           shuffledTypes = shuffleArray(shuffledTypes);
           return shuffledTypes;
+        }
+
+        getCardSize() {
+          // For NumCards, adjust the size of the cell such that they fit perfectly in the container
+          // Need to reference the column constraint 
+          let parentLayout = this.node.getComponent("cc.Layout");
+          let parentTransform = this.node.getComponent("cc.UITransform");
+          let parentWidth = parentTransform.contentSize.width;
+          let parentHeight = parentTransform.contentSize.height;
+
+          if (parentLayout.constraint == Layout.Constraint.FIXED_COL) {
+            let numCols = parentLayout.constraintNum;
+
+            if (this.NumCards >= numCols) {
+              // Have to be the full size
+              // Adjust width to fit
+              console.log("Parent width ", parentWidth, ", parent height ", parentHeight);
+              this.childCardWidth = (parentWidth - (numCols - 1) * parentLayout.spacingX) / numCols; // Adjust height to fit
+
+              let numRows = this.NumCards / numCols + (this.NumCards % numCols > 0 ? 1 : 0);
+              console.log("Num rows is ", numRows);
+              this.childCardHeight = (parentHeight - (numRows - 1) * parentLayout.spacingY) / numRows;
+            } else {
+              // Grow the children
+              return;
+            }
+          }
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "CardPrefab", [_dec2], {

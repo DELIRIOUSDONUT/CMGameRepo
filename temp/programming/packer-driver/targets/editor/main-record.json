@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 5299.133208000101,
+      "mTimestamp": 5633.046042000002,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -640,7 +640,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 19444422.800582998,
+      "mTimestamp": 2932389.945083,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -1006,7 +1006,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
       "mTimestamp": {
-        "mtime": 1750842108987.651,
+        "mtime": 1750906854966.6667,
         "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
       },
       "chunkId": "caec25bf9120a2b9bd628d467890152acaf01abe",
@@ -1026,11 +1026,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 73
+              "column": 93
             },
             "end": {
               "line": 1,
-              "column": 77
+              "column": 97
             }
           }
         },
@@ -1088,7 +1088,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1750824384337,
+      "mTimestamp": 1750903923245,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",

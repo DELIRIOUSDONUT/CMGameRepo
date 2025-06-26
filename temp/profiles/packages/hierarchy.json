@@ -14,7 +14,6 @@
     "expandLevels": [
       "0",
       "0_0",
-      "0_0_1",
       "0_0_2",
       "0_0_2_1",
       "0_0_2_2"
@@ -37,6 +36,13 @@
   },
   "326d98a1-8a90-4e73-9bfc-810bd6b2bede": {
     "assetUuid": "326d98a1-8a90-4e73-9bfc-810bd6b2bede",
+    "animationUuid": "",
+    "expandLevels": [
+      "0"
+    ]
+  },
+  "a5635c0e-5d7b-4b61-ac41-73b3c61258f0": {
+    "assetUuid": "a5635c0e-5d7b-4b61-ac41-73b3c61258f0",
     "animationUuid": "",
     "expandLevels": [
       "0"
