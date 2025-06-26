@@ -1,4 +1,4 @@
-import { _decorator, Component, instantiate, Layout, Node, Prefab, UITransform, Widget} from 'cc';
+import { _decorator, Component, instantiate, Layout, Node, Prefab, UITransform, Widget, Button} from 'cc';
 import { CCInteger } from 'cc'
 import { CardScript } from './CardScript';
 import { ScoreEvaluator } from './ScoreEvaluator';
@@ -36,7 +36,8 @@ export class CardController extends Component {
         cards : [] as string[],
         faceUpIndex: -1,
         removedCards : [] as number[],
-        columnReq: 0
+        columnReq: 0,
+        numCards : 0
     };
 
     childCardHeight : number;
@@ -45,7 +46,7 @@ export class CardController extends Component {
     ColumnReq : number;
 
     protected onLoad(): void {
-        this.getCardSize();
+
     }
     start() {
         // Get requirements for card sizes and columns
@@ -58,18 +59,25 @@ export class CardController extends Component {
         if((localStorage.getItem("saveState")) ){
             console.log("Fetched save data");
             this.SaveState = JSON.parse(localStorage.getItem("saveState") as string);
+            console.log("savedata: column req:" + this.SaveState.columnReq);
+            console.log("savedata numcards: " + this.SaveState.numCards);
+            console.log("savedata score: " + this.SaveState.score);
+            console.log("savedata combo: " + this.SaveState.combo);
             if(this.SaveState.columnReq != this.ColumnReq){
-                console.log("Column req not met");
+                console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
                 this.getCardSize();
             } else if(this.SaveState.cards.length != this.NumCards){
-                console.log("Num cards not met");
+                console.log("Num cards not met", this.SaveState.cards.length, this.NumCards);
                 this.getCardSize();
             } else {
+                console.log("Parse success");
+                console.log(this.SaveState.cards);
                 // parse from here
                 this.NumCards = this.SaveState.cards.length;
                 this.ScoreCounter.Score = this.SaveState.score;
                 this.ScoreCounter.ComboStreak = this.SaveState.combo;
-                for(let i = 0; i < this.NumCards; i++){
+                this.ScoreCounter.sendUpdate();
+                for(let i = 0; i < this.SaveState.numCards; i++){
                     const childCard = instantiate(this.CardPrefab);
                     let childTransform : UITransform = 
                         childCard.getComponent("cc.UITransform") as UITransform;
@@ -92,10 +100,23 @@ export class CardController extends Component {
             }
         }
 
+        // By this point, failed to load save data
+        this.SaveState = {
+            score: 0,
+            combo: 0,
+            cards : [] as string[],
+            faceUpIndex: -1,
+            removedCards : [] as number[],
+            columnReq: 0,
+            numCards : 0
+        };
+
+        this.SaveState.columnReq = this.ColumnReq;
         // First make sure that numcards is an even number (cant make pairs with odd num)
         if(this.NumCards % 2 != 0){
             this.NumCards -= 1;
         }
+        this.SaveState.numCards = this.NumCards;
         
 
         // Get a random subset of card type pairs
@@ -164,6 +185,9 @@ export class CardController extends Component {
                 // Flip face up
                 card.setFlipStatus(true);
                 this.SaveState.faceUpIndex = card.CardID; // this works because the card id IS the index
+                // While face up, cannot interact with it
+                let button : Button = card.getComponent("cc.Button") as Button;
+                button.interactable = false;
             } else if (this.NumSelectedCards > 1){
                 // By this point, two cards are selected
                 this.SaveState.faceUpIndex = -1;
@@ -186,6 +210,12 @@ export class CardController extends Component {
                     // Do delay, then flip both cards face down
                     this.CardSelectedQueue[0].setFlipStatus(false);
                     card.setFlipStatus(false);
+
+                    // Enable both buttons
+                    let button1 : Button = this.CardSelectedQueue[0].getComponent("cc.Button") as Button;
+                    button1.interactable = true;
+                    let button2 : Button = card.getComponent("cc.Button") as Button;
+                    button2.interactable = true;
                     
                 } else {
                     // Match

@@ -172,10 +172,10 @@
       "b": 0,
       "a": 255
     },
-    "_string": "button",
+    "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 26.38888888888889,
+    "_actualFontSize": 24.375,
     "_fontSize": 20,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
@@ -282,7 +282,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+      "__uuid__": "f19fcd8e-598f-40dd-9768-952e99996b2e@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -352,11 +352,11 @@
       "a": 255
     },
     "_normalSprite": {
-      "__uuid__": "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+      "__uuid__": "f19fcd8e-598f-40dd-9768-952e99996b2e@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_hoverSprite": {
-      "__uuid__": "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+      "__uuid__": "f20f4c8d-b589-4795-85a8-b8080709f1e3@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_pressedSprite": {

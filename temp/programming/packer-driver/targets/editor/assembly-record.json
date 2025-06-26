@@ -93,32 +93,6 @@
       },
       "timestamp": 1750838795471
     },
-    "a125d109f0b97243b4f1c9797caf34a7a511d0cf": {
-      "imports": {
-        "__unresolved_0": {
-          "resolved": {
-            "type": "chunk",
-            "id": "6a5019a719a9014c047e67aa1cf34453ab8392ce"
-          },
-          "messages": []
-        },
-        "__unresolved_1": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ff3268cab4d899bc2eaffe851cc9cdd01024ff62"
-          },
-          "messages": []
-        },
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1750842382771
-    },
     "8f4819b59b8ffda51714044ea8a800909441061d": {
       "imports": {
         "__unresolved_0": {
@@ -351,11 +325,23 @@
           "messages": []
         }
       },
-      "timestamp": 1750903928904
+      "timestamp": 1750910377485
     },
     "6a5019a719a9014c047e67aa1cf34453ab8392ce": {
       "imports": {},
-      "timestamp": 1750903928923
+      "timestamp": 1750910377502
+    },
+    "75f50742f94cd93512fd9cb4631ed6522e7fa6bb": {
+      "imports": {
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1750911440004
     },
     "6d8fd2b0177941b032ddc0733af48a561fb60657": {
       "imports": {
@@ -414,9 +400,16 @@
             "id": "8f4819b59b8ffda51714044ea8a800909441061d"
           },
           "messages": []
+        },
+        "__unresolved_8": {
+          "resolved": {
+            "type": "chunk",
+            "id": "75f50742f94cd93512fd9cb4631ed6522e7fa6bb"
+          },
+          "messages": []
         }
       },
-      "timestamp": 1750908264597
+      "timestamp": 1750913255628
     },
     "caec25bf9120a2b9bd628d467890152acaf01abe": {
       "imports": {
@@ -435,7 +428,33 @@
           "messages": []
         }
       },
-      "timestamp": 1750908264632
+      "timestamp": 1750913255659
+    },
+    "a125d109f0b97243b4f1c9797caf34a7a511d0cf": {
+      "imports": {
+        "__unresolved_0": {
+          "resolved": {
+            "type": "chunk",
+            "id": "6a5019a719a9014c047e67aa1cf34453ab8392ce"
+          },
+          "messages": []
+        },
+        "__unresolved_1": {
+          "resolved": {
+            "type": "chunk",
+            "id": "ff3268cab4d899bc2eaffe851cc9cdd01024ff62"
+          },
+          "messages": []
+        },
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1750913255672
     }
   },
   "entries": {
@@ -448,6 +467,7 @@
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts": "a125d109f0b97243b4f1c9797caf34a7a511d0cf",
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts": "9007ab4b72832a718a8bbabcded061842efed625",
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts": "ff3268cab4d899bc2eaffe851cc9cdd01024ff62",
-    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts": "8f4819b59b8ffda51714044ea8a800909441061d"
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts": "8f4819b59b8ffda51714044ea8a800909441061d",
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts": "75f50742f94cd93512fd9cb4631ed6522e7fa6bb"
   }
 }

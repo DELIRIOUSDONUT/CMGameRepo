@@ -60,7 +60,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
 
       _cclegacy._RF.push({}, "f1c9ceDbnpJlYYKLIBiBmbq", "CardController", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Layout', 'Node', 'Prefab', 'UITransform', 'Widget']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Layout', 'Node', 'Prefab', 'UITransform', 'Widget', 'Button']);
 
       __checkObsolete__(['CCInteger']);
 
@@ -100,16 +100,15 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             cards: [],
             faceUpIndex: -1,
             removedCards: [],
-            columnReq: 0
+            columnReq: 0,
+            numCards: 0
           };
           this.childCardHeight = void 0;
           this.childCardWidth = void 0;
           this.ColumnReq = void 0;
         }
 
-        onLoad() {
-          this.getCardSize();
-        }
+        onLoad() {}
 
         start() {
           // Get requirements for card sizes and columns
@@ -122,20 +121,27 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           if (localStorage.getItem("saveState")) {
             console.log("Fetched save data");
             this.SaveState = JSON.parse(localStorage.getItem("saveState"));
+            console.log("savedata: column req:" + this.SaveState.columnReq);
+            console.log("savedata numcards: " + this.SaveState.numCards);
+            console.log("savedata score: " + this.SaveState.score);
+            console.log("savedata combo: " + this.SaveState.combo);
 
             if (this.SaveState.columnReq != this.ColumnReq) {
-              console.log("Column req not met");
+              console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
               this.getCardSize();
             } else if (this.SaveState.cards.length != this.NumCards) {
-              console.log("Num cards not met");
+              console.log("Num cards not met", this.SaveState.cards.length, this.NumCards);
               this.getCardSize();
             } else {
-              // parse from here
+              console.log("Parse success");
+              console.log(this.SaveState.cards); // parse from here
+
               this.NumCards = this.SaveState.cards.length;
               this.ScoreCounter.Score = this.SaveState.score;
               this.ScoreCounter.ComboStreak = this.SaveState.combo;
+              this.ScoreCounter.sendUpdate();
 
-              for (let i = 0; i < this.NumCards; i++) {
+              for (let i = 0; i < this.SaveState.numCards; i++) {
                 const childCard = instantiate(this.CardPrefab);
                 let childTransform = childCard.getComponent("cc.UITransform");
                 childTransform.width = this.childCardWidth;
@@ -157,13 +163,25 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               this.setupCardMatchListener();
               return;
             }
-          } // First make sure that numcards is an even number (cant make pairs with odd num)
+          } // By this point, failed to load save data
 
+
+          this.SaveState = {
+            score: 0,
+            combo: 0,
+            cards: [],
+            faceUpIndex: -1,
+            removedCards: [],
+            columnReq: 0,
+            numCards: 0
+          };
+          this.SaveState.columnReq = this.ColumnReq; // First make sure that numcards is an even number (cant make pairs with odd num)
 
           if (this.NumCards % 2 != 0) {
             this.NumCards -= 1;
-          } // Get a random subset of card type pairs
+          }
 
+          this.SaveState.numCards = this.NumCards; // Get a random subset of card type pairs
 
           let shuffledTypes = this.getCardTypes(); // Instantiate all cards
 
@@ -222,6 +240,10 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               // Flip face up
               card.setFlipStatus(true);
               this.SaveState.faceUpIndex = card.CardID; // this works because the card id IS the index
+              // While face up, cannot interact with it
+
+              let button = card.getComponent("cc.Button");
+              button.interactable = false;
             } else if (this.NumSelectedCards > 1) {
               // By this point, two cards are selected
               this.SaveState.faceUpIndex = -1;
@@ -239,7 +261,12 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
                 this.SaveState.combo = 0; // Do delay, then flip both cards face down
 
                 this.CardSelectedQueue[0].setFlipStatus(false);
-                card.setFlipStatus(false);
+                card.setFlipStatus(false); // Enable both buttons
+
+                let button1 = this.CardSelectedQueue[0].getComponent("cc.Button");
+                button1.interactable = true;
+                let button2 = card.getComponent("cc.Button");
+                button2.interactable = true;
               } else {
                 // Match
                 // Do delay, then disable both cards from rendering

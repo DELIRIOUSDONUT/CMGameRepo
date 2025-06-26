@@ -23,7 +23,7 @@
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts": {
-      "time": 1750844452887.3022,
+      "time": 1750911023204.4116,
       "uuid": "a084bb39-5748-4c80-89af-05bd3c10b9eb"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
@@ -36,18 +36,11 @@
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.meta": {
       "time": 1750750846499.2942
     },
-    "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene": {
-      "time": 1750908754269.3352,
-      "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
-    },
-    "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene.meta": {
-      "time": 1750750979865.9514
-    },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.meta": {
       "time": 1750751745815.2346
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
-      "time": 1750908263824.6826,
+      "time": 1750913253721.4402,
       "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs.meta": {
@@ -61,7 +54,7 @@
       "time": 1750753307610.7861
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs/CardButton.prefab": {
-      "time": 1750844261808.87,
+      "time": 1750910612598.9224,
       "uuid": "c7737fb0-80a1-48ec-8c5a-575b2740fec1"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.meta": {
@@ -82,7 +75,7 @@
       "time": 1750833097406.5586
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts": {
-      "time": 1750842313112.9014,
+      "time": 1750913242369.843,
       "uuid": "5f684221-564d-4ce4-8d19-bb195065f271"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.meta": {
@@ -99,20 +92,892 @@
       "time": 1750843828286.94,
       "uuid": "7c8af5c5-16b3-4f9c-a023-a39dd638d72a"
     },
-    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites.meta": {
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.meta": {
+      "time": 1750911023205.978
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts": {
+      "time": 1750911356450.6519,
+      "uuid": "0975ccc7-52e8-4dd7-9df1-94154ad34d34"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources.meta": {
+      "time": 1750911457326.705
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources": {
+      "time": 1750911461242.0247,
+      "uuid": "ad369614-11de-463c-9a1e-4169b59498ba"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites.meta": {
       "time": 1750836368366.81
     },
-    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites": {
-      "time": 1750836739827.3076,
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards.meta": {
+      "time": 1750910287767.3374
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites": {
+      "time": 1750910287757.0977,
       "uuid": "e7b6cec2-545e-4fa9-86bb-bad97d65d2a7"
     },
-    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/istockphoto-1186585903-612x612.jpg.meta": {
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards": {
+      "time": 1750910287766.23,
+      "uuid": "f7b62435-a333-4da4-8031-b0b0c676dc7b"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue2.png.meta": {
+      "time": 1750910875709.1057
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue2.png": {
+      "time": 1750910287755.572,
+      "uuid": "5025b5fd-51f0-4fb1-88ca-7abd89f19db9"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue3.png.meta": {
+      "time": 1750910875719.0154
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue3.png": {
+      "time": 1750910287755.0076,
+      "uuid": "0ee6dfda-5ae5-487e-98f5-58ff09e8327f"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue4.png.meta": {
+      "time": 1750910875720.1118
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue4.png": {
+      "time": 1750910287754.5486,
+      "uuid": "112a4569-c60c-4e6e-9773-9ca7b147f9bb"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue1.png.meta": {
+      "time": 1750910875707.7776
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue1.png": {
+      "time": 1750910287756.0513,
+      "uuid": "562a20ce-4cf6-460c-858a-e25800ce3e46"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/istockphoto-1186585903-612x612.jpg.meta": {
       "time": 1750836983467.069
     },
-    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/istockphoto-1186585903-612x612.jpg": {
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/istockphoto-1186585903-612x612.jpg": {
       "time": 1750836725852.9446,
       "uuid": "52a40af8-2668-462d-8a42-61997c8a340e"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue5.png.meta": {
+      "time": 1750910875721.4824
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_blue5.png": {
+      "time": 1750910287754.033,
+      "uuid": "559a8b3a-34e9-4ffa-8e42-c498addabebd"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green1.png.meta": {
+      "time": 1750910875723.3516
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green1.png": {
+      "time": 1750910287753.511,
+      "uuid": "edad5597-ef35-48e8-926a-b6f70b3b7287"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green3.png.meta": {
+      "time": 1750910875725.2437
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green3.png": {
+      "time": 1750910287752.482,
+      "uuid": "daee6ef3-ae85-4d00-9cff-5889eb55e539"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green2.png.meta": {
+      "time": 1750910589744.831
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green2.png": {
+      "time": 1750910287753.0374,
+      "uuid": "f20f4c8d-b589-4795-85a8-b8080709f1e3"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green5.png.meta": {
+      "time": 1750910464943.4834
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green5.png": {
+      "time": 1750910287751.451,
+      "uuid": "2c2fe6c4-dbc4-4d9f-a080-e495879944fc"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green4.png.meta": {
+      "time": 1750910585809.1968
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_green4.png": {
+      "time": 1750910287752.0205,
+      "uuid": "f19fcd8e-598f-40dd-9768-952e99996b2e"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red2.png.meta": {
+      "time": 1750910875736.8577
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red2.png": {
+      "time": 1750910287750.4387,
+      "uuid": "c4201649-564f-4a8c-adf1-7292007a2f51"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red1.png.meta": {
+      "time": 1750910875736.2554
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red1.png": {
+      "time": 1750910287750.9868,
+      "uuid": "c11975d4-bd79-4c9f-834d-1173810fb96b"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red3.png.meta": {
+      "time": 1750910875738.0835
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red3.png": {
+      "time": 1750910287749.823,
+      "uuid": "9bfca180-5077-4a62-83c7-4136f03af7ea"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red4.png.meta": {
+      "time": 1750910875739.3076
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red4.png": {
+      "time": 1750910287749.295,
+      "uuid": "cd44d77c-0e68-4963-b3ea-2143dfa9d82c"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red5.png.meta": {
+      "time": 1750910875739.5833
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardBack_red5.png": {
+      "time": 1750910287748.6284,
+      "uuid": "2397e45a-ae5a-4b08-8a96-86afc6aac392"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs10.png.meta": {
+      "time": 1750910875687.0134
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs10.png": {
+      "time": 1750910287748.0854,
+      "uuid": "ca39b23c-a078-4091-a32b-eb3cf306a7af"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs2.png.meta": {
+      "time": 1750910875668.658
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs2.png": {
+      "time": 1750910287747.4597,
+      "uuid": "65210540-083a-43fa-b68c-257635fa9224"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs3.png.meta": {
+      "time": 1750910875670.23
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs3.png": {
+      "time": 1750910287746.8586,
+      "uuid": "600b13dc-413f-4990-bd65-ab34378cda56"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs4.png.meta": {
+      "time": 1750910875673.195
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs4.png": {
+      "time": 1750910287746.0098,
+      "uuid": "ee487ea4-9c65-4624-a116-3cd013714b8d"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs6.png.meta": {
+      "time": 1750910875674.3972
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs6.png": {
+      "time": 1750910287744.646,
+      "uuid": "0d7c0df0-ee32-448b-99de-79f662084a70"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs5.png.meta": {
+      "time": 1750910875672.105
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs5.png": {
+      "time": 1750910287745.4214,
+      "uuid": "c2b0c42d-2d7b-4ec8-bea2-447736f8d914"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs7.png.meta": {
+      "time": 1750910875684.2693
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs7.png": {
+      "time": 1750910287744.0923,
+      "uuid": "d5ef7741-f45e-4053-9cac-a74fb8ee528d"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs8.png.meta": {
+      "time": 1750910875685.7805
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs8.png": {
+      "time": 1750910287743.5637,
+      "uuid": "8311a760-766c-45fb-b619-d35912250591"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs9.png.meta": {
+      "time": 1750910875687.4827
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubs9.png": {
+      "time": 1750910287743.0017,
+      "uuid": "873bdcc1-114c-46d2-83a4-1aac5a351284"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsA.png.meta": {
+      "time": 1750910875687.8306
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsA.png": {
+      "time": 1750910287742.332,
+      "uuid": "eb2eda52-7e32-4eca-9131-5f00facd9a34"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsJ.png.meta": {
+      "time": 1750910875706.4805
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsJ.png": {
+      "time": 1750910287740.819,
+      "uuid": "198f8db8-e2e8-4eb0-b20b-147ed3d582a7"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsK.png.meta": {
+      "time": 1750910875705.2612
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsK.png": {
+      "time": 1750910287740.2292,
+      "uuid": "4d1796f4-63f2-4982-8061-3e6a2b933ed1"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsQ.png.meta": {
+      "time": 1750910875707.491
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardClubsQ.png": {
+      "time": 1750910287739.2554,
+      "uuid": "157261da-91d4-4887-92ac-50aa60df36bd"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds10.png.meta": {
+      "time": 1750910875638.1606
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds10.png": {
+      "time": 1750910287738.7056,
+      "uuid": "b28ff500-24d5-4a7a-9b82-f9b027f518c6"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds2.png.meta": {
+      "time": 1750910875607.7156
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds2.png": {
+      "time": 1750910287738.1506,
+      "uuid": "b40286bd-b2f6-47a0-91a9-1b766a34a744"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds3.png.meta": {
+      "time": 1750910875613.5188
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds3.png": {
+      "time": 1750910287737.5674,
+      "uuid": "9543860c-b81a-4bc8-9e62-2fb8a866dd08"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds4.png.meta": {
+      "time": 1750910875610.3093
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds4.png": {
+      "time": 1750910287737.0376,
+      "uuid": "dae1cb2f-df45-404f-85a9-1eee0cee3174"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds5.png.meta": {
+      "time": 1750910875612.0586
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds5.png": {
+      "time": 1750910287736.4465,
+      "uuid": "c1ecf96c-0aa4-4729-8027-31727ccf7638"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds6.png.meta": {
+      "time": 1750910875633.9126
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds6.png": {
+      "time": 1750910287735.7249,
+      "uuid": "fce3cdbc-2d0b-4d01-8dd2-61c65c9844ed"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds7.png.meta": {
+      "time": 1750910875635.1577
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds7.png": {
+      "time": 1750910287735.0713,
+      "uuid": "7bd72d7e-a041-4261-8e60-b76ee15eaa26"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds9.png.meta": {
+      "time": 1750910875636.9988
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds9.png": {
+      "time": 1750910287733.8213,
+      "uuid": "241c2ad1-c0f3-418f-ae4f-9a7da10a9b03"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds8.png.meta": {
+      "time": 1750910875632.3389
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamonds8.png": {
+      "time": 1750910287734.3962,
+      "uuid": "d32da593-e2f9-492f-9ace-2c3544384550"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsA.png.meta": {
+      "time": 1750910875648.6887
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsA.png": {
+      "time": 1750910287733.1719,
+      "uuid": "8397775a-d928-480f-986e-e964405ee7db"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsJ.png.meta": {
+      "time": 1750910875650.5852
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsJ.png": {
+      "time": 1750910287732.373,
+      "uuid": "4e3253cf-c2db-499c-8dab-9e2642f0a064"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsK.png.meta": {
+      "time": 1750910875651.5498
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsK.png": {
+      "time": 1750910287731.5813,
+      "uuid": "b46f64fd-630e-4b94-addb-0e1039583bba"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsQ.png.meta": {
+      "time": 1750910875654.526
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardDiamondsQ.png": {
+      "time": 1750910287730.758,
+      "uuid": "8a08d83c-49e9-4030-bdb1-a3496d9e6c16"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts2.png.meta": {
+      "time": 1750910875651.8887
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts2.png": {
+      "time": 1750910287729.0754,
+      "uuid": "3e74c1fb-c777-42f8-bede-539a78d133e9"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts10.png.meta": {
+      "time": 1750910875589.744
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts10.png": {
+      "time": 1750910287729.8623,
+      "uuid": "00679364-16de-49ef-a862-7bab1c88abff"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts3.png.meta": {
+      "time": 1750910875557.2117
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts3.png": {
+      "time": 1750910287728.501,
+      "uuid": "f63a464c-5959-4403-8245-1e534b4039ad"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts5.png.meta": {
+      "time": 1750910875568.9312
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts5.png": {
+      "time": 1750910287727.3318,
+      "uuid": "86ce14cd-4718-4420-80b4-d946c3529949"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts6.png.meta": {
+      "time": 1750910875572.1785
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts6.png": {
+      "time": 1750910287726.7961,
+      "uuid": "0c913aa1-5ded-4251-b729-43a355c91df4"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts4.png.meta": {
+      "time": 1750910875557.8293
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts4.png": {
+      "time": 1750910287727.8752,
+      "uuid": "9b9cb0a7-ea98-4065-9157-ba919c56d7b8"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts7.png.meta": {
+      "time": 1750910875570.5996
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts7.png": {
+      "time": 1750910287726.2756,
+      "uuid": "98b9d641-3cae-499a-ac49-e8b9204924a7"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts8.png.meta": {
+      "time": 1750910875572.7576
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts8.png": {
+      "time": 1750910287725.6843,
+      "uuid": "371b4ec3-baca-4a06-ad1b-34cead60ea56"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts9.png.meta": {
+      "time": 1750910875574.7332
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHearts9.png": {
+      "time": 1750910287725.0945,
+      "uuid": "ec1ce90c-000f-40bd-bd9b-73ba477c7721"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsJ.png.meta": {
+      "time": 1750910875591.9746
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsJ.png": {
+      "time": 1750910287723.9321,
+      "uuid": "e4bb883f-4391-4ef8-b6d0-acd7a93f78a8"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsA.png.meta": {
+      "time": 1750910875591.2837
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsA.png": {
+      "time": 1750910287724.4934,
+      "uuid": "780de4a7-c3ee-4b4c-816d-063327c84b30"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsK.png.meta": {
+      "time": 1750910875592.297
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsK.png": {
+      "time": 1750910287723.3374,
+      "uuid": "1ccf3551-77f4-41fd-98c8-fc6ac6707361"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsQ.png.meta": {
+      "time": 1750910875591.6147
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardHeartsQ.png": {
+      "time": 1750910287722.764,
+      "uuid": "34147743-038f-4d60-b8d1-2860ea1ab10a"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardJoker.png.meta": {
+      "time": 1750910875609.0327
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardJoker.png": {
+      "time": 1750910287722.194,
+      "uuid": "80c53a3a-e12f-4444-9aa0-0787e294a6a1"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades2.png.meta": {
+      "time": 1750910875527.5012
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades2.png": {
+      "time": 1750910287721.0823,
+      "uuid": "a7773aef-82f4-4800-8499-ff73076d55bd"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades3.png.meta": {
+      "time": 1750910875525.1316
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades3.png": {
+      "time": 1750910287720.5269,
+      "uuid": "45556e29-e3f6-494f-a97d-f72ce399a231"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades10.png.meta": {
+      "time": 1750910875545.1545
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades10.png": {
+      "time": 1750910287721.664,
+      "uuid": "96ecca95-972b-4be1-9077-9d72576d726a"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades4.png.meta": {
+      "time": 1750910875528.9177
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades4.png": {
+      "time": 1750910287719.9148,
+      "uuid": "090d78eb-4cbe-40ca-afbe-a7048aac4881"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades7.png.meta": {
+      "time": 1750910875540.0662
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades7.png": {
+      "time": 1750910287718.2207,
+      "uuid": "6b95011e-7eb4-4e15-b97f-2160e1a3292d"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades5.png.meta": {
+      "time": 1750910875529.335
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades5.png": {
+      "time": 1750910287719.3628,
+      "uuid": "47ceaabc-bc0f-4afe-9e98-21b9dc41251e"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades8.png.meta": {
+      "time": 1750910875540.4736
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades8.png": {
+      "time": 1750910287717.3896,
+      "uuid": "93021377-9316-4a13-a67c-cf4fbf0da3ab"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades6.png.meta": {
+      "time": 1750910875525.5537
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades6.png": {
+      "time": 1750910287718.8137,
+      "uuid": "41e64bfb-8806-494e-9513-19839d1b6436"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades9.png.meta": {
+      "time": 1750910875542.0159
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpades9.png": {
+      "time": 1750910287716.5583,
+      "uuid": "a1f6cf4a-2324-47ea-9946-73f59355c716"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesA.png.meta": {
+      "time": 1750910875545.9277
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesA.png": {
+      "time": 1750910287715.8425,
+      "uuid": "9def5ba0-3e6d-49cb-8395-c5ef3cdc25a5"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesJ.png.meta": {
+      "time": 1750910875553.16
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesJ.png": {
+      "time": 1750910287715.1606,
+      "uuid": "df3cdc08-9db9-4682-9ae1-8318cd9549e9"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesQ.png.meta": {
+      "time": 1750910875554.1853
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesQ.png": {
+      "time": 1750910287713.4355,
+      "uuid": "c7112c77-8e17-4d96-a7a2-ad51edebe842"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesK.png.meta": {
+      "time": 1750910875555.6082
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Resources/Sprites/Cards/cardSpadesK.png": {
+      "time": 1750910287714.4255,
+      "uuid": "d1adbfb0-3bb4-4c0e-ab01-e2d23a842f07"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes.meta": {
+      "time": 1750911472913.0757
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes": {
+      "time": 1750911477044.8457,
+      "uuid": "9d3a64da-f00f-4731-aafc-5c48967501ab"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes/MainGameScene.scene.meta": {
+      "time": 1750750979865.9514
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes/MainGameScene.scene": {
+      "time": 1750912941695.609,
+      "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     }
   },
-  "missing": {}
+  "missing": {
+    "e7b6cec2-545e-4fa9-86bb-bad97d65d2a7": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites",
+      "time": 1750910287757.0977,
+      "removeTime": 1750911461243
+    },
+    "f7b62435-a333-4da4-8031-b0b0c676dc7b": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards",
+      "time": 1750910287766.23,
+      "removeTime": 1750911461244
+    },
+    "52a40af8-2668-462d-8a42-61997c8a340e": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/istockphoto-1186585903-612x612.jpg",
+      "time": 1750836725852.9446,
+      "removeTime": 1750911461244
+    },
+    "562a20ce-4cf6-460c-858a-e25800ce3e46": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_blue1.png",
+      "time": 1750910287756.0513,
+      "removeTime": 1750911461245
+    },
+    "5025b5fd-51f0-4fb1-88ca-7abd89f19db9": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_blue2.png",
+      "time": 1750910287755.572,
+      "removeTime": 1750911461245
+    },
+    "0ee6dfda-5ae5-487e-98f5-58ff09e8327f": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_blue3.png",
+      "time": 1750910287755.0076,
+      "removeTime": 1750911461246
+    },
+    "112a4569-c60c-4e6e-9773-9ca7b147f9bb": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_blue4.png",
+      "time": 1750910287754.5486,
+      "removeTime": 1750911461246
+    },
+    "559a8b3a-34e9-4ffa-8e42-c498addabebd": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_blue5.png",
+      "time": 1750910287754.033,
+      "removeTime": 1750911461246
+    },
+    "edad5597-ef35-48e8-926a-b6f70b3b7287": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_green1.png",
+      "time": 1750910287753.511,
+      "removeTime": 1750911461247
+    },
+    "f20f4c8d-b589-4795-85a8-b8080709f1e3": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_green2.png",
+      "time": 1750910287753.0374,
+      "removeTime": 1750911461247
+    },
+    "daee6ef3-ae85-4d00-9cff-5889eb55e539": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_green3.png",
+      "time": 1750910287752.482,
+      "removeTime": 1750911461248
+    },
+    "f19fcd8e-598f-40dd-9768-952e99996b2e": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_green4.png",
+      "time": 1750910287752.0205,
+      "removeTime": 1750911461248
+    },
+    "2c2fe6c4-dbc4-4d9f-a080-e495879944fc": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_green5.png",
+      "time": 1750910287751.451,
+      "removeTime": 1750911461248
+    },
+    "c11975d4-bd79-4c9f-834d-1173810fb96b": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_red1.png",
+      "time": 1750910287750.9868,
+      "removeTime": 1750911461249
+    },
+    "c4201649-564f-4a8c-adf1-7292007a2f51": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_red2.png",
+      "time": 1750910287750.4387,
+      "removeTime": 1750911461249
+    },
+    "9bfca180-5077-4a62-83c7-4136f03af7ea": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_red3.png",
+      "time": 1750910287749.823,
+      "removeTime": 1750911461249
+    },
+    "cd44d77c-0e68-4963-b3ea-2143dfa9d82c": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_red4.png",
+      "time": 1750910287749.295,
+      "removeTime": 1750911461250
+    },
+    "2397e45a-ae5a-4b08-8a96-86afc6aac392": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardBack_red5.png",
+      "time": 1750910287748.6284,
+      "removeTime": 1750911461250
+    },
+    "ca39b23c-a078-4091-a32b-eb3cf306a7af": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs10.png",
+      "time": 1750910287748.0854,
+      "removeTime": 1750911461250
+    },
+    "65210540-083a-43fa-b68c-257635fa9224": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs2.png",
+      "time": 1750910287747.4597,
+      "removeTime": 1750911461251
+    },
+    "600b13dc-413f-4990-bd65-ab34378cda56": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs3.png",
+      "time": 1750910287746.8586,
+      "removeTime": 1750911461251
+    },
+    "ee487ea4-9c65-4624-a116-3cd013714b8d": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs4.png",
+      "time": 1750910287746.0098,
+      "removeTime": 1750911461252
+    },
+    "c2b0c42d-2d7b-4ec8-bea2-447736f8d914": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs5.png",
+      "time": 1750910287745.4214,
+      "removeTime": 1750911461252
+    },
+    "0d7c0df0-ee32-448b-99de-79f662084a70": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs6.png",
+      "time": 1750910287744.646,
+      "removeTime": 1750911461252
+    },
+    "d5ef7741-f45e-4053-9cac-a74fb8ee528d": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs7.png",
+      "time": 1750910287744.0923,
+      "removeTime": 1750911461253
+    },
+    "8311a760-766c-45fb-b619-d35912250591": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs8.png",
+      "time": 1750910287743.5637,
+      "removeTime": 1750911461253
+    },
+    "873bdcc1-114c-46d2-83a4-1aac5a351284": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubs9.png",
+      "time": 1750910287743.0017,
+      "removeTime": 1750911461253
+    },
+    "eb2eda52-7e32-4eca-9131-5f00facd9a34": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubsA.png",
+      "time": 1750910287742.332,
+      "removeTime": 1750911461254
+    },
+    "198f8db8-e2e8-4eb0-b20b-147ed3d582a7": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubsJ.png",
+      "time": 1750910287740.819,
+      "removeTime": 1750911461255
+    },
+    "4d1796f4-63f2-4982-8061-3e6a2b933ed1": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubsK.png",
+      "time": 1750910287740.2292,
+      "removeTime": 1750911461255
+    },
+    "157261da-91d4-4887-92ac-50aa60df36bd": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardClubsQ.png",
+      "time": 1750910287739.2554,
+      "removeTime": 1750911461255
+    },
+    "b28ff500-24d5-4a7a-9b82-f9b027f518c6": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds10.png",
+      "time": 1750910287738.7056,
+      "removeTime": 1750911461255
+    },
+    "b40286bd-b2f6-47a0-91a9-1b766a34a744": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds2.png",
+      "time": 1750910287738.1506,
+      "removeTime": 1750911461256
+    },
+    "9543860c-b81a-4bc8-9e62-2fb8a866dd08": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds3.png",
+      "time": 1750910287737.5674,
+      "removeTime": 1750911461256
+    },
+    "dae1cb2f-df45-404f-85a9-1eee0cee3174": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds4.png",
+      "time": 1750910287737.0376,
+      "removeTime": 1750911461256
+    },
+    "c1ecf96c-0aa4-4729-8027-31727ccf7638": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds5.png",
+      "time": 1750910287736.4465,
+      "removeTime": 1750911461256
+    },
+    "fce3cdbc-2d0b-4d01-8dd2-61c65c9844ed": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds6.png",
+      "time": 1750910287735.7249,
+      "removeTime": 1750911461257
+    },
+    "7bd72d7e-a041-4261-8e60-b76ee15eaa26": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds7.png",
+      "time": 1750910287735.0713,
+      "removeTime": 1750911461257
+    },
+    "d32da593-e2f9-492f-9ace-2c3544384550": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds8.png",
+      "time": 1750910287734.3962,
+      "removeTime": 1750911461257
+    },
+    "241c2ad1-c0f3-418f-ae4f-9a7da10a9b03": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamonds9.png",
+      "time": 1750910287733.8213,
+      "removeTime": 1750911461257
+    },
+    "8397775a-d928-480f-986e-e964405ee7db": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamondsA.png",
+      "time": 1750910287733.1719,
+      "removeTime": 1750911461258
+    },
+    "4e3253cf-c2db-499c-8dab-9e2642f0a064": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamondsJ.png",
+      "time": 1750910287732.373,
+      "removeTime": 1750911461258
+    },
+    "b46f64fd-630e-4b94-addb-0e1039583bba": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamondsK.png",
+      "time": 1750910287731.5813,
+      "removeTime": 1750911461258
+    },
+    "8a08d83c-49e9-4030-bdb1-a3496d9e6c16": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardDiamondsQ.png",
+      "time": 1750910287730.758,
+      "removeTime": 1750911461258
+    },
+    "00679364-16de-49ef-a862-7bab1c88abff": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts10.png",
+      "time": 1750910287729.8623,
+      "removeTime": 1750911461259
+    },
+    "3e74c1fb-c777-42f8-bede-539a78d133e9": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts2.png",
+      "time": 1750910287729.0754,
+      "removeTime": 1750911461259
+    },
+    "f63a464c-5959-4403-8245-1e534b4039ad": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts3.png",
+      "time": 1750910287728.501,
+      "removeTime": 1750911461259
+    },
+    "9b9cb0a7-ea98-4065-9157-ba919c56d7b8": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts4.png",
+      "time": 1750910287727.8752,
+      "removeTime": 1750911461259
+    },
+    "86ce14cd-4718-4420-80b4-d946c3529949": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts5.png",
+      "time": 1750910287727.3318,
+      "removeTime": 1750911461260
+    },
+    "0c913aa1-5ded-4251-b729-43a355c91df4": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts6.png",
+      "time": 1750910287726.7961,
+      "removeTime": 1750911461260
+    },
+    "98b9d641-3cae-499a-ac49-e8b9204924a7": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts7.png",
+      "time": 1750910287726.2756,
+      "removeTime": 1750911461260
+    },
+    "371b4ec3-baca-4a06-ad1b-34cead60ea56": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts8.png",
+      "time": 1750910287725.6843,
+      "removeTime": 1750911461260
+    },
+    "ec1ce90c-000f-40bd-bd9b-73ba477c7721": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHearts9.png",
+      "time": 1750910287725.0945,
+      "removeTime": 1750911461260
+    },
+    "780de4a7-c3ee-4b4c-816d-063327c84b30": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHeartsA.png",
+      "time": 1750910287724.4934,
+      "removeTime": 1750911461261
+    },
+    "e4bb883f-4391-4ef8-b6d0-acd7a93f78a8": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHeartsJ.png",
+      "time": 1750910287723.9321,
+      "removeTime": 1750911461261
+    },
+    "1ccf3551-77f4-41fd-98c8-fc6ac6707361": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHeartsK.png",
+      "time": 1750910287723.3374,
+      "removeTime": 1750911461261
+    },
+    "34147743-038f-4d60-b8d1-2860ea1ab10a": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardHeartsQ.png",
+      "time": 1750910287722.764,
+      "removeTime": 1750911461261
+    },
+    "80c53a3a-e12f-4444-9aa0-0787e294a6a1": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardJoker.png",
+      "time": 1750910287722.194,
+      "removeTime": 1750911461261
+    },
+    "96ecca95-972b-4be1-9077-9d72576d726a": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades10.png",
+      "time": 1750910287721.664,
+      "removeTime": 1750911461262
+    },
+    "a7773aef-82f4-4800-8499-ff73076d55bd": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades2.png",
+      "time": 1750910287721.0823,
+      "removeTime": 1750911461262
+    },
+    "45556e29-e3f6-494f-a97d-f72ce399a231": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades3.png",
+      "time": 1750910287720.5269,
+      "removeTime": 1750911461262
+    },
+    "090d78eb-4cbe-40ca-afbe-a7048aac4881": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades4.png",
+      "time": 1750910287719.9148,
+      "removeTime": 1750911461262
+    },
+    "47ceaabc-bc0f-4afe-9e98-21b9dc41251e": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades5.png",
+      "time": 1750910287719.3628,
+      "removeTime": 1750911461262
+    },
+    "41e64bfb-8806-494e-9513-19839d1b6436": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades6.png",
+      "time": 1750910287718.8137,
+      "removeTime": 1750911461263
+    },
+    "6b95011e-7eb4-4e15-b97f-2160e1a3292d": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades7.png",
+      "time": 1750910287718.2207,
+      "removeTime": 1750911461263
+    },
+    "93021377-9316-4a13-a67c-cf4fbf0da3ab": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades8.png",
+      "time": 1750910287717.3896,
+      "removeTime": 1750911461263
+    },
+    "a1f6cf4a-2324-47ea-9946-73f59355c716": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpades9.png",
+      "time": 1750910287716.5583,
+      "removeTime": 1750911461263
+    },
+    "9def5ba0-3e6d-49cb-8395-c5ef3cdc25a5": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpadesA.png",
+      "time": 1750910287715.8425,
+      "removeTime": 1750911461263
+    },
+    "df3cdc08-9db9-4682-9ae1-8318cd9549e9": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpadesJ.png",
+      "time": 1750910287715.1606,
+      "removeTime": 1750911461264
+    },
+    "d1adbfb0-3bb4-4c0e-ab01-e2d23a842f07": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpadesK.png",
+      "time": 1750910287714.4255,
+      "removeTime": 1750911461264
+    },
+    "c7112c77-8e17-4d96-a7a2-ad51edebe842": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Sprites/Cards/cardSpadesQ.png",
+      "time": 1750910287713.4355,
+      "removeTime": 1750911461264
+    },
+    "29ba28d9-1244-421a-be48-36a95eb85582": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene",
+      "time": 1750910362184.0044,
+      "removeTime": 1750911477045
+    }
+  }
 }

@@ -10,7 +10,7 @@
     "versionCode": 1
   },
   "29ba28d9-1244-421a-be48-36a95eb85582": {
-    "url": "db://assets/MainGameScene.scene",
+    "url": "db://assets/Scenes/MainGameScene.scene",
     "value": {
       "depends": [
         "29ba28d9-1244-421a-be48-36a95eb85582",
@@ -40,7 +40,8 @@
     "url": "db://assets/Prefabs/CardButton.prefab",
     "value": {
       "depends": [
-        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "f19fcd8e-598f-40dd-9768-952e99996b2e@f9941",
+        "f20f4c8d-b589-4795-85a8-b8080709f1e3@f9941",
         "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
         "951249e0-9f16-456d-8b85-a6ca954da16b@f9941"
       ],
@@ -76,19 +77,19 @@
     "versionCode": 1
   },
   "e7b6cec2-545e-4fa9-86bb-bad97d65d2a7": {
-    "url": "db://assets/Sprites",
+    "url": "db://assets/Resources/Sprites",
     "value": {},
     "versionCode": 1
   },
   "52a40af8-2668-462d-8a42-61997c8a340e": {
-    "url": "db://assets/Sprites/istockphoto-1186585903-612x612.jpg",
+    "url": "db://assets/Resources/Sprites/istockphoto-1186585903-612x612.jpg",
     "value": {
       "depends": []
     },
     "versionCode": 1
   },
   "52a40af8-2668-462d-8a42-61997c8a340e@6c48a": {
-    "url": "db://assets/Sprites/istockphoto-1186585903-612x612.jpg@6c48a",
+    "url": "db://assets/Resources/Sprites/istockphoto-1186585903-612x612.jpg@6c48a",
     "value": {
       "depends": [
         "52a40af8-2668-462d-8a42-61997c8a340e"
@@ -97,12 +98,1732 @@
     "versionCode": 1
   },
   "52a40af8-2668-462d-8a42-61997c8a340e@f9941": {
-    "url": "db://assets/Sprites/istockphoto-1186585903-612x612.jpg@f9941",
+    "url": "db://assets/Resources/Sprites/istockphoto-1186585903-612x612.jpg@f9941",
     "value": {
       "depends": [
         "52a40af8-2668-462d-8a42-61997c8a340e@6c48a"
       ]
     },
+    "versionCode": 1
+  },
+  "562a20ce-4cf6-460c-858a-e25800ce3e46": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue1.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5025b5fd-51f0-4fb1-88ca-7abd89f19db9": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0ee6dfda-5ae5-487e-98f5-58ff09e8327f": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "112a4569-c60c-4e6e-9773-9ca7b147f9bb": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f7b62435-a333-4da4-8031-b0b0c676dc7b": {
+    "url": "db://assets/Resources/Sprites/Cards",
+    "value": {},
+    "versionCode": 1
+  },
+  "559a8b3a-34e9-4ffa-8e42-c498addabebd": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0ee6dfda-5ae5-487e-98f5-58ff09e8327f@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue3.png@6c48a",
+    "value": {
+      "depends": [
+        "0ee6dfda-5ae5-487e-98f5-58ff09e8327f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "edad5597-ef35-48e8-926a-b6f70b3b7287": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green1.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "112a4569-c60c-4e6e-9773-9ca7b147f9bb@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue4.png@6c48a",
+    "value": {
+      "depends": [
+        "112a4569-c60c-4e6e-9773-9ca7b147f9bb"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f20f4c8d-b589-4795-85a8-b8080709f1e3": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "562a20ce-4cf6-460c-858a-e25800ce3e46@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue1.png@6c48a",
+    "value": {
+      "depends": [
+        "562a20ce-4cf6-460c-858a-e25800ce3e46"
+      ]
+    },
+    "versionCode": 1
+  },
+  "daee6ef3-ae85-4d00-9cff-5889eb55e539": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5025b5fd-51f0-4fb1-88ca-7abd89f19db9@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue2.png@6c48a",
+    "value": {
+      "depends": [
+        "5025b5fd-51f0-4fb1-88ca-7abd89f19db9"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f19fcd8e-598f-40dd-9768-952e99996b2e": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "559a8b3a-34e9-4ffa-8e42-c498addabebd@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue5.png@6c48a",
+    "value": {
+      "depends": [
+        "559a8b3a-34e9-4ffa-8e42-c498addabebd"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2c2fe6c4-dbc4-4d9f-a080-e495879944fc": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "edad5597-ef35-48e8-926a-b6f70b3b7287@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green1.png@6c48a",
+    "value": {
+      "depends": [
+        "edad5597-ef35-48e8-926a-b6f70b3b7287"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c11975d4-bd79-4c9f-834d-1173810fb96b": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red1.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f20f4c8d-b589-4795-85a8-b8080709f1e3@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green2.png@6c48a",
+    "value": {
+      "depends": [
+        "f20f4c8d-b589-4795-85a8-b8080709f1e3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c4201649-564f-4a8c-adf1-7292007a2f51": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "daee6ef3-ae85-4d00-9cff-5889eb55e539@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green3.png@6c48a",
+    "value": {
+      "depends": [
+        "daee6ef3-ae85-4d00-9cff-5889eb55e539"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9bfca180-5077-4a62-83c7-4136f03af7ea": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f19fcd8e-598f-40dd-9768-952e99996b2e@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green4.png@6c48a",
+    "value": {
+      "depends": [
+        "f19fcd8e-598f-40dd-9768-952e99996b2e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cd44d77c-0e68-4963-b3ea-2143dfa9d82c": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "2c2fe6c4-dbc4-4d9f-a080-e495879944fc@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green5.png@6c48a",
+    "value": {
+      "depends": [
+        "2c2fe6c4-dbc4-4d9f-a080-e495879944fc"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2397e45a-ae5a-4b08-8a96-86afc6aac392": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c11975d4-bd79-4c9f-834d-1173810fb96b@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red1.png@6c48a",
+    "value": {
+      "depends": [
+        "c11975d4-bd79-4c9f-834d-1173810fb96b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ca39b23c-a078-4091-a32b-eb3cf306a7af": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs10.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c4201649-564f-4a8c-adf1-7292007a2f51@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red2.png@6c48a",
+    "value": {
+      "depends": [
+        "c4201649-564f-4a8c-adf1-7292007a2f51"
+      ]
+    },
+    "versionCode": 1
+  },
+  "65210540-083a-43fa-b68c-257635fa9224": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9bfca180-5077-4a62-83c7-4136f03af7ea@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red3.png@6c48a",
+    "value": {
+      "depends": [
+        "9bfca180-5077-4a62-83c7-4136f03af7ea"
+      ]
+    },
+    "versionCode": 1
+  },
+  "600b13dc-413f-4990-bd65-ab34378cda56": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "cd44d77c-0e68-4963-b3ea-2143dfa9d82c@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red4.png@6c48a",
+    "value": {
+      "depends": [
+        "cd44d77c-0e68-4963-b3ea-2143dfa9d82c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ee487ea4-9c65-4624-a116-3cd013714b8d": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "2397e45a-ae5a-4b08-8a96-86afc6aac392@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red5.png@6c48a",
+    "value": {
+      "depends": [
+        "2397e45a-ae5a-4b08-8a96-86afc6aac392"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c2b0c42d-2d7b-4ec8-bea2-447736f8d914": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ca39b23c-a078-4091-a32b-eb3cf306a7af@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs10.png@6c48a",
+    "value": {
+      "depends": [
+        "ca39b23c-a078-4091-a32b-eb3cf306a7af"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0d7c0df0-ee32-448b-99de-79f662084a70": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs6.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "65210540-083a-43fa-b68c-257635fa9224@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs2.png@6c48a",
+    "value": {
+      "depends": [
+        "65210540-083a-43fa-b68c-257635fa9224"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d5ef7741-f45e-4053-9cac-a74fb8ee528d": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs7.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "600b13dc-413f-4990-bd65-ab34378cda56@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs3.png@6c48a",
+    "value": {
+      "depends": [
+        "600b13dc-413f-4990-bd65-ab34378cda56"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8311a760-766c-45fb-b619-d35912250591": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs8.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c2b0c42d-2d7b-4ec8-bea2-447736f8d914@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs5.png@6c48a",
+    "value": {
+      "depends": [
+        "c2b0c42d-2d7b-4ec8-bea2-447736f8d914"
+      ]
+    },
+    "versionCode": 1
+  },
+  "873bdcc1-114c-46d2-83a4-1aac5a351284": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs9.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ee487ea4-9c65-4624-a116-3cd013714b8d@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs4.png@6c48a",
+    "value": {
+      "depends": [
+        "ee487ea4-9c65-4624-a116-3cd013714b8d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "eb2eda52-7e32-4eca-9131-5f00facd9a34": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsA.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0d7c0df0-ee32-448b-99de-79f662084a70@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs6.png@6c48a",
+    "value": {
+      "depends": [
+        "0d7c0df0-ee32-448b-99de-79f662084a70"
+      ]
+    },
+    "versionCode": 1
+  },
+  "198f8db8-e2e8-4eb0-b20b-147ed3d582a7": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsJ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d5ef7741-f45e-4053-9cac-a74fb8ee528d@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs7.png@6c48a",
+    "value": {
+      "depends": [
+        "d5ef7741-f45e-4053-9cac-a74fb8ee528d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4d1796f4-63f2-4982-8061-3e6a2b933ed1": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsK.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "873bdcc1-114c-46d2-83a4-1aac5a351284@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs9.png@6c48a",
+    "value": {
+      "depends": [
+        "873bdcc1-114c-46d2-83a4-1aac5a351284"
+      ]
+    },
+    "versionCode": 1
+  },
+  "eb2eda52-7e32-4eca-9131-5f00facd9a34@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsA.png@6c48a",
+    "value": {
+      "depends": [
+        "eb2eda52-7e32-4eca-9131-5f00facd9a34"
+      ]
+    },
+    "versionCode": 1
+  },
+  "157261da-91d4-4887-92ac-50aa60df36bd": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsQ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "b28ff500-24d5-4a7a-9b82-f9b027f518c6": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds10.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8311a760-766c-45fb-b619-d35912250591@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs8.png@6c48a",
+    "value": {
+      "depends": [
+        "8311a760-766c-45fb-b619-d35912250591"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b40286bd-b2f6-47a0-91a9-1b766a34a744": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "198f8db8-e2e8-4eb0-b20b-147ed3d582a7@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsJ.png@6c48a",
+    "value": {
+      "depends": [
+        "198f8db8-e2e8-4eb0-b20b-147ed3d582a7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9543860c-b81a-4bc8-9e62-2fb8a866dd08": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4d1796f4-63f2-4982-8061-3e6a2b933ed1@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsK.png@6c48a",
+    "value": {
+      "depends": [
+        "4d1796f4-63f2-4982-8061-3e6a2b933ed1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dae1cb2f-df45-404f-85a9-1eee0cee3174": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "157261da-91d4-4887-92ac-50aa60df36bd@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsQ.png@6c48a",
+    "value": {
+      "depends": [
+        "157261da-91d4-4887-92ac-50aa60df36bd"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c1ecf96c-0aa4-4729-8027-31727ccf7638": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "b28ff500-24d5-4a7a-9b82-f9b027f518c6@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds10.png@6c48a",
+    "value": {
+      "depends": [
+        "b28ff500-24d5-4a7a-9b82-f9b027f518c6"
+      ]
+    },
+    "versionCode": 1
+  },
+  "fce3cdbc-2d0b-4d01-8dd2-61c65c9844ed": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds6.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "b40286bd-b2f6-47a0-91a9-1b766a34a744@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds2.png@6c48a",
+    "value": {
+      "depends": [
+        "b40286bd-b2f6-47a0-91a9-1b766a34a744"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7bd72d7e-a041-4261-8e60-b76ee15eaa26": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds7.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9543860c-b81a-4bc8-9e62-2fb8a866dd08@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds3.png@6c48a",
+    "value": {
+      "depends": [
+        "9543860c-b81a-4bc8-9e62-2fb8a866dd08"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d32da593-e2f9-492f-9ace-2c3544384550": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds8.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "dae1cb2f-df45-404f-85a9-1eee0cee3174@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds4.png@6c48a",
+    "value": {
+      "depends": [
+        "dae1cb2f-df45-404f-85a9-1eee0cee3174"
+      ]
+    },
+    "versionCode": 1
+  },
+  "241c2ad1-c0f3-418f-ae4f-9a7da10a9b03": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds9.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c1ecf96c-0aa4-4729-8027-31727ccf7638@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds5.png@6c48a",
+    "value": {
+      "depends": [
+        "c1ecf96c-0aa4-4729-8027-31727ccf7638"
+      ]
+    },
+    "versionCode": 1
+  },
+  "fce3cdbc-2d0b-4d01-8dd2-61c65c9844ed@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds6.png@6c48a",
+    "value": {
+      "depends": [
+        "fce3cdbc-2d0b-4d01-8dd2-61c65c9844ed"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8397775a-d928-480f-986e-e964405ee7db": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsA.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4e3253cf-c2db-499c-8dab-9e2642f0a064": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsJ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "7bd72d7e-a041-4261-8e60-b76ee15eaa26@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds7.png@6c48a",
+    "value": {
+      "depends": [
+        "7bd72d7e-a041-4261-8e60-b76ee15eaa26"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b46f64fd-630e-4b94-addb-0e1039583bba": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsK.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "241c2ad1-c0f3-418f-ae4f-9a7da10a9b03@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds9.png@6c48a",
+    "value": {
+      "depends": [
+        "241c2ad1-c0f3-418f-ae4f-9a7da10a9b03"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d32da593-e2f9-492f-9ace-2c3544384550@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds8.png@6c48a",
+    "value": {
+      "depends": [
+        "d32da593-e2f9-492f-9ace-2c3544384550"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8a08d83c-49e9-4030-bdb1-a3496d9e6c16": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsQ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "00679364-16de-49ef-a862-7bab1c88abff": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts10.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8397775a-d928-480f-986e-e964405ee7db@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsA.png@6c48a",
+    "value": {
+      "depends": [
+        "8397775a-d928-480f-986e-e964405ee7db"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3e74c1fb-c777-42f8-bede-539a78d133e9": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "b46f64fd-630e-4b94-addb-0e1039583bba@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsK.png@6c48a",
+    "value": {
+      "depends": [
+        "b46f64fd-630e-4b94-addb-0e1039583bba"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f63a464c-5959-4403-8245-1e534b4039ad": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4e3253cf-c2db-499c-8dab-9e2642f0a064@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsJ.png@6c48a",
+    "value": {
+      "depends": [
+        "4e3253cf-c2db-499c-8dab-9e2642f0a064"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9b9cb0a7-ea98-4065-9157-ba919c56d7b8": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "00679364-16de-49ef-a862-7bab1c88abff@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts10.png@6c48a",
+    "value": {
+      "depends": [
+        "00679364-16de-49ef-a862-7bab1c88abff"
+      ]
+    },
+    "versionCode": 1
+  },
+  "86ce14cd-4718-4420-80b4-d946c3529949": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8a08d83c-49e9-4030-bdb1-a3496d9e6c16@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsQ.png@6c48a",
+    "value": {
+      "depends": [
+        "8a08d83c-49e9-4030-bdb1-a3496d9e6c16"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0c913aa1-5ded-4251-b729-43a355c91df4": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts6.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3e74c1fb-c777-42f8-bede-539a78d133e9@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts2.png@6c48a",
+    "value": {
+      "depends": [
+        "3e74c1fb-c777-42f8-bede-539a78d133e9"
+      ]
+    },
+    "versionCode": 1
+  },
+  "98b9d641-3cae-499a-ac49-e8b9204924a7": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts7.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9b9cb0a7-ea98-4065-9157-ba919c56d7b8@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts4.png@6c48a",
+    "value": {
+      "depends": [
+        "9b9cb0a7-ea98-4065-9157-ba919c56d7b8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f63a464c-5959-4403-8245-1e534b4039ad@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts3.png@6c48a",
+    "value": {
+      "depends": [
+        "f63a464c-5959-4403-8245-1e534b4039ad"
+      ]
+    },
+    "versionCode": 1
+  },
+  "371b4ec3-baca-4a06-ad1b-34cead60ea56": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts8.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ec1ce90c-000f-40bd-bd9b-73ba477c7721": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts9.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "86ce14cd-4718-4420-80b4-d946c3529949@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts5.png@6c48a",
+    "value": {
+      "depends": [
+        "86ce14cd-4718-4420-80b4-d946c3529949"
+      ]
+    },
+    "versionCode": 1
+  },
+  "780de4a7-c3ee-4b4c-816d-063327c84b30": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsA.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0c913aa1-5ded-4251-b729-43a355c91df4@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts6.png@6c48a",
+    "value": {
+      "depends": [
+        "0c913aa1-5ded-4251-b729-43a355c91df4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e4bb883f-4391-4ef8-b6d0-acd7a93f78a8": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsJ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ec1ce90c-000f-40bd-bd9b-73ba477c7721@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts9.png@6c48a",
+    "value": {
+      "depends": [
+        "ec1ce90c-000f-40bd-bd9b-73ba477c7721"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1ccf3551-77f4-41fd-98c8-fc6ac6707361": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsK.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "98b9d641-3cae-499a-ac49-e8b9204924a7@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts7.png@6c48a",
+    "value": {
+      "depends": [
+        "98b9d641-3cae-499a-ac49-e8b9204924a7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "34147743-038f-4d60-b8d1-2860ea1ab10a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsQ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "371b4ec3-baca-4a06-ad1b-34cead60ea56@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts8.png@6c48a",
+    "value": {
+      "depends": [
+        "371b4ec3-baca-4a06-ad1b-34cead60ea56"
+      ]
+    },
+    "versionCode": 1
+  },
+  "80c53a3a-e12f-4444-9aa0-0787e294a6a1": {
+    "url": "db://assets/Resources/Sprites/Cards/cardJoker.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "780de4a7-c3ee-4b4c-816d-063327c84b30@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsA.png@6c48a",
+    "value": {
+      "depends": [
+        "780de4a7-c3ee-4b4c-816d-063327c84b30"
+      ]
+    },
+    "versionCode": 1
+  },
+  "96ecca95-972b-4be1-9077-9d72576d726a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades10.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e4bb883f-4391-4ef8-b6d0-acd7a93f78a8@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsJ.png@6c48a",
+    "value": {
+      "depends": [
+        "e4bb883f-4391-4ef8-b6d0-acd7a93f78a8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a7773aef-82f4-4800-8499-ff73076d55bd": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "34147743-038f-4d60-b8d1-2860ea1ab10a@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsQ.png@6c48a",
+    "value": {
+      "depends": [
+        "34147743-038f-4d60-b8d1-2860ea1ab10a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "45556e29-e3f6-494f-a97d-f72ce399a231": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "1ccf3551-77f4-41fd-98c8-fc6ac6707361@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsK.png@6c48a",
+    "value": {
+      "depends": [
+        "1ccf3551-77f4-41fd-98c8-fc6ac6707361"
+      ]
+    },
+    "versionCode": 1
+  },
+  "090d78eb-4cbe-40ca-afbe-a7048aac4881": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "80c53a3a-e12f-4444-9aa0-0787e294a6a1@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardJoker.png@6c48a",
+    "value": {
+      "depends": [
+        "80c53a3a-e12f-4444-9aa0-0787e294a6a1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "47ceaabc-bc0f-4afe-9e98-21b9dc41251e": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a7773aef-82f4-4800-8499-ff73076d55bd@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades2.png@6c48a",
+    "value": {
+      "depends": [
+        "a7773aef-82f4-4800-8499-ff73076d55bd"
+      ]
+    },
+    "versionCode": 1
+  },
+  "41e64bfb-8806-494e-9513-19839d1b6436": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades6.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "96ecca95-972b-4be1-9077-9d72576d726a@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades10.png@6c48a",
+    "value": {
+      "depends": [
+        "96ecca95-972b-4be1-9077-9d72576d726a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6b95011e-7eb4-4e15-b97f-2160e1a3292d": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades7.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "45556e29-e3f6-494f-a97d-f72ce399a231@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades3.png@6c48a",
+    "value": {
+      "depends": [
+        "45556e29-e3f6-494f-a97d-f72ce399a231"
+      ]
+    },
+    "versionCode": 1
+  },
+  "93021377-9316-4a13-a67c-cf4fbf0da3ab": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades8.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "090d78eb-4cbe-40ca-afbe-a7048aac4881@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades4.png@6c48a",
+    "value": {
+      "depends": [
+        "090d78eb-4cbe-40ca-afbe-a7048aac4881"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a1f6cf4a-2324-47ea-9946-73f59355c716": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades9.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "47ceaabc-bc0f-4afe-9e98-21b9dc41251e@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades5.png@6c48a",
+    "value": {
+      "depends": [
+        "47ceaabc-bc0f-4afe-9e98-21b9dc41251e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9def5ba0-3e6d-49cb-8395-c5ef3cdc25a5": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesA.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "41e64bfb-8806-494e-9513-19839d1b6436@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades6.png@6c48a",
+    "value": {
+      "depends": [
+        "41e64bfb-8806-494e-9513-19839d1b6436"
+      ]
+    },
+    "versionCode": 1
+  },
+  "df3cdc08-9db9-4682-9ae1-8318cd9549e9": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesJ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6b95011e-7eb4-4e15-b97f-2160e1a3292d@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades7.png@6c48a",
+    "value": {
+      "depends": [
+        "6b95011e-7eb4-4e15-b97f-2160e1a3292d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d1adbfb0-3bb4-4c0e-ab01-e2d23a842f07": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesK.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "93021377-9316-4a13-a67c-cf4fbf0da3ab@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades8.png@6c48a",
+    "value": {
+      "depends": [
+        "93021377-9316-4a13-a67c-cf4fbf0da3ab"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c7112c77-8e17-4d96-a7a2-ad51edebe842": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesQ.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a1f6cf4a-2324-47ea-9946-73f59355c716@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades9.png@6c48a",
+    "value": {
+      "depends": [
+        "a1f6cf4a-2324-47ea-9946-73f59355c716"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9def5ba0-3e6d-49cb-8395-c5ef3cdc25a5@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesA.png@6c48a",
+    "value": {
+      "depends": [
+        "9def5ba0-3e6d-49cb-8395-c5ef3cdc25a5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "df3cdc08-9db9-4682-9ae1-8318cd9549e9@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesJ.png@6c48a",
+    "value": {
+      "depends": [
+        "df3cdc08-9db9-4682-9ae1-8318cd9549e9"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d1adbfb0-3bb4-4c0e-ab01-e2d23a842f07@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesK.png@6c48a",
+    "value": {
+      "depends": [
+        "d1adbfb0-3bb4-4c0e-ab01-e2d23a842f07"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c7112c77-8e17-4d96-a7a2-ad51edebe842@6c48a": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesQ.png@6c48a",
+    "value": {
+      "depends": [
+        "c7112c77-8e17-4d96-a7a2-ad51edebe842"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2c2fe6c4-dbc4-4d9f-a080-e495879944fc@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green5.png@f9941",
+    "value": {
+      "depends": [
+        "2c2fe6c4-dbc4-4d9f-a080-e495879944fc@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f19fcd8e-598f-40dd-9768-952e99996b2e@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green4.png@f9941",
+    "value": {
+      "depends": [
+        "f19fcd8e-598f-40dd-9768-952e99996b2e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f20f4c8d-b589-4795-85a8-b8080709f1e3@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green2.png@f9941",
+    "value": {
+      "depends": [
+        "f20f4c8d-b589-4795-85a8-b8080709f1e3@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "45556e29-e3f6-494f-a97d-f72ce399a231@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades3.png@f9941",
+    "value": {
+      "depends": [
+        "45556e29-e3f6-494f-a97d-f72ce399a231@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "41e64bfb-8806-494e-9513-19839d1b6436@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades6.png@f9941",
+    "value": {
+      "depends": [
+        "41e64bfb-8806-494e-9513-19839d1b6436@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a7773aef-82f4-4800-8499-ff73076d55bd@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades2.png@f9941",
+    "value": {
+      "depends": [
+        "a7773aef-82f4-4800-8499-ff73076d55bd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "090d78eb-4cbe-40ca-afbe-a7048aac4881@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades4.png@f9941",
+    "value": {
+      "depends": [
+        "090d78eb-4cbe-40ca-afbe-a7048aac4881@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "47ceaabc-bc0f-4afe-9e98-21b9dc41251e@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades5.png@f9941",
+    "value": {
+      "depends": [
+        "47ceaabc-bc0f-4afe-9e98-21b9dc41251e@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6b95011e-7eb4-4e15-b97f-2160e1a3292d@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades7.png@f9941",
+    "value": {
+      "depends": [
+        "6b95011e-7eb4-4e15-b97f-2160e1a3292d@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "93021377-9316-4a13-a67c-cf4fbf0da3ab@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades8.png@f9941",
+    "value": {
+      "depends": [
+        "93021377-9316-4a13-a67c-cf4fbf0da3ab@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a1f6cf4a-2324-47ea-9946-73f59355c716@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades9.png@f9941",
+    "value": {
+      "depends": [
+        "a1f6cf4a-2324-47ea-9946-73f59355c716@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "96ecca95-972b-4be1-9077-9d72576d726a@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpades10.png@f9941",
+    "value": {
+      "depends": [
+        "96ecca95-972b-4be1-9077-9d72576d726a@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9def5ba0-3e6d-49cb-8395-c5ef3cdc25a5@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesA.png@f9941",
+    "value": {
+      "depends": [
+        "9def5ba0-3e6d-49cb-8395-c5ef3cdc25a5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "df3cdc08-9db9-4682-9ae1-8318cd9549e9@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesJ.png@f9941",
+    "value": {
+      "depends": [
+        "df3cdc08-9db9-4682-9ae1-8318cd9549e9@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c7112c77-8e17-4d96-a7a2-ad51edebe842@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesQ.png@f9941",
+    "value": {
+      "depends": [
+        "c7112c77-8e17-4d96-a7a2-ad51edebe842@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d1adbfb0-3bb4-4c0e-ab01-e2d23a842f07@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardSpadesK.png@f9941",
+    "value": {
+      "depends": [
+        "d1adbfb0-3bb4-4c0e-ab01-e2d23a842f07@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f63a464c-5959-4403-8245-1e534b4039ad@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts3.png@f9941",
+    "value": {
+      "depends": [
+        "f63a464c-5959-4403-8245-1e534b4039ad@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9b9cb0a7-ea98-4065-9157-ba919c56d7b8@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts4.png@f9941",
+    "value": {
+      "depends": [
+        "9b9cb0a7-ea98-4065-9157-ba919c56d7b8@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "86ce14cd-4718-4420-80b4-d946c3529949@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts5.png@f9941",
+    "value": {
+      "depends": [
+        "86ce14cd-4718-4420-80b4-d946c3529949@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "98b9d641-3cae-499a-ac49-e8b9204924a7@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts7.png@f9941",
+    "value": {
+      "depends": [
+        "98b9d641-3cae-499a-ac49-e8b9204924a7@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0c913aa1-5ded-4251-b729-43a355c91df4@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts6.png@f9941",
+    "value": {
+      "depends": [
+        "0c913aa1-5ded-4251-b729-43a355c91df4@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "371b4ec3-baca-4a06-ad1b-34cead60ea56@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts8.png@f9941",
+    "value": {
+      "depends": [
+        "371b4ec3-baca-4a06-ad1b-34cead60ea56@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ec1ce90c-000f-40bd-bd9b-73ba477c7721@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts9.png@f9941",
+    "value": {
+      "depends": [
+        "ec1ce90c-000f-40bd-bd9b-73ba477c7721@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "00679364-16de-49ef-a862-7bab1c88abff@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts10.png@f9941",
+    "value": {
+      "depends": [
+        "00679364-16de-49ef-a862-7bab1c88abff@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "780de4a7-c3ee-4b4c-816d-063327c84b30@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsA.png@f9941",
+    "value": {
+      "depends": [
+        "780de4a7-c3ee-4b4c-816d-063327c84b30@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "34147743-038f-4d60-b8d1-2860ea1ab10a@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsQ.png@f9941",
+    "value": {
+      "depends": [
+        "34147743-038f-4d60-b8d1-2860ea1ab10a@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e4bb883f-4391-4ef8-b6d0-acd7a93f78a8@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsJ.png@f9941",
+    "value": {
+      "depends": [
+        "e4bb883f-4391-4ef8-b6d0-acd7a93f78a8@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1ccf3551-77f4-41fd-98c8-fc6ac6707361@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHeartsK.png@f9941",
+    "value": {
+      "depends": [
+        "1ccf3551-77f4-41fd-98c8-fc6ac6707361@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b40286bd-b2f6-47a0-91a9-1b766a34a744@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds2.png@f9941",
+    "value": {
+      "depends": [
+        "b40286bd-b2f6-47a0-91a9-1b766a34a744@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "80c53a3a-e12f-4444-9aa0-0787e294a6a1@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardJoker.png@f9941",
+    "value": {
+      "depends": [
+        "80c53a3a-e12f-4444-9aa0-0787e294a6a1@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dae1cb2f-df45-404f-85a9-1eee0cee3174@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds4.png@f9941",
+    "value": {
+      "depends": [
+        "dae1cb2f-df45-404f-85a9-1eee0cee3174@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c1ecf96c-0aa4-4729-8027-31727ccf7638@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds5.png@f9941",
+    "value": {
+      "depends": [
+        "c1ecf96c-0aa4-4729-8027-31727ccf7638@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9543860c-b81a-4bc8-9e62-2fb8a866dd08@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds3.png@f9941",
+    "value": {
+      "depends": [
+        "9543860c-b81a-4bc8-9e62-2fb8a866dd08@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d32da593-e2f9-492f-9ace-2c3544384550@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds8.png@f9941",
+    "value": {
+      "depends": [
+        "d32da593-e2f9-492f-9ace-2c3544384550@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "fce3cdbc-2d0b-4d01-8dd2-61c65c9844ed@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds6.png@f9941",
+    "value": {
+      "depends": [
+        "fce3cdbc-2d0b-4d01-8dd2-61c65c9844ed@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7bd72d7e-a041-4261-8e60-b76ee15eaa26@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds7.png@f9941",
+    "value": {
+      "depends": [
+        "7bd72d7e-a041-4261-8e60-b76ee15eaa26@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "241c2ad1-c0f3-418f-ae4f-9a7da10a9b03@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds9.png@f9941",
+    "value": {
+      "depends": [
+        "241c2ad1-c0f3-418f-ae4f-9a7da10a9b03@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b28ff500-24d5-4a7a-9b82-f9b027f518c6@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamonds10.png@f9941",
+    "value": {
+      "depends": [
+        "b28ff500-24d5-4a7a-9b82-f9b027f518c6@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8397775a-d928-480f-986e-e964405ee7db@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsA.png@f9941",
+    "value": {
+      "depends": [
+        "8397775a-d928-480f-986e-e964405ee7db@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4e3253cf-c2db-499c-8dab-9e2642f0a064@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsJ.png@f9941",
+    "value": {
+      "depends": [
+        "4e3253cf-c2db-499c-8dab-9e2642f0a064@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b46f64fd-630e-4b94-addb-0e1039583bba@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsK.png@f9941",
+    "value": {
+      "depends": [
+        "b46f64fd-630e-4b94-addb-0e1039583bba@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3e74c1fb-c777-42f8-bede-539a78d133e9@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardHearts2.png@f9941",
+    "value": {
+      "depends": [
+        "3e74c1fb-c777-42f8-bede-539a78d133e9@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8a08d83c-49e9-4030-bdb1-a3496d9e6c16@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardDiamondsQ.png@f9941",
+    "value": {
+      "depends": [
+        "8a08d83c-49e9-4030-bdb1-a3496d9e6c16@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "65210540-083a-43fa-b68c-257635fa9224@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs2.png@f9941",
+    "value": {
+      "depends": [
+        "65210540-083a-43fa-b68c-257635fa9224@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "600b13dc-413f-4990-bd65-ab34378cda56@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs3.png@f9941",
+    "value": {
+      "depends": [
+        "600b13dc-413f-4990-bd65-ab34378cda56@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c2b0c42d-2d7b-4ec8-bea2-447736f8d914@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs5.png@f9941",
+    "value": {
+      "depends": [
+        "c2b0c42d-2d7b-4ec8-bea2-447736f8d914@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ee487ea4-9c65-4624-a116-3cd013714b8d@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs4.png@f9941",
+    "value": {
+      "depends": [
+        "ee487ea4-9c65-4624-a116-3cd013714b8d@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0d7c0df0-ee32-448b-99de-79f662084a70@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs6.png@f9941",
+    "value": {
+      "depends": [
+        "0d7c0df0-ee32-448b-99de-79f662084a70@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d5ef7741-f45e-4053-9cac-a74fb8ee528d@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs7.png@f9941",
+    "value": {
+      "depends": [
+        "d5ef7741-f45e-4053-9cac-a74fb8ee528d@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8311a760-766c-45fb-b619-d35912250591@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs8.png@f9941",
+    "value": {
+      "depends": [
+        "8311a760-766c-45fb-b619-d35912250591@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ca39b23c-a078-4091-a32b-eb3cf306a7af@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs10.png@f9941",
+    "value": {
+      "depends": [
+        "ca39b23c-a078-4091-a32b-eb3cf306a7af@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "873bdcc1-114c-46d2-83a4-1aac5a351284@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubs9.png@f9941",
+    "value": {
+      "depends": [
+        "873bdcc1-114c-46d2-83a4-1aac5a351284@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "eb2eda52-7e32-4eca-9131-5f00facd9a34@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsA.png@f9941",
+    "value": {
+      "depends": [
+        "eb2eda52-7e32-4eca-9131-5f00facd9a34@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4d1796f4-63f2-4982-8061-3e6a2b933ed1@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsK.png@f9941",
+    "value": {
+      "depends": [
+        "4d1796f4-63f2-4982-8061-3e6a2b933ed1@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "198f8db8-e2e8-4eb0-b20b-147ed3d582a7@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsJ.png@f9941",
+    "value": {
+      "depends": [
+        "198f8db8-e2e8-4eb0-b20b-147ed3d582a7@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "157261da-91d4-4887-92ac-50aa60df36bd@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardClubsQ.png@f9941",
+    "value": {
+      "depends": [
+        "157261da-91d4-4887-92ac-50aa60df36bd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "562a20ce-4cf6-460c-858a-e25800ce3e46@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue1.png@f9941",
+    "value": {
+      "depends": [
+        "562a20ce-4cf6-460c-858a-e25800ce3e46@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5025b5fd-51f0-4fb1-88ca-7abd89f19db9@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue2.png@f9941",
+    "value": {
+      "depends": [
+        "5025b5fd-51f0-4fb1-88ca-7abd89f19db9@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0ee6dfda-5ae5-487e-98f5-58ff09e8327f@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue3.png@f9941",
+    "value": {
+      "depends": [
+        "0ee6dfda-5ae5-487e-98f5-58ff09e8327f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "112a4569-c60c-4e6e-9773-9ca7b147f9bb@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue4.png@f9941",
+    "value": {
+      "depends": [
+        "112a4569-c60c-4e6e-9773-9ca7b147f9bb@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "559a8b3a-34e9-4ffa-8e42-c498addabebd@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_blue5.png@f9941",
+    "value": {
+      "depends": [
+        "559a8b3a-34e9-4ffa-8e42-c498addabebd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "edad5597-ef35-48e8-926a-b6f70b3b7287@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green1.png@f9941",
+    "value": {
+      "depends": [
+        "edad5597-ef35-48e8-926a-b6f70b3b7287@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "daee6ef3-ae85-4d00-9cff-5889eb55e539@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_green3.png@f9941",
+    "value": {
+      "depends": [
+        "daee6ef3-ae85-4d00-9cff-5889eb55e539@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c11975d4-bd79-4c9f-834d-1173810fb96b@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red1.png@f9941",
+    "value": {
+      "depends": [
+        "c11975d4-bd79-4c9f-834d-1173810fb96b@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c4201649-564f-4a8c-adf1-7292007a2f51@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red2.png@f9941",
+    "value": {
+      "depends": [
+        "c4201649-564f-4a8c-adf1-7292007a2f51@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9bfca180-5077-4a62-83c7-4136f03af7ea@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red3.png@f9941",
+    "value": {
+      "depends": [
+        "9bfca180-5077-4a62-83c7-4136f03af7ea@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cd44d77c-0e68-4963-b3ea-2143dfa9d82c@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red4.png@f9941",
+    "value": {
+      "depends": [
+        "cd44d77c-0e68-4963-b3ea-2143dfa9d82c@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2397e45a-ae5a-4b08-8a96-86afc6aac392@f9941": {
+    "url": "db://assets/Resources/Sprites/Cards/cardBack_red5.png@f9941",
+    "value": {
+      "depends": [
+        "2397e45a-ae5a-4b08-8a96-86afc6aac392@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0975ccc7-52e8-4dd7-9df1-94154ad34d34": {
+    "url": "db://assets/Scripts/SpriteHandler.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "ad369614-11de-463c-9a1e-4169b59498ba": {
+    "url": "db://assets/Resources",
+    "value": {},
+    "versionCode": 1
+  },
+  "9d3a64da-f00f-4731-aafc-5c48967501ab": {
+    "url": "db://assets/Scenes",
+    "value": {},
     "versionCode": 1
   }
 }

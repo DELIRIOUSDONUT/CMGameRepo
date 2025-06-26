@@ -42,6 +42,10 @@ export class ScoreCounter extends Component {
         }
 
         // Emit signal to update UI for score and combo
+        this.sendUpdate();
+    }
+
+    sendUpdate(){
         this.node.dispatchEvent(new ScoreUpdateEvent(this.Score, this.ComboStreak));
     }
 }

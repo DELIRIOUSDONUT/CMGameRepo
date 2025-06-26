@@ -81,6 +81,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           } // Emit signal to update UI for score and combo
 
 
+          this.sendUpdate();
+        }
+
+        sendUpdate() {
           this.node.dispatchEvent(new (_crd && ScoreUpdateEvent === void 0 ? (_reportPossibleCrUseOfScoreUpdateEvent({
             error: Error()
           }), ScoreUpdateEvent) : ScoreUpdateEvent)(this.Score, this.ComboStreak));
