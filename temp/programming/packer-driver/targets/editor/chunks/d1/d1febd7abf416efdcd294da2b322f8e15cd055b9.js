@@ -24,7 +24,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
       _cclegacy._RF.push({}, "72078SBVGJLKrHmFYvn9xxm", "CardScript", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Node', 'Event', 'Label', 'Sprite', 'SpriteFrame']);
+      __checkObsolete__(['_decorator', 'Component', 'Node', 'Event', 'Label', 'Sprite', 'SpriteFrame', 'AudioSource']);
 
       ({
         ccclass,
@@ -40,6 +40,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.CardSprite = void 0;
           this.BackSprite = void 0;
           this.SpriteFrame = void 0;
+          this.AudioSource = void 0;
         }
 
         start() {}
@@ -60,6 +61,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           if (this.CardSprite != null && this.BackSprite != null) {
             if (this.FlippedUp) {
+              this.AudioSource.playOneShot(this.AudioSource.clip);
               this.SpriteFrame.spriteFrame = this.CardSprite;
             } else {
               this.SpriteFrame.spriteFrame = this.BackSprite;
@@ -75,6 +77,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.CardSprite = null;
           this.BackSprite = null;
           this.SpriteFrame = this.node.getComponent("cc.Sprite");
+          this.AudioSource = this.node.getComponent("cc.AudioSource");
           console.log("---END CARD INIT---");
         }
 

@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 5491.830667000264,
+      "mTimestamp": 5658.989959000028,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 8913277.197375,
+      "mTimestamp": 5313932.516667001,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -483,7 +483,7 @@
           }
         },
         {
-          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts",
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts",
           "resolved": "__unresolved_5",
           "loc": {
             "start": {
@@ -492,12 +492,12 @@
             },
             "end": {
               "line": 9,
-              "column": 87
+              "column": 88
             }
           }
         },
         {
-          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts",
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts",
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
@@ -506,12 +506,12 @@
             },
             "end": {
               "line": 10,
-              "column": 89
+              "column": 87
             }
           }
         },
         {
-          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts",
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts",
           "resolved": "__unresolved_7",
           "loc": {
             "start": {
@@ -520,12 +520,12 @@
             },
             "end": {
               "line": 11,
-              "column": 91
+              "column": 89
             }
           }
         },
         {
-          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts",
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts",
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
@@ -534,12 +534,12 @@
             },
             "end": {
               "line": 12,
-              "column": 87
+              "column": 91
             }
           }
         },
         {
-          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts",
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts",
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
@@ -548,6 +548,34 @@
             },
             "end": {
               "line": 13,
+              "column": 87
+            }
+          }
+        },
+        {
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts",
+          "resolved": "__unresolved_10",
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 7
+            },
+            "end": {
+              "line": 14,
+              "column": 99
+            }
+          }
+        },
+        {
+          "value": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts",
+          "resolved": "__unresolved_11",
+          "loc": {
+            "start": {
+              "line": 15,
+              "column": 7
+            },
+            "end": {
+              "line": 15,
               "column": 88
             }
           }
@@ -593,6 +621,13 @@
         {
           "resolved": {
             "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
             "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts"
           },
           "messages": []
@@ -615,6 +650,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts"
           },
           "messages": []
         },
@@ -733,7 +775,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
       "mTimestamp": {
-        "mtime": 1750924692244.1382,
+        "mtime": 1750993285218.3513,
         "uuid": "72078481-5462-4b2a-b1e6-158be7f71c66"
       },
       "chunkId": "d1febd7abf416efdcd294da2b322f8e15cd055b9",
@@ -753,11 +795,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 80
+              "column": 94
             },
             "end": {
               "line": 1,
-              "column": 84
+              "column": 98
             }
           }
         },
@@ -817,7 +859,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
       "mTimestamp": {
-        "mtime": 1750928542145.0098,
+        "mtime": 1750996758219.656,
         "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
       },
       "chunkId": "caec25bf9120a2b9bd628d467890152acaf01abe",
@@ -837,11 +879,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 114
+              "column": 136
             },
             "end": {
               "line": 1,
-              "column": 118
+              "column": 140
             }
           }
         },
@@ -855,6 +897,20 @@
             "end": {
               "line": 2,
               "column": 30
+            }
+          }
+        },
+        {
+          "value": "./ScreenSwitchRequestEvent",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 41
+            },
+            "end": {
+              "line": 8,
+              "column": 69
             }
           }
         }
@@ -895,11 +951,18 @@
             "url": "cce:/internal/x/cc"
           },
           "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts"
+          },
+          "messages": []
         }
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1750923312055,
+      "mTimestamp": 1750991527877,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -1305,6 +1368,121 @@
             "end": {
               "line": 1,
               "column": 77
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts": {
+      "mTimestamp": {
+        "mtime": 1750996832873.4888,
+        "uuid": "582ddf77-8d26-40a7-8623-05d704c8b16f"
+      },
+      "chunkId": "595b7f35fe0b70295f3677177fc8791319032162",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts": {
+      "mTimestamp": {
+        "mtime": 1750996735898.761,
+        "uuid": "60a50bf7-c7d0-42a5-b982-7ab5354ec603"
+      },
+      "chunkId": "a707dd2bc4ecc8bf61ebecae48eb6f352b60617f",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 20
+            },
+            "end": {
+              "line": 1,
+              "column": 24
             }
           }
         }

@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Layout, Prefab, CCInteger, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _crd, ccclass, property, CardController;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, instantiate, Layout, Prefab, AudioSource, CCFloat, CCInteger, ScreenSwitchEventRequest, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _crd, ccclass, property, CardController;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -45,6 +45,10 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
     _reporterNs.report("SpriteHandler", "./SpriteHandler", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfScreenSwitchEventRequest(extras) {
+    _reporterNs.report("ScreenSwitchEventRequest", "./ScreenSwitchRequestEvent", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -57,14 +61,18 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
       instantiate = _cc.instantiate;
       Layout = _cc.Layout;
       Prefab = _cc.Prefab;
+      AudioSource = _cc.AudioSource;
+      CCFloat = _cc.CCFloat;
       CCInteger = _cc.CCInteger;
+    }, function (_unresolved_2) {
+      ScreenSwitchEventRequest = _unresolved_2.ScreenSwitchEventRequest;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "f1c9ceDbnpJlYYKLIBiBmbq", "CardController", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Layout', 'Node', 'Prefab', 'UITransform', 'Widget', 'Button', 'SpriteFrame']);
+      __checkObsolete__(['_decorator', 'Component', 'instantiate', 'Layout', 'Node', 'Prefab', 'UITransform', 'Widget', 'Button', 'SpriteFrame', 'AudioSource', 'CCFloat']);
 
       __checkObsolete__(['CCInteger']);
 
@@ -82,6 +90,18 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
       }), _dec4 = property({
         type: CCInteger,
         tooltip: "Delay time for card flip"
+      }), _dec5 = property({
+        type: AudioSource,
+        tooltip: "Audio source when cards match"
+      }), _dec6 = property({
+        type: AudioSource,
+        tooltip: "Audio source when cards mismatch"
+      }), _dec7 = property({
+        type: AudioSource,
+        tooltip: "Audio source when game is over"
+      }), _dec8 = property({
+        type: CCFloat,
+        tooltip: "Delay time for victory jingle"
       }), _dec(_class = (_class2 = class CardController extends Component {
         constructor(...args) {
           super(...args);
@@ -118,6 +138,15 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           this.childCardHeight = void 0;
           this.childCardWidth = void 0;
           this.SpriteHandler = void 0;
+
+          // Properties for audio
+          _initializerDefineProperty(this, "MatchAudioSource", _descriptor4, this);
+
+          _initializerDefineProperty(this, "MismatchAudioSource", _descriptor5, this);
+
+          _initializerDefineProperty(this, "GameOverAudioSource", _descriptor6, this);
+
+          _initializerDefineProperty(this, "VictoryJingleDelay", _descriptor7, this);
         }
 
         start() {
@@ -235,8 +264,9 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
               this.SaveState.combo = this.ScoreCounter.ComboStreak; // Save combo to save state
 
               if (score <= 0) {
-                // Mismatch
-                this.SaveState.combo = 0; // Do delay, then flip both cards face down
+                // --------- MISMATCH -------------
+                // Play audio source
+                this.MismatchAudioSource.playOneShot(this.MismatchAudioSource.clip); // Do delay, then flip both cards face down
 
                 let prevCard = this.CardSelectedQueue[0];
                 this.scheduleOnce(() => {
@@ -247,11 +277,15 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
                 let button1 = this.CardSelectedQueue[0].getComponent("cc.Button");
                 button1.interactable = true;
                 let button2 = card.getComponent("cc.Button");
-                button2.interactable = true;
+                button2.interactable = true; // Save state for combo
+
+                this.SaveState.combo = 0;
               } else {
-                // Match
+                // --------- MATCH -------------
                 console.log("MATCH");
-                console.log(this.CardSelectedQueue[0].CardType, card.CardType); // Do delay, then disable both cards from rendering
+                console.log(this.CardSelectedQueue[0].CardType, card.CardType); // Play audio source
+
+                this.MatchAudioSource.playOneShot(this.MatchAudioSource.clip); // Do delay, then disable both cards from rendering
 
                 let prevCard = this.CardSelectedQueue[0];
                 this.scheduleOnce(() => {
@@ -278,6 +312,13 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
             console.log(this.SaveState); // if all cards are removed, no need to save state as game is over
 
             if (this.SaveState.removedCards.every(val => val == 1)) {
+              // Play game over audio source
+              this.scheduleOnce(() => {
+                this.GameOverAudioSource.playOneShot(this.GameOverAudioSource.clip);
+                this.node.dispatchEvent(new (_crd && ScreenSwitchEventRequest === void 0 ? (_reportPossibleCrUseOfScreenSwitchEventRequest({
+                  error: Error()
+                }), ScreenSwitchEventRequest) : ScreenSwitchEventRequest)("victory"));
+              }, this.VictoryJingleDelay);
               localStorage.removeItem("saveState");
             } else {
               localStorage.setItem("saveState", JSON.stringify(this.SaveState));
@@ -399,6 +440,26 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
         writable: true,
         initializer: null
       }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "FlipDelay", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "MatchAudioSource", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "MismatchAudioSource", [_dec6], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "GameOverAudioSource", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "VictoryJingleDelay", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,

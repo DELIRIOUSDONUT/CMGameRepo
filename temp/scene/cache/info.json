@@ -5,8 +5,8 @@
         "version": "Darwin Kernel Version 23.6.0: Mon Jul 29 21:13:04 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6020"
     },
     "sceneListMap": {
-        "29ba28d9-1244-421a-be48-36a95eb85582": "/Users/admin/Documents/GitHub/CMGameRepo/assets/MainGameScene.scene",
-        "c7737fb0-80a1-48ec-8c5a-575b2740fec1": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs/CardButton.prefab"
+        "c7737fb0-80a1-48ec-8c5a-575b2740fec1": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs/CardButton.prefab",
+        "29ba28d9-1244-421a-be48-36a95eb85582": "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes/MainGameScene.scene"
     },
     "deviceMd5": "ea803bff50afe819a06702a1f564285e"
 }

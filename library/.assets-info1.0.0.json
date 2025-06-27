@@ -23,11 +23,11 @@
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts": {
-      "time": 1750929493272.0615,
+      "time": 1750996841702.669,
       "uuid": "a084bb39-5748-4c80-89af-05bd3c10b9eb"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
-      "time": 1750924692244.1382,
+      "time": 1750993285218.3513,
       "uuid": "72078481-5462-4b2a-b1e6-158be7f71c66"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts.meta": {
@@ -40,7 +40,7 @@
       "time": 1750751745815.2346
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
-      "time": 1750928542145.0098,
+      "time": 1750996758219.656,
       "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs.meta": {
@@ -54,7 +54,7 @@
       "time": 1750753307610.7861
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Prefabs/CardButton.prefab": {
-      "time": 1750930895351.772,
+      "time": 1750995919753.4226,
       "uuid": "c7737fb0-80a1-48ec-8c5a-575b2740fec1"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.meta": {
@@ -110,7 +110,7 @@
       "time": 1750750979865.9514
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes/MainGameScene.scene": {
-      "time": 1750932245504.867,
+      "time": 1750996863407.1125,
       "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources.meta": {
@@ -123,7 +123,7 @@
       "time": 1750924003274.9814
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources": {
-      "time": 1750930215556.556,
+      "time": 1750991618258.9844,
       "uuid": "ad369614-11de-463c-9a1e-4169b59498ba"
     },
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Sprites": {
@@ -630,6 +630,55 @@
     "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Sprites/endless-constellation.png": {
       "time": 1750931211520.9575,
       "uuid": "6455e663-a815-4d21-9100-4fb9ddd27969"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio.meta": {
+      "time": 1750991618260.028
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio": {
+      "time": 1750995832956.3467,
+      "uuid": "24ad5e16-35d9-48bd-bfca-fec32b03d033"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/CardFlipAudio.mp3.meta": {
+      "time": 1750995734624.1716
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/CardFlipAudio.mp3": {
+      "time": 1750995734619.0542,
+      "uuid": "6dd90463-069e-4586-8a41-98feebf3ea12"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/VictoryJingle.mp3.meta": {
+      "time": 1750995430017.3867
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/VictoryJingle.mp3": {
+      "time": 1750995430012.707,
+      "uuid": "472fbf1b-a58e-44fd-b58f-958be263753b"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/MatchSFX.mp3.meta": {
+      "time": 1750994683486.1719
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/MatchSFX.mp3": {
+      "time": 1750994683480.433,
+      "uuid": "8a10f670-23cb-403c-a6b2-5164b6aaa78e"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/MismatchSFX.mp3.meta": {
+      "time": 1750995329012.527
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/MismatchSFX.mp3": {
+      "time": 1750995329007.1055,
+      "uuid": "c270740e-f48f-43ef-9878-34b54a973743"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts.meta": {
+      "time": 1750996373579.8877
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts": {
+      "time": 1750996832873.4888,
+      "uuid": "582ddf77-8d26-40a7-8623-05d704c8b16f"
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.meta": {
+      "time": 1750996841704.906
+    },
+    "/Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts": {
+      "time": 1750996735898.761,
+      "uuid": "60a50bf7-c7d0-42a5-b982-7ab5354ec603"
     }
   },
   "missing": {
@@ -1682,6 +1731,51 @@
       "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/rose-petals.svg",
       "time": 1750930178552.5952,
       "removeTime": 1750930196249
+    },
+    "4cf50fd0-a845-450e-a892-82ddb08ac0f8": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/11L-card_click_sound-1750991591361.mp3",
+      "time": 1750991636772.9521,
+      "removeTime": 1750994528446
+    },
+    "cc5b3e6c-35ae-4e44-bdb3-0b2a7f0b9fb6": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/cardFlipSound.mp3",
+      "time": 1750992295453.5474,
+      "removeTime": 1750994532132
+    },
+    "ab56d7f2-1b45-48d2-8072-8f5ce55ed98a": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/cardPlaySoundLQ.mp3",
+      "time": 1750992442830.3867,
+      "removeTime": 1750994535338
+    },
+    "21ceb272-d778-4242-a0e3-8869922976e3": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/cardFlip.mp3",
+      "time": 1750994524188.5488,
+      "removeTime": 1750995798999
+    },
+    "6dd90463-069e-4586-8a41-98feebf3ea12": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/audiomass-output (1).mp3",
+      "time": 1750995734619.0542,
+      "removeTime": 1750995804005
+    },
+    "4c9a2322-0b07-485e-90ac-2921201d016b": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/audiomass-output.mp3",
+      "time": 1750994582203.8223,
+      "removeTime": 1750995808657
+    },
+    "472fbf1b-a58e-44fd-b58f-958be263753b": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/11L-victory_jingle_like_-1750995424414.mp3",
+      "time": 1750995430012.707,
+      "removeTime": 1750995813384
+    },
+    "8a10f670-23cb-403c-a6b2-5164b6aaa78e": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/11L-success_sound-1750994673987.mp3",
+      "time": 1750994683480.433,
+      "removeTime": 1750995824361
+    },
+    "c270740e-f48f-43ef-9878-34b54a973743": {
+      "path": "/Users/admin/Documents/GitHub/CMGameRepo/assets/resources/Audio/11L-8bit_error_sound-1750995311383.mp3",
+      "time": 1750995329007.1055,
+      "removeTime": 1750995832957
     }
   }
 }

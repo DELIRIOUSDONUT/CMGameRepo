@@ -14026,3 +14026,13 @@
 6-26-2025 17:04:06-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
 6-26-2025 17:04:06-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 15%
 6-26-2025 17:04:06-debug: [Build Memory track]: Sort some build options to settings.json start:175.38MB, end 175.49MB, increase: 112.41KB
+6-26-2025 17:04:54-debug: refresh db internal success
+6-26-2025 17:04:54-debug: refresh db assets success
+6-26-2025 17:04:54-debug: Run asset db hook engine-extends:afterRefresh ...
+6-26-2025 17:04:54-debug: Run asset db hook engine-extends:afterRefresh success!
+6-26-2025 17:04:54-debug: asset-db:refresh-all-database (46ms)
+6-26-2025 17:04:54-debug: asset-db:worker-effect-data-processing (1ms)
+6-26-2025 17:04:54-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+6-26-2025 17:04:59-debug: start refresh asset from /Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes/MainGameScene.scene...
+6-26-2025 17:04:59-debug: %cImport%c: /Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes/MainGameScene.scenebackground: #aaff85; color: #000;color: #000;
+6-26-2025 17:04:59-debug: refresh asset /Users/admin/Documents/GitHub/CMGameRepo/assets/Scenes success

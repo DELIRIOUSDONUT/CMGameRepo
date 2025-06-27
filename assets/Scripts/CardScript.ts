@@ -1,4 +1,4 @@
-import { _decorator, Component, Node , Event , Label, Sprite, SpriteFrame} from 'cc';
+import { _decorator, Component, Node , Event , Label, Sprite, SpriteFrame, AudioSource } from 'cc';
 const { ccclass, property } = _decorator;
 import { CardSelectEvent } from "./CardSelectEvent";
 
@@ -10,6 +10,7 @@ export class CardScript extends Component {
     CardSprite : SpriteFrame;
     BackSprite : SpriteFrame;
     SpriteFrame : Sprite;
+    AudioSource : AudioSource;
     start() {
     }
 
@@ -33,6 +34,7 @@ export class CardScript extends Component {
         // Add animation here based on flip status
         if(this.CardSprite != null && this.BackSprite != null){
             if(this.FlippedUp){
+                this.AudioSource.playOneShot(this.AudioSource.clip);
                 this.SpriteFrame.spriteFrame = this.CardSprite;
             }
             else{
@@ -49,6 +51,7 @@ export class CardScript extends Component {
         this.CardSprite = null;
         this.BackSprite = null;
         this.SpriteFrame = this.node.getComponent("cc.Sprite") as Sprite;
+        this.AudioSource = this.node.getComponent("cc.AudioSource") as AudioSource;
         console.log("---END CARD INIT---");
     }
 

@@ -1,10 +1,11 @@
-import { _decorator, Component, instantiate, Layout, Node, Prefab, UITransform, Widget, Button, SpriteFrame} from 'cc';
+import { _decorator, Component, instantiate, Layout, Node, Prefab, UITransform, Widget, Button, SpriteFrame, AudioSource, CCFloat} from 'cc';
 import { CCInteger } from 'cc'
 import { CardScript } from './CardScript';
 import { ScoreEvaluator } from './ScoreEvaluator';
 import { CardSelectEvent } from './CardSelectEvent';
 import { ScoreCounter } from './ScoreCounter';
 import { SpriteHandler } from './SpriteHandler';
+import { ScreenSwitchEventRequest } from './ScreenSwitchRequestEvent';
 const { ccclass, property } = _decorator;
 
 @ccclass('CardController')
@@ -49,7 +50,17 @@ export class CardController extends Component {
     childCardWidth : number;
 
     SpriteHandler : SpriteHandler;
-    
+
+    // Properties for audio
+    @property({type : AudioSource, tooltip: "Audio source when cards match"})
+    MatchAudioSource : AudioSource;
+    @property({type : AudioSource, tooltip: "Audio source when cards mismatch"})
+    MismatchAudioSource : AudioSource;
+    @property({type : AudioSource, tooltip: "Audio source when game is over"})
+    GameOverAudioSource : AudioSource;
+    @property({type : CCFloat, tooltip: "Delay time for victory jingle"})
+    VictoryJingleDelay : number;
+
     start() {
         // Get requirements for card sizes and columns
         this.getCardSize();
@@ -178,8 +189,9 @@ export class CardController extends Component {
                 this.SaveState.combo = this.ScoreCounter.ComboStreak;
                 // Save combo to save state
                 if(score <= 0){
-                    // Mismatch
-                    this.SaveState.combo = 0;
+                    // --------- MISMATCH -------------
+                    // Play audio source
+                    this.MismatchAudioSource.playOneShot(this.MismatchAudioSource.clip);
                     // Do delay, then flip both cards face down
                     let prevCard = this.CardSelectedQueue[0];
                     this.scheduleOnce(() => {
@@ -192,11 +204,15 @@ export class CardController extends Component {
                     button1.interactable = true;
                     let button2 : Button = card.getComponent("cc.Button") as Button;
                     button2.interactable = true;
-                    
+                    // Save state for combo
+                    this.SaveState.combo = 0;
+
                 } else {
-                    // Match
+                    // --------- MATCH -------------
                     console.log("MATCH");
                     console.log(this.CardSelectedQueue[0].CardType, card.CardType);
+                    // Play audio source
+                    this.MatchAudioSource.playOneShot(this.MatchAudioSource.clip);
                     // Do delay, then disable both cards from rendering
                     let prevCard = this.CardSelectedQueue[0];
                     this.scheduleOnce(()=>{
@@ -224,6 +240,11 @@ export class CardController extends Component {
             
             // if all cards are removed, no need to save state as game is over
             if(this.SaveState.removedCards.every((val) => val == 1)){
+                // Play game over audio source
+                this.scheduleOnce(() => {
+                    this.GameOverAudioSource.playOneShot(this.GameOverAudioSource.clip);
+                    this.node.dispatchEvent(new ScreenSwitchEventRequest("victory"));
+                }, this.VictoryJingleDelay);
                 localStorage.removeItem("saveState");
             } else {
                 localStorage.setItem("saveState", JSON.stringify(this.SaveState));
