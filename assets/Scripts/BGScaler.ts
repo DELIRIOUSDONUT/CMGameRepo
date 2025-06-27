@@ -25,12 +25,5 @@ export class BGScaler extends Component {
         this.node.setScale(scale, scale, 1);
 
     }
-    start() {
-
-    }
-
-    update(deltaTime: number) {
-        
-    }
 }
 

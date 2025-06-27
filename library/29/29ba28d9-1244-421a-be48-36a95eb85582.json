@@ -1513,7 +1513,6 @@
     "GameOverAudioSource": {
       "__id__": 44
     },
-    "VictoryJingleDelay": 0.75,
     "_id": "00mL+S/TdLNqYP26iNVZLI"
   },
   {
@@ -1583,6 +1582,7 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "defaultScore": 10,
     "_id": "7dnvXbKTpB1Yc+1oIOisYr"
   },
   {

@@ -25,14 +25,6 @@ export class ScoreCounter extends Component {
     // Current number of matches
     MatchCount : number = 0;
 
-    start() {
-
-    }
-
-    update(deltaTime: number) {
-        
-    }
-
     trackScore(score : number){
         // Check if combo streak is broken
         if(score <= 0){

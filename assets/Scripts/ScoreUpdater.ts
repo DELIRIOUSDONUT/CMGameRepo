@@ -34,10 +34,6 @@ export class ScoreUpdater extends Component {
     }
 
     updateScore(event : ScoreUpdateEvent){
-        console.log("Score: " + event.score);
-        console.log("Combo: " + event.combo);
-        console.log("Match: " + event.matchCount);
-        console.log("Turn: " + event.turn);
         this.ScoreText.string = "Score = " + event.score;
         this.ComboText.string = "Combo = " + event.combo;
         this.MatchText.string = "Match = " + event.matchCount;

@@ -101,7 +101,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         tooltip: "Audio source when game is over"
       }), _dec8 = property({
         type: CCFloat,
-        tooltip: "Delay time for victory jingle"
+        tooltip: "Delay time for victory jingle and screen"
       }), _dec(_class = (_class2 = class CardController extends Component {
         constructor(...args) {
           super(...args);
@@ -112,14 +112,32 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           _initializerDefineProperty(this, "FlipDelay", _descriptor3, this);
 
+          // Properties for audio
+          _initializerDefineProperty(this, "MatchAudioSource", _descriptor4, this);
+
+          _initializerDefineProperty(this, "MismatchAudioSource", _descriptor5, this);
+
+          _initializerDefineProperty(this, "GameOverAudioSource", _descriptor6, this);
+
+          // Property for victory screen
+          _initializerDefineProperty(this, "VictoryDelay", _descriptor7, this);
+
+          // Used to calculate score for cards
           this.ScoreEval = void 0;
-          // Queue for tracking card selection events  --  for now use array, change to actual queue later
+          // Queue for tracking card selection events 
           // Stores ID of selected cards temporally, remove the first two on match/mismatch
           this.CardSelectedQueue = void 0;
           // Number of cards currently selected
           this.NumSelectedCards = void 0;
-          // Object to keep track of player score
+          // Object to keep track of player score, combo, turns and matches
           this.ScoreCounter = void 0;
+          // Number of columns required by Layout
+          this.ColumnReq = void 0;
+          // Dimensions of cards based on number of cards and requird columns
+          this.childCardHeight = void 0;
+          this.childCardWidth = void 0;
+          // Handles assignment of card sprites
+          this.SpriteHandler = void 0;
           // For keeping track of game states across restarts
           this.SaveState = {
             score: 0,
@@ -132,21 +150,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             turn: 0,
             matchCount: 0
           };
-          // Number of columns required by Layout
-          this.ColumnReq = void 0;
-          // Dimensions of cards based on number of cards and requird columns
-          this.childCardHeight = void 0;
-          this.childCardWidth = void 0;
-          this.SpriteHandler = void 0;
-
-          // Properties for audio
-          _initializerDefineProperty(this, "MatchAudioSource", _descriptor4, this);
-
-          _initializerDefineProperty(this, "MismatchAudioSource", _descriptor5, this);
-
-          _initializerDefineProperty(this, "GameOverAudioSource", _descriptor6, this);
-
-          _initializerDefineProperty(this, "VictoryJingleDelay", _descriptor7, this);
         }
 
         start() {
@@ -181,7 +184,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           if (this.NumCards % 2 != 0) {
             this.NumCards -= 1;
-          }
+          } // Save current number of cards and columns
+
 
           this.SaveState.columnReq = this.ColumnReq;
           this.SaveState.numCards = this.NumCards; // Get a random subset of card type pairs
@@ -189,11 +193,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           let shuffledTypes = this.getCardTypes(); // Instantiate all cards
 
           for (let i = 0; i < this.NumCards; i++) {
-            const childCard = instantiate(this.CardPrefab);
+            const childCard = instantiate(this.CardPrefab); // Adjust dimensions of card to fit parent container
+
             let childTransform = childCard.getComponent("cc.UITransform");
             childTransform.width = this.childCardWidth;
             childTransform.height = this.childCardHeight;
-            this.node.addChild(childCard);
+            this.node.addChild(childCard); // Initialize the card script
+
             let cardScript = childCard.getComponent("CardScript");
             cardScript.init(false, shuffledTypes[i], i); // For layout adjustments
 
@@ -210,11 +216,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.setupCardMatchListener();
         }
 
-        update(deltaTime) {}
-
         setupCardMatchListener() {
           this.CardSelectedQueue = new Array();
-          this.NumSelectedCards = this.SaveState.faceUpIndex == -1 ? 0 : 1; // In the case that the program was closed while one card was faceup
+          this.NumSelectedCards = this.SaveState.faceUpIndex == -1 ? 0 : 1; // In the case that the program was closed while one card was face up
 
           if (this.NumSelectedCards == 1) {
             // Search for card with matching index, and add to queue
@@ -226,14 +230,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
                 break;
               }
             }
-          }
+          } // Listening to card selection events emitted by card scripts
+
 
           this.node.on("card-selected", event => {
             let card = event.card; // Stop event propagation
 
             event.propagationStopped = true;
-            console.log("SELECTED CARD ID: ", card.CardID, " CARD TYPE: ", card.CardType); // Handle animation logic here
-            // Check if this card is already face up. If it is then early return
+            console.log("SELECTED CARD ID: ", card.CardID, " CARD TYPE: ", card.CardType); // Check if this card is already face up. If it is then early return
 
             if (card.FlippedUp) {
               return;
@@ -253,7 +257,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               button.interactable = false;
             } else if (this.NumSelectedCards > 1) {
               // By this point, two cards are selected
-              this.SaveState.faceUpIndex = -1;
+              // Both cards will be either face down or removed, so reset face up index
+              this.SaveState.faceUpIndex = -1; // Flip face up
+
               card.setFlipStatus(true);
               let score = this.ScoreEval.getScore(this.CardSelectedQueue[0].CardType, card.CardType);
               console.log("Score: ", score); // Pass score to score counter
@@ -265,8 +271,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
               if (score <= 0) {
                 // --------- MISMATCH -------------
-                // Play audio source
-                this.MismatchAudioSource.playOneShot(this.MismatchAudioSource.clip); // Do delay, then flip both cards face down
+                // Play mismatch audio source
+                this.MismatchAudioSource.playOneShot(this.MismatchAudioSource.clip); // Flip both cards face down after a delay
 
                 let prevCard = this.CardSelectedQueue[0];
                 this.scheduleOnce(() => {
@@ -282,10 +288,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
                 this.SaveState.combo = 0;
               } else {
                 // --------- MATCH -------------
-                console.log("MATCH");
-                console.log(this.CardSelectedQueue[0].CardType, card.CardType); // Play audio source
-
-                this.MatchAudioSource.playOneShot(this.MatchAudioSource.clip); // Do delay, then disable both cards from rendering
+                // Play audio source
+                this.MatchAudioSource.playOneShot(this.MatchAudioSource.clip); // Disable both cards from rendering after a delay
 
                 let prevCard = this.CardSelectedQueue[0];
                 this.scheduleOnce(() => {
@@ -296,7 +300,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
                 this.SaveState.removedCards[this.CardSelectedQueue[0].CardID] = 1;
                 this.SaveState.removedCards[card.CardID] = 1;
-              } // Eject the first two queue entries which are the two selected cards
+              } // Eject the first two queue entries (the two selected cards)
 
 
               this.NumSelectedCards -= 2;
@@ -307,9 +311,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               this.SaveState.matchCount = this.ScoreCounter.MatchCount;
             } else {
               console.log("ERROR: Num selected cards: ", this.NumSelectedCards);
-            }
+            } // if all cards are removed, no need to save state as game is over
 
-            console.log(this.SaveState); // if all cards are removed, no need to save state as game is over
 
             if (this.SaveState.removedCards.every(val => val == 1)) {
               // Play game over audio source
@@ -318,7 +321,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
                 this.node.dispatchEvent(new (_crd && ScreenSwitchEventRequest === void 0 ? (_reportPossibleCrUseOfScreenSwitchEventRequest({
                   error: Error()
                 }), ScreenSwitchEventRequest) : ScreenSwitchEventRequest)("victory"));
-              }, this.VictoryJingleDelay);
+              }, this.VictoryDelay);
               localStorage.removeItem("saveState");
             } else {
               localStorage.setItem("saveState", JSON.stringify(this.SaveState));
@@ -331,7 +334,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           let scoringTypes = Array.from(this.ScoreEval.scoreHashMap.keys());
           scoringTypes = shuffleArray(scoringTypes);
           console.log(scoringTypes);
-          let numTypes = this.NumCards / 2;
+          let numTypes = this.NumCards / 2; // Since we need pairs
+
           let shuffledTypes = new Array(); // Get the first numTypes shuffled types from the evaluator, and only use those for this game
 
           console.log(shuffledTypes);
@@ -369,21 +373,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               let numRows = Math.ceil(this.NumCards / numCols);
               console.log("Num rows is ", numRows);
               this.childCardHeight = (parentHeight - (numRows - 1) * parentLayout.spacingY) / numRows;
-            } else {
-              // Grow the children
-              return;
             }
           }
-        }
+        } // If there is save data then load it
+
 
         loadIfAvailable() {
           if (localStorage.getItem("saveState")) {
-            console.log("Fetched save data");
-            this.SaveState = JSON.parse(localStorage.getItem("saveState"));
-            console.log("savedata: column req:" + this.SaveState.columnReq);
-            console.log("savedata numcards: " + this.SaveState.numCards);
-            console.log("savedata score: " + this.SaveState.score);
-            console.log("savedata combo: " + this.SaveState.combo);
+            this.SaveState = JSON.parse(localStorage.getItem("saveState")); // Checks if column requirement or number of cards in this game matches save state
+            // If not then set up new game
 
             if (this.SaveState.columnReq != this.ColumnReq) {
               console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
@@ -393,7 +391,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               return false;
             } else {
               console.log("Parse success");
-              console.log(this.SaveState.cards); // parse from here
+              console.log(this.SaveState.cards); // Parse from here
 
               this.NumCards = this.SaveState.cards.length;
               this.ScoreCounter.Score = this.SaveState.score;
@@ -459,7 +457,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "VictoryJingleDelay", [_dec8], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "VictoryDelay", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,

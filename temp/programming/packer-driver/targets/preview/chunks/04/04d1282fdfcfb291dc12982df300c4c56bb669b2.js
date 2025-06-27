@@ -40,10 +40,6 @@ System.register(["cc"], function (_export, _context) {
           this.node.setScale(scale, scale, 1);
         }
 
-        start() {}
-
-        update(deltaTime) {}
-
       }) || _class));
 
       _cclegacy._RF.pop();

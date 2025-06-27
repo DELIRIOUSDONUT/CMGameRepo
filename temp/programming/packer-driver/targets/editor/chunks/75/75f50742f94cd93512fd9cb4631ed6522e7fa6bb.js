@@ -47,10 +47,6 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
           _initializerDefineProperty(this, "BackSprite", _descriptor, this);
         }
 
-        start() {}
-
-        update(deltaTime) {}
-
         getFileName(cardClass) {
           let rank = cardClass[0];
           let suit = cardClass[1];

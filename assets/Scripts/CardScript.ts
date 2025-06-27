@@ -1,9 +1,11 @@
-import { _decorator, Component, Node , Event , Label, Sprite, SpriteFrame, AudioSource } from 'cc';
+import { _decorator, Component, Node , Event , Label, Sprite, SpriteFrame, AudioSource, CCBoolean } from 'cc';
 const { ccclass, property } = _decorator;
 import { CardSelectEvent } from "./CardSelectEvent";
 
 @ccclass('CardScript')
 export class CardScript extends Component {
+    @property({type: CCBoolean, tooltip: "Show card type for testing?"})
+    ShowCardType : boolean;
     FlippedUp : boolean;
     CardType : String;
     CardID : number;
@@ -23,8 +25,11 @@ export class CardScript extends Component {
         console.log("Card type set to: ", this.CardType);
 
         // For testing
-        let label : Label = this.node.getComponentInChildren("cc.Label") as Label;
-        label.string = this.CardType as string;
+        if(this.ShowCardType){
+            let label : Label = this.node.getComponentInChildren("cc.Label") as Label;
+            label.string = this.CardType as string;
+        }
+        
 
     }
 

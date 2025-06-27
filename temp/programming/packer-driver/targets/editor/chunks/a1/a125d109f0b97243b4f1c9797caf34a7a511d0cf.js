@@ -64,10 +64,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.MatchCount = 0;
         }
 
-        start() {}
-
-        update(deltaTime) {}
-
         trackScore(score) {
           // Check if combo streak is broken
           if (score <= 0) {

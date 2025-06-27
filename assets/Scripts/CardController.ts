@@ -18,16 +18,40 @@ export class CardController extends Component {
 
     @property({type: CCInteger, tooltip: "Delay time for card flip"})
     FlipDelay : number;
+
+    // Properties for audio
+    @property({type : AudioSource, tooltip: "Audio source when cards match"})
+    MatchAudioSource : AudioSource;
+    @property({type : AudioSource, tooltip: "Audio source when cards mismatch"})
+    MismatchAudioSource : AudioSource;
+    @property({type : AudioSource, tooltip: "Audio source when game is over"})
+    GameOverAudioSource : AudioSource;
+
+    // Property for victory screen
+    @property({type : CCFloat, tooltip: "Delay time for victory jingle and screen"})
+    VictoryDelay : number;
+
+    // Used to calculate score for cards
     ScoreEval : ScoreEvaluator;
-    // Queue for tracking card selection events  --  for now use array, change to actual queue later
+    // Queue for tracking card selection events 
     // Stores ID of selected cards temporally, remove the first two on match/mismatch
     CardSelectedQueue : Array<CardScript>;
 
     // Number of cards currently selected
     NumSelectedCards : number;
 
-    // Object to keep track of player score
+    // Object to keep track of player score, combo, turns and matches
     ScoreCounter : ScoreCounter;
+
+    // Number of columns required by Layout
+    ColumnReq : number;
+
+    // Dimensions of cards based on number of cards and requird columns
+    childCardHeight : number;
+    childCardWidth : number;
+
+    // Handles assignment of card sprites
+    SpriteHandler : SpriteHandler;
 
     // For keeping track of game states across restarts
     SaveState = {
@@ -42,25 +66,6 @@ export class CardController extends Component {
         matchCount: 0
     };
 
-    // Number of columns required by Layout
-    ColumnReq : number;
-
-    // Dimensions of cards based on number of cards and requird columns
-    childCardHeight : number;
-    childCardWidth : number;
-
-    SpriteHandler : SpriteHandler;
-
-    // Properties for audio
-    @property({type : AudioSource, tooltip: "Audio source when cards match"})
-    MatchAudioSource : AudioSource;
-    @property({type : AudioSource, tooltip: "Audio source when cards mismatch"})
-    MismatchAudioSource : AudioSource;
-    @property({type : AudioSource, tooltip: "Audio source when game is over"})
-    GameOverAudioSource : AudioSource;
-    @property({type : CCFloat, tooltip: "Delay time for victory jingle"})
-    VictoryJingleDelay : number;
-
     start() {
         // Get requirements for card sizes and columns
         this.getCardSize();
@@ -68,7 +73,6 @@ export class CardController extends Component {
         this.ScoreEval = this.node.getComponent("ScoreEvaluator") as ScoreEvaluator;
         // Get score tracker
         this.ScoreCounter = this.node.getComponent("ScoreCounter") as ScoreCounter;
-
         // Sprite handler
         this.SpriteHandler = this.node.getComponent("SpriteHandler") as SpriteHandler;
         // If save state exists and at least one pair is left
@@ -97,6 +101,7 @@ export class CardController extends Component {
             this.NumCards -= 1;
         }
 
+        // Save current number of cards and columns
         this.SaveState.columnReq = this.ColumnReq;
         this.SaveState.numCards = this.NumCards;
         
@@ -106,15 +111,19 @@ export class CardController extends Component {
         // Instantiate all cards
         for (let i = 0; i < this.NumCards; i++){
             const childCard = instantiate(this.CardPrefab);
+
+            // Adjust dimensions of card to fit parent container
             let childTransform : UITransform = 
                 childCard.getComponent("cc.UITransform") as UITransform;
             childTransform.width = this.childCardWidth;
             childTransform.height = this.childCardHeight;
             this.node.addChild(childCard);
+
+            // Initialize the card script
             let cardScript : CardScript = 
                     childCard.getComponent("CardScript") as CardScript;
-            
             cardScript.init(false, shuffledTypes[i], i); 
+
             // For layout adjustments
             let widget : Widget = 
                     childCard.getComponent("cc.Widget") as Widget;
@@ -131,13 +140,10 @@ export class CardController extends Component {
         this.setupCardMatchListener();
     }
 
-    update(deltaTime: number) {
-    }
-
     setupCardMatchListener(){
         this.CardSelectedQueue = new Array<CardScript>();
         this.NumSelectedCards = (this.SaveState.faceUpIndex == -1) ? 0 : 1;
-        // In the case that the program was closed while one card was faceup
+        // In the case that the program was closed while one card was face up
         if(this.NumSelectedCards == 1){
             // Search for card with matching index, and add to queue
             for(let i = 0; i < this.NumCards; i++){
@@ -150,20 +156,22 @@ export class CardController extends Component {
             }
             
         }
+
+        // Listening to card selection events emitted by card scripts
         this.node.on("card-selected", (event : CardSelectEvent) => {
             let card : CardScript = event.card;
             // Stop event propagation
             event.propagationStopped = true;  
             console.log("SELECTED CARD ID: ", card.CardID, " CARD TYPE: ",card.CardType);
-            // Handle animation logic here
-    
             // Check if this card is already face up. If it is then early return
             if(card.FlippedUp){
                 return;
             }
+
             // First add to queue
             this.CardSelectedQueue.push(card);
             this.NumSelectedCards++;
+
             // If no other cards selected, can flip face up
             if(this.NumSelectedCards == 1){
                 // Flip face up
@@ -174,7 +182,10 @@ export class CardController extends Component {
                 button.interactable = false;
             } else if (this.NumSelectedCards > 1){
                 // By this point, two cards are selected
+
+                // Both cards will be either face down or removed, so reset face up index
                 this.SaveState.faceUpIndex = -1;
+                // Flip face up
                 card.setFlipStatus(true);
                 let score : number = this.ScoreEval.getScore(
                     this.CardSelectedQueue[0].CardType,
@@ -190,9 +201,9 @@ export class CardController extends Component {
                 // Save combo to save state
                 if(score <= 0){
                     // --------- MISMATCH -------------
-                    // Play audio source
+                    // Play mismatch audio source
                     this.MismatchAudioSource.playOneShot(this.MismatchAudioSource.clip);
-                    // Do delay, then flip both cards face down
+                    // Flip both cards face down after a delay
                     let prevCard = this.CardSelectedQueue[0];
                     this.scheduleOnce(() => {
                         prevCard.setFlipStatus(false);
@@ -209,11 +220,9 @@ export class CardController extends Component {
 
                 } else {
                     // --------- MATCH -------------
-                    console.log("MATCH");
-                    console.log(this.CardSelectedQueue[0].CardType, card.CardType);
                     // Play audio source
                     this.MatchAudioSource.playOneShot(this.MatchAudioSource.clip);
-                    // Do delay, then disable both cards from rendering
+                    // Disable both cards from rendering after a delay
                     let prevCard = this.CardSelectedQueue[0];
                     this.scheduleOnce(()=>{
                         prevCard.disable();
@@ -225,7 +234,7 @@ export class CardController extends Component {
                     this.SaveState.removedCards[this.CardSelectedQueue[0].CardID] = 1;
                     this.SaveState.removedCards[card.CardID] = 1;
                 }
-                // Eject the first two queue entries which are the two selected cards
+                // Eject the first two queue entries (the two selected cards)
                 this.NumSelectedCards -= 2;
                 this.CardSelectedQueue.shift();
                 this.CardSelectedQueue.shift();
@@ -236,7 +245,6 @@ export class CardController extends Component {
             } else {
                 console.log("ERROR: Num selected cards: ", this.NumSelectedCards);
             }
-            console.log(this.SaveState);
             
             // if all cards are removed, no need to save state as game is over
             if(this.SaveState.removedCards.every((val) => val == 1)){
@@ -244,7 +252,7 @@ export class CardController extends Component {
                 this.scheduleOnce(() => {
                     this.GameOverAudioSource.playOneShot(this.GameOverAudioSource.clip);
                     this.node.dispatchEvent(new ScreenSwitchEventRequest("victory"));
-                }, this.VictoryJingleDelay);
+                }, this.VictoryDelay);
                 localStorage.removeItem("saveState");
             } else {
                 localStorage.setItem("saveState", JSON.stringify(this.SaveState));
@@ -257,7 +265,7 @@ export class CardController extends Component {
         let scoringTypes : Array<String> = Array.from(this.ScoreEval.scoreHashMap.keys());
         scoringTypes = shuffleArray(scoringTypes);
         console.log(scoringTypes);
-        let numTypes : number = this.NumCards / 2;
+        let numTypes : number = this.NumCards / 2;  // Since we need pairs
         let shuffledTypes : Array<String> = new Array<String>();
         // Get the first numTypes shuffled types from the evaluator, and only use those for this game
         console.log(shuffledTypes);
@@ -291,22 +299,18 @@ export class CardController extends Component {
                 let numRows : number = Math.ceil(this.NumCards / numCols);
                 console.log("Num rows is ", numRows);
                 this.childCardHeight = (parentHeight - ((numRows - 1) * parentLayout.spacingY)) / numRows;
-            } else {
-                // Grow the children
-                return;
             }
         }
 
     }
 
+    // If there is save data then load it
     loadIfAvailable(){
         if((localStorage.getItem("saveState")) ){
-            console.log("Fetched save data");
             this.SaveState = JSON.parse(localStorage.getItem("saveState") as string);
-            console.log("savedata: column req:" + this.SaveState.columnReq);
-            console.log("savedata numcards: " + this.SaveState.numCards);
-            console.log("savedata score: " + this.SaveState.score);
-            console.log("savedata combo: " + this.SaveState.combo);
+
+            // Checks if column requirement or number of cards in this game matches save state
+            // If not then set up new game
             if(this.SaveState.columnReq != this.ColumnReq){
                 console.log("Column req not met", this.SaveState.columnReq, this.ColumnReq);
                 return false;
@@ -316,7 +320,7 @@ export class CardController extends Component {
             } else {
                 console.log("Parse success");
                 console.log(this.SaveState.cards);
-                // parse from here
+                // Parse from here
                 this.NumCards = this.SaveState.cards.length;
                 this.ScoreCounter.Score = this.SaveState.score;
                 this.ScoreCounter.ComboStreak = this.SaveState.combo;

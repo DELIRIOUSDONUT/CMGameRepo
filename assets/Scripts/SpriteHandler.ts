@@ -8,14 +8,6 @@ export class SpriteHandler extends Component {
     @property({type : SpriteFrame, tooltip: "Sprite for the back of the card"})
     BackSprite : SpriteFrame;
 
-    start() {
-
-    }
-
-    update(deltaTime: number) {
-        
-    }
-
     getFileName(cardClass : string){
         let rank = cardClass[0];
         let suit = cardClass[1];

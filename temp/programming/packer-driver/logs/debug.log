@@ -1096,3 +1096,229 @@ Feature changed: false
 11:00:41 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
 11:00:41 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.
 11:00:41 debug: Target(preview) ends with cost 98.03183399885893ms.
+11:04:02 debug: Dispatch build request for time accumulated 1 asset changes.
+11:04:02 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+11:04:02 debug: Target(editor) build started.
+11:04:02 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:28:33 GMT+0700 (Indochina Time), Current mtime: Thu Jan 01 1970 08:31:54 GMT+0700 (Indochina Time)
+11:04:02 debug: Inspect cce:/internal/x/prerequisite-imports
+11:04:02 debug: Resolve file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.
+11:04:02 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts. Last mtime: Fri Jun 27 2025 10:01:25 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66, Current mtime: Fri Jun 27 2025 11:03:54 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66
+11:04:02 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts
+11:04:02 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/code-quality/cr.mjs.
+11:04:02 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:04:02 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:04:02 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:04:02 debug: Resolve ./CardSelectEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.
+11:04:02 debug: Target(editor) ends with cost 36.93266599997878ms.
+11:04:02 debug: Target(preview) build started.
+11:04:02 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:28:33 GMT+0700 (Indochina Time), Current mtime: Thu Jan 01 1970 08:31:54 GMT+0700 (Indochina Time)
+11:04:02 debug: Inspect cce:/internal/x/prerequisite-imports
+11:04:02 debug: Resolve file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.
+11:04:02 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts. Last mtime: Fri Jun 27 2025 10:01:25 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66, Current mtime: Fri Jun 27 2025 11:03:54 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66
+11:04:02 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts
+11:04:02 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/code-quality/cr.mjs.
+11:04:02 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:04:02 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:04:02 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:04:02 debug: Resolve ./CardSelectEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:04:02 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.
+11:04:02 debug: Target(preview) ends with cost 39.31383400037885ms.
+11:05:16 debug: Dispatch build request for time accumulated 1 asset changes.
+11:05:16 debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+11:05:16 debug: Target(editor) build started.
+11:05:16 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:31:54 GMT+0700 (Indochina Time), Current mtime: Thu Jan 01 1970 08:33:08 GMT+0700 (Indochina Time)
+11:05:16 debug: Inspect cce:/internal/x/prerequisite-imports
+11:05:16 debug: Resolve file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.
+11:05:16 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts. Last mtime: Fri Jun 27 2025 10:59:18 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea, Current mtime: Fri Jun 27 2025 11:05:16 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea
+11:05:16 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts
+11:05:16 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/code-quality/cr.mjs.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve ./ScreenSwitchRequestEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.
+11:05:16 debug: Target(editor) ends with cost 63.2533750012517ms.
+11:05:16 debug: Target(preview) build started.
+11:05:16 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:31:54 GMT+0700 (Indochina Time), Current mtime: Thu Jan 01 1970 08:33:08 GMT+0700 (Indochina Time)
+11:05:16 debug: Inspect cce:/internal/x/prerequisite-imports
+11:05:16 debug: Resolve file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.
+11:05:16 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts. Last mtime: Fri Jun 27 2025 10:59:18 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea, Current mtime: Fri Jun 27 2025 11:05:16 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea
+11:05:16 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts
+11:05:16 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/code-quality/cr.mjs.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:05:16 debug: Resolve ./ScreenSwitchRequestEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:05:16 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.
+11:05:16 debug: Target(preview) ends with cost 73.29183300025761ms.
+11:45:37 debug: Dispatch build request for time accumulated 7 asset changes.
+11:45:37 debug: Build iteration starts.
+Number of accumulated asset changes: 7
+Feature changed: false
+11:45:37 debug: Target(editor) build started.
+11:45:37 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:33:08 GMT+0700 (Indochina Time), Current mtime: Thu Jan 01 1970 09:13:29 GMT+0700 (Indochina Time)
+11:45:37 debug: Inspect cce:/internal/x/prerequisite-imports
+11:45:37 debug: Resolve file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts. Last mtime: Thu Jun 26 2025 17:03:42 GMT+0700 (Indochina Time)@53a9d8db-76df-4c43-96d6-c4426f450b09, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@53a9d8db-76df-4c43-96d6-c4426f450b09
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts. Last mtime: Fri Jun 27 2025 11:05:16 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea, Current mtime: Fri Jun 27 2025 11:45:11 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve ./ScreenSwitchRequestEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts. Last mtime: Fri Jun 27 2025 11:03:54 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66, Current mtime: Fri Jun 27 2025 11:45:16 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve ./CardSelectEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts. Last mtime: Thu Jun 26 2025 16:02:29 GMT+0700 (Indochina Time)@5f684221-564d-4ce4-8d19-bb195065f271, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@5f684221-564d-4ce4-8d19-bb195065f271
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve ./ScoreUpdateEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts. Last mtime: Wed Jun 25 2025 13:17:42 GMT+0700 (Indochina Time)@b4d57943-4a9c-4d95-bc66-2f62251cc49d, Current mtime: Fri Jun 27 2025 11:45:17 GMT+0700 (Indochina Time)@b4d57943-4a9c-4d95-bc66-2f62251cc49d
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts. Last mtime: Thu Jun 26 2025 15:52:57 GMT+0700 (Indochina Time)@7c8af5c5-16b3-4f9c-a023-a39dd638d72a, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@7c8af5c5-16b3-4f9c-a023-a39dd638d72a
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts. Last mtime: Thu Jun 26 2025 14:54:58 GMT+0700 (Indochina Time)@0975ccc7-52e8-4dd7-9df1-94154ad34d34, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@0975ccc7-52e8-4dd7-9df1-94154ad34d34
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/x/cc.
+11:45:37 debug: Target(editor) ends with cost 134.8052920009941ms.
+11:45:37 debug: Target(preview) build started.
+11:45:37 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:33:08 GMT+0700 (Indochina Time), Current mtime: Thu Jan 01 1970 09:13:29 GMT+0700 (Indochina Time)
+11:45:37 debug: Inspect cce:/internal/x/prerequisite-imports
+11:45:37 debug: Resolve file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts. Last mtime: Thu Jun 26 2025 17:03:42 GMT+0700 (Indochina Time)@53a9d8db-76df-4c43-96d6-c4426f450b09, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@53a9d8db-76df-4c43-96d6-c4426f450b09
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts. Last mtime: Fri Jun 27 2025 11:05:16 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea, Current mtime: Fri Jun 27 2025 11:45:11 GMT+0700 (Indochina Time)@f1c9c783-6e7a-4995-860a-2c80620666ea
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve ./ScreenSwitchRequestEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts. Last mtime: Fri Jun 27 2025 11:03:54 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66, Current mtime: Fri Jun 27 2025 11:45:16 GMT+0700 (Indochina Time)@72078481-5462-4b2a-b1e6-158be7f71c66
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve ./CardSelectEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardSelectEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SceneSwitcher.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts. Last mtime: Thu Jun 26 2025 16:02:29 GMT+0700 (Indochina Time)@5f684221-564d-4ce4-8d19-bb195065f271, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@5f684221-564d-4ce4-8d19-bb195065f271
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve ./ScoreUpdateEvent from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts. Last mtime: Wed Jun 25 2025 13:17:42 GMT+0700 (Indochina Time)@b4d57943-4a9c-4d95-bc66-2f62251cc49d, Current mtime: Fri Jun 27 2025 11:45:17 GMT+0700 (Indochina Time)@b4d57943-4a9c-4d95-bc66-2f62251cc49d
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdateEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts. Last mtime: Thu Jun 26 2025 15:52:57 GMT+0700 (Indochina Time)@7c8af5c5-16b3-4f9c-a023-a39dd638d72a, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@7c8af5c5-16b3-4f9c-a023-a39dd638d72a
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScreenSwitchRequestEvent.ts.
+11:45:37 debug: Resolve file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts from cce:/internal/x/prerequisite-imports as file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts.
+11:45:37 debug: Detected change: file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts. Last mtime: Thu Jun 26 2025 14:54:58 GMT+0700 (Indochina Time)@0975ccc7-52e8-4dd7-9df1-94154ad34d34, Current mtime: Fri Jun 27 2025 11:45:28 GMT+0700 (Indochina Time)@0975ccc7-52e8-4dd7-9df1-94154ad34d34
+11:45:37 debug: Inspect file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts
+11:45:37 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/code-quality/cr.mjs.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/x/cc.
+11:45:37 debug: Resolve cc from file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts as cce:/internal/x/cc.
+11:45:37 debug: Target(preview) ends with cost 127.53087499924004ms.

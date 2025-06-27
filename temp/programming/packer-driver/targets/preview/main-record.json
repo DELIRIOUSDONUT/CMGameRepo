@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 5313932.516667001,
+      "mTimestamp": 8009955.362834001,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -775,7 +775,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardScript.ts": {
       "mTimestamp": {
-        "mtime": 1750993285218.3513,
+        "mtime": 1750999516175.8323,
         "uuid": "72078481-5462-4b2a-b1e6-158be7f71c66"
       },
       "chunkId": "d1febd7abf416efdcd294da2b322f8e15cd055b9",
@@ -795,11 +795,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 94
+              "column": 105
             },
             "end": {
               "line": 1,
-              "column": 98
+              "column": 109
             }
           }
         },
@@ -859,7 +859,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/CardController.ts": {
       "mTimestamp": {
-        "mtime": 1750996758219.656,
+        "mtime": 1750999511031.1545,
         "uuid": "f1c9c783-6e7a-4995-860a-2c80620666ea"
       },
       "chunkId": "caec25bf9120a2b9bd628d467890152acaf01abe",
@@ -970,7 +970,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreEvaluator.ts": {
       "mTimestamp": {
-        "mtime": 1750832262760.944,
+        "mtime": 1750999517913.397,
         "uuid": "b4d57943-4a9c-4d95-bc66-2f62251cc49d"
       },
       "chunkId": "9007ab4b72832a718a8bbabcded061842efed625",
@@ -986,11 +986,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 44
+              "column": 55
             },
             "end": {
               "line": 1,
-              "column": 48
+              "column": 59
             }
           }
         }
@@ -1085,7 +1085,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreCounter.ts": {
       "mTimestamp": {
-        "mtime": 1750928549966.2695,
+        "mtime": 1750999528196.55,
         "uuid": "5f684221-564d-4ce4-8d19-bb195065f271"
       },
       "chunkId": "a125d109f0b97243b4f1c9797caf34a7a511d0cf",
@@ -1221,7 +1221,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/ScoreUpdater.ts": {
       "mTimestamp": {
-        "mtime": 1750927977958.3623,
+        "mtime": 1750999528193.4497,
         "uuid": "7c8af5c5-16b3-4f9c-a023-a39dd638d72a"
       },
       "chunkId": "8f4819b59b8ffda51714044ea8a800909441061d",
@@ -1284,7 +1284,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/SpriteHandler.ts": {
       "mTimestamp": {
-        "mtime": 1750924498773.4678,
+        "mtime": 1750999528196.573,
         "uuid": "0975ccc7-52e8-4dd7-9df1-94154ad34d34"
       },
       "chunkId": "75f50742f94cd93512fd9cb4631ed6522e7fa6bb",
@@ -1347,7 +1347,7 @@
     },
     "file:///Users/admin/Documents/GitHub/CMGameRepo/assets/Scripts/BGScaler.ts": {
       "mTimestamp": {
-        "mtime": 1750932222584.2983,
+        "mtime": 1750999528193.3877,
         "uuid": "53a9d8db-76df-4c43-96d6-c4426f450b09"
       },
       "chunkId": "04d1282fdfcfb291dc12982df300c4c56bb669b2",
