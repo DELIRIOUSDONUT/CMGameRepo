@@ -6,7 +6,13 @@
       "outputName": "ios",
       "mainBundleCompressionType": "merge_dep",
       "platform": "ios",
-      "buildMode": "bundle"
+      "buildMode": "normal",
+      "buildStageGroup": {
+        "build": [
+          "make",
+          "run"
+        ]
+      }
     },
     "options": {
       "ios": {
@@ -15,7 +21,7 @@
         "renderBackEnd": {
           "metal": true
         },
-        "skipUpdateXcodeProject": false,
+        "skipUpdateXcodeProject": true,
         "orientation": {
           "portrait": false,
           "upsideDown": false,
@@ -47,6 +53,27 @@
         },
         "osTarget": {
           "iphoneos": false,
+          "simulator": true
+        },
+        "targetVersion": "12.0",
+        "__version__": "1.0.1",
+        "developerTeam": "testcocos"
+      },
+      "1751005167889": {
+        "executableName": "cmgame",
+        "packageName": "com.cmgame.ios",
+        "renderBackEnd": {
+          "metal": true
+        },
+        "skipUpdateXcodeProject": false,
+        "orientation": {
+          "portrait": false,
+          "upsideDown": false,
+          "landscapeRight": true,
+          "landscapeLeft": true
+        },
+        "osTarget": {
+          "iphoneos": true,
           "simulator": true
         },
         "targetVersion": "12.0",

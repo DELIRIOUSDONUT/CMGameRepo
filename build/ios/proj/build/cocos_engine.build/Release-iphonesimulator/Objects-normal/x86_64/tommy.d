@@ -1,0 +1,30 @@
+dependencies: \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommy.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhash.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhash.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommytypes.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyalloc.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyalloc.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarray.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarray.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarrayof.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarrayof.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarrayblk.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarrayblk.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarrayblkof.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyarrayblkof.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommylist.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommylist.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommychain.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommytree.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommytree.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommytrie.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommytrie.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommytrieinp.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommytrieinp.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhashtbl.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhashtbl.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhashdyn.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhashdyn.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhashlin.c \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/tommyds/tommyhashlin.h

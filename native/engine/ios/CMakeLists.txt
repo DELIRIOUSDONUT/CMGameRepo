@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.20)
 
 set(CMAKE_SYSTEM_NAME iOS)
 set(APP_NAME "CMGame"  CACHE STRING "Project Name")

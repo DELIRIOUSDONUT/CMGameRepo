@@ -1,0 +1,9 @@
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/CMakeFiles/builtin-res.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/CMakeFiles/cocos_engine.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/CMakeFiles/genbindings.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/CMakeFiles/cmgame.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/CMakeFiles/ALL_BUILD.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/CMakeFiles/ZERO_CHECK.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/boost/container/CMakeFiles/boost_container.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/boost/container/CMakeFiles/ALL_BUILD.dir
+/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/boost/container/CMakeFiles/ZERO_CHECK.dir

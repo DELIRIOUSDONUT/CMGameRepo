@@ -8,9 +8,9 @@
       "asyncFunctions": true
     },
     "buildPath": "project://build",
-    "outputName": "web-desktop",
+    "outputName": "ios",
     "mainBundleCompressionType": "merge_dep",
-    "platform": "web-desktop"
+    "platform": "ios"
   },
   "BuildTaskManager": {
     "taskMap": {
@@ -20,7 +20,7 @@
         "progress": 1,
         "state": "success",
         "stage": "build",
-        "message": "6-27-2025 10:13:26 build success in 54 s!",
+        "message": "6-27-2025 12:12:23 build success in 19 s!",
         "detailMessage": "// ---- build task cocos-service：onAfterBuild ----\r",
         "options": {
           "name": "CMGame",
@@ -68,7 +68,71 @@
           "__version__": "1.3.8",
           "logDest": "project://temp/builder/log/web-desktop6-27-2025 10-12.log"
         },
-        "time": "6-27-2025 10:12:31",
+        "time": "6-27-2025 12:12:03",
+        "dirty": false
+      },
+      "1751005167889": {
+        "type": "build",
+        "id": "1751005167889",
+        "progress": 1,
+        "state": "failure",
+        "stage": "build",
+        "message": "6-27-2025 13:28:24 build task failed! Error: run cmake failed \"cmake -S \"/Users/admin/Documents/GitHub/CMGameRepo/native/engine/ios\" -GXcode -B\"/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj\" -T buildsystem=1 -DCMAKE_SYSTEM_NAME=iOS -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DRES_DIR=\"/Users/admin/Documents/GitHub/CMGameRepo/build/ios\" -DAPP_NAME=\"CMGame\" -DLAUNCH_TYPE=\"Release\"\", code: 1, signal: null\n    at ChildProcess.<anonymous> (/Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/scripts/native-pack-tool/source/utils.ts:484:28)\n    at ChildProcess.emit (events.js:315:20)\n    at maybeClose (internal/child_process.js:1048:16)\n    at Socket.<anonymous> (internal/child_process.js:439:11)\n    at Socket.emit (events.js:315:20)\n    at Pipe.<anonymous> (net.js:673:12)",
+        "detailMessage": "// ---- build task native：onAfterBuild ----\r",
+        "options": {
+          "name": "CMGame",
+          "server": "",
+          "platform": "ios",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "overwriteProjectSettings": {
+            "macroConfig": {
+              "cleanupImageCache": "inherit-project-setting"
+            },
+            "includeModules": {
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting",
+              "gfx-webgl2": "off"
+            }
+          },
+          "nativeCodeBundleMode": "asmjs",
+          "polyfills": {
+            "asyncFunctions": false
+          },
+          "experimentalEraseModules": false,
+          "startSceneAssetBundle": false,
+          "bundleConfigs": [],
+          "useBuiltinServer": false,
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "useSplashScreen": true,
+          "bundleCommonChunk": false,
+          "packAutoAtlas": true,
+          "startScene": "29ba28d9-1244-421a-be48-36a95eb85582",
+          "outputName": "ios",
+          "taskName": "ios",
+          "scenes": [
+            {
+              "url": "db://assets/Scenes/MainGameScene.scene",
+              "uuid": "29ba28d9-1244-421a-be48-36a95eb85582"
+            }
+          ],
+          "wasmCompressionMode": false,
+          "buildMode": "normal",
+          "packages": {},
+          "__version__": "1.3.8",
+          "logDest": "project://temp/builder/log/ios6-27-2025 13-19.log",
+          "buildStageGroup": {
+            "build": [
+              "make",
+              "run"
+            ]
+          }
+        },
+        "time": "6-27-2025 13:28:11",
         "dirty": false
       }
     }

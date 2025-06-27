@@ -1,0 +1,22 @@
+dependencies: \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/DataParser.cpp \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/DataParser.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../core/DragonBones.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/AnimationData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/ArmatureData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../core/BaseObject.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../core/DragonBones.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../geom/ColorTransform.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../geom/../core/DragonBones.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../geom/Matrix.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../geom/Point.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../geom/Rectangle.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/../geom/Transform.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/BoundingBoxData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/CanvasData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/ConstraintData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/DisplayData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/DragonBonesData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/SkinData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/TextureAtlasData.h \
+  /Applications/Cocos/Creator/3.8.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support/dragonbones/parser/../model/UserData.h

@@ -1,0 +1,13 @@
+Target dependency graph (5 targets)
+Target 'cmgame' in project 'CMGame'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'CMGame'
+➜ Explicit dependency on target 'cocos_engine' in project 'CMGame'
+➜ Explicit dependency on target 'boost_container' in project 'CMGame'
+Target 'cocos_engine' in project 'CMGame'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'CMGame'
+➜ Explicit dependency on target 'genbindings' in project 'CMGame'
+➜ Explicit dependency on target 'boost_container' in project 'CMGame'
+Target 'boost_container' in project 'CMGame' (no dependencies)
+Target 'genbindings' in project 'CMGame'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'CMGame'
+Target 'ZERO_CHECK' in project 'CMGame' (no dependencies)
