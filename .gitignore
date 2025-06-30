@@ -1,0 +1,37 @@
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Cocos Creator
+local/
+library/
+temp/
+build/
+profiles/
+native/
+settings/
+jsb-adapter/
+*.log
+*.tmp
+
+# General node/npm cache 
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Generated files by CMake (if applicable)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Auto-generated bindings
+auto/
+bindings/
+
+# Log files
+*.log
