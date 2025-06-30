@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/cmake_install.cmake",
-		"/Users/admin/Documents/GitHub/CMGameRepo/build/ios/proj/boost/container/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

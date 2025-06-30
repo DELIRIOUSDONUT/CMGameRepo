@@ -1,9 +1,0 @@
-{
-    "systemInfo": {
-        "arch": "arm64",
-        "cpu": "Apple M2 Max",
-        "version": "Darwin Kernel Version 24.5.0: Tue Apr 22 19:54:25 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T6020"
-    },
-    "sceneListMap": {},
-    "deviceMd5": "0a5b7aa8644532e7466586ed083df5d8"
-}

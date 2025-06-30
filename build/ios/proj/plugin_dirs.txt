@@ -1,3 +1,0 @@
-# directories for searching native plugins
-/Users/admin/Documents/GitHub/CMGameRepo/native
-/Users/admin/Documents/GitHub/CMGameRepo/extensions
